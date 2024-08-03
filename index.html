@@ -1,328 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-  <title>Applied Machine Intelligence Initiatives & Education Lab (AMIIE Lab)</title>
-  <meta content="Applied Machine Intelligence Initiatives & Education Lab (AMIIE Lab)" name="description">
-  <meta content="Applied Machine Intelligence Initiatives & Education Lab (AMIIE Lab)" name="keywords">
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="amiielab">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- =======================================================
-  * Template Name: Moderna - v4.11.0
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>amiielab</title>
+  <link rel="manifest" href="manifest.json">
 </head>
-
 <body>
-
-  <!-- ======= Header ======= -->
-  <section id="topbar" >
-    <div class="container">
-      <div class="contact-info">
-      <a href="https://www.pace.edu" target="_blank" class="text-light uni">Pace University</a>
-      </div>
-    </div>
-  </section>	
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html"><img src="assets/img/logo24.png" width="254" height="254" class="logo" style="max-width: 350px;max-height: 350px;"></a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="active " href="index.html">Home</a></li>
-          <li><a href="people.html">People</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="opening.html">Openings</a></li>
-	  <li><a href="githubrepo.html">GitHub Repo</a></li>
-          <li><a href="wic.html">Webinar Series</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h3 class="animate__animated animate__fadeInUp">AMIIE Research and Educational Laboratory</span></h3>
-		  
-        </div>
-      </div>
-	  
-	  <div class="carousel-item ">
-        <div class="carousel-container">
-          <h3 class="animate__animated animate__fadeInUp">Building AI and Machine Intelligence to Tackle Real-World Problems</span></h3>
-		  
-        </div>
-      </div>
-	  
-	  <div class="carousel-item">
-        <div class="carousel-container">
-          <h3 class="animate__animated animate__fadeInUp">Offering Highly-Available Trainings in AI and Machine Learning</span></h3>
-		  
-        </div>
-      </div>
-	  <!-- Slide 2 -->
-      <div class="carousel-item ">
-        <div class="carousel-container">
-		
-          <h3 class="animate__animated animate__fadeInUp">Empowering Healthcare with AI-Powered Models</span></h3>
-		  
-        </div>
-      </div>
-
-	    <div class="carousel-item ">
-        <div class="carousel-container">
-		
-          <h3 class="animate__animated animate__fadeInUp">Developing Unbiased AI Models to Advance Health Equity</span></h3>
-		  
-        </div>
-      </div>
-	
-	  <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
-    
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main" style="margin-top:0px">
-
-
-
-    <section class="why-us " data-aos="fade-up" date-aos-delay="200" >
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/May24.jpg" class="img-fluid" alt="Soheyla Amirian, Ph.D.">
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-            <p class="description">
-			The main goal and purpose of the <strong> AMIIE Laboratory </strong> led by <a href="https://amiielab.github.io/index.html" target="_blank">Soheyla Amirian</a> is to conduct and promote fundamental and applied Artificial Intelligence (AI) research and education in solving real-world problems, ranging from health informatics to surveillance systems and security. We envision serving as a world-class leader in research, education, commercialization, and scholarship in applied AI. 
-		    </p>
-			<p class="description"> Our group is a multidisciplinary team of computer scientists, informaticians, physicians, artificial intelligence experts, undergraduate, and graduate students, and it benefits from several external collaborations with other academic institutions nationwide. Furthermore, our laboratory aims to provide high quality education and research experience in AI-powered algorithms at all levels from K-12 to undergraduate to graduate levels to develop a highly skilled workforce for New York’s economic and social development.
-			</p>
-           
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-user"></i></div>
-              <h4 class="title">Soheyla Amirian, Ph.D.</h4>
-              <p class="description">Director, <a href="https://amiielab.github.io" target="">AMIIE Lab</a></p>
-			  <p class="description">Assistant Professor, <a href="https://www.pace.edu/seidenberg" target="_blank">Seidenberg School of CSIS</a></p>
-		          <!-- <p class="description">Faculty Lecturer, <a href="https://www.cs.uga.edu/" target="_blank">School of Computing</a></p> -->
-			  <p class="description"><a href="https://www.pace.edu/" target="_blank">Pace University</a></p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======= Features Section ======= -->
-    <section class="why-us section-bg">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-            <div class="section-title">
-          <h2>Research Interests</h2>
-        </div>
-          <ul>
-		        <li> Accountable and Explainable AI</li>
-		        <li> AI Fairness</li>
-		        <li> AI-Powered Healthcare</li>
-		        <li> Computational Vision</li>
-			<li> Computational Text Analytics </li>
-			<li> Learning from Less Labeled Data</li>
-		  </ul>
-
-          </div>
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/p1.jpg" class="img-fluid" alt="Soheyla Amirian, Ph.D.">
-          </div>
-        </div>
-    </section>
-
-    <!-- ======= Features Section ======= -->
-    <section class="features ">
-	 <div class="container">
-        <div class="row" data-aos="fade-up">
-        <div class="col-md-12 pt-2">
-		<div class="section-title">
-          <h2>News</h2>
-        </div>
-          <ul>
-
-		       	<li><i class="bi bi-check"></i> <strong>Sep. 2024:</strong> PACE AI Insight Series. <a href="https://amiielab.github.io/wic.html" target="_blank">Registeration and more info here soon</a>. </li>
-			<li><i class="bi bi-check"></i> <strong>Jul. 2024:</strong> Delighted to announce that our paper was published by <a href="https://www.nature.com/articles/s41598-024-66873-6" target="_blank">Scientific Reports</a>.</li>
-
-		  	<li><i class="bi bi-check"></i> <strong>Apr. 2024:</strong> Our team won the second place award for the poster at the University of Georgia's AI Research Day. </li>
-			<li><i class="bi bi-check"></i> <strong>Apr. 2024:</strong> Women in Computing (WIC) Webinar series. <a href="https://amiielab.github.io/wic.html" target="_blank">Registeration and more info here</a>. </li>
-			<li><i class="bi bi-check"></i> <strong>Apr. 2024:</strong> Congratulations to the Mobile App team for successfully submitting a paper to the <a href="https://eccb2024.fi/calls" target="_blank">ECCB 2024!</a></li>
-			<li><i class="bi bi-check"></i> <strong>Apr. 2024:</strong> Congratulations to the Text Mining team for successfully submitting a paper to the <a href="https://www.cambridge.org/core/journals/global-mental-health" target="_blank">Cambridge journal!</a></li>
-		  
-		        <li><i class="bi bi-check"></i> <strong>Mar. 2024:</strong> Thrilled and deeply honored to be awarded by the NIH-National Institute on Aging, effective June 1, 2024. <a href="" target="_blank"></a></li>
-			<li><i class="bi bi-check"></i> <strong>Mar. 2024:</strong> Delighted to be a panelist! “Code-switching vs authentic self: Are you keeping it real?”, IEEE Women in Engineering 2024<a href="" target="_blank"></a></li>
-			<li><i class="bi bi-check"></i> <strong>Mar. 2024:</strong> Congratulations, Nima, my Fall 23 TA, on receiving the Teaching Assistant Award!<a href="" target="_blank"></a></li>
-		  	<li><i class="bi bi-check"></i> <strong>Mar. 2024:</strong> Congratulations, Rohan, my Fall 23 TA, on receiving the Teaching Assistant Award!<a href="" target="_blank"></a></li>
-
-		  	<li><i class="bi bi-check"></i> <strong>Feb. 2024:</strong> Soheyla received the UGA "Student Career Success Influencer Award 2023"<a href="" target="_blank"></a>. </li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2024:</strong> Women in Computing (WIC) Webinar series. <a href="https://amiielab.github.io/wic.html" target="_blank">Registeration and more info here</a>. </li>
-		  	<li><i class="bi bi-check"></i> <strong>Jan. 2023:</strong> Soheyla is serving as the Program Committee member at the 19th International Symposium on Visual Computing. <a href="https://www.isvc.net/" target="_blank">ISVC'24</a>. </li>
-
-		        <li><i class="bi bi-check"></i> <strong>Jan. 2024:</strong> Delighted to announce that our podium abstract was accepted by <a href="https://amia.org/education-events/amia-2024-informatics-summit" target="_blank">AMIA 2024 Informatics Summit</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Dec. 2023::</strong> Congratulations, Rohan, my CSCI 1301 lab instructor, on being nominated for the Teaching Assistant Award in Fall 2023!<a href="" target="_blank"></a></li>
-
-		  
-		        <li><i class="bi bi-check"></i> <strong>Dec. 2023:</strong> Soheyla has been appointed as a member of the University Council at the University of Georgia, commencing her term on July 2024 <a href="" target="_blank"></a>. </li>
-		  	<li><i class="bi bi-check"></i> <strong>Dec. 2023:</strong> Serving as a keynote speaker at the CSCI'23 International Conference. <a href="https://american-cse.org/csci2023/keynotes/amirian" target="_blank">More info here</a>. </li>
-		  	<li><i class="bi bi-check"></i> <strong>Nov. 2023:</strong> Our team won the first and second place awards for two posters at the University of Georgia's Soc Research Day. </li>
-		  	<li><i class="bi bi-check"></i> <strong>Nov. 2023:</strong> Three posters from our team were presented at the University of Georgia's Soc Research Day by our research assistants.</li>
-		  	<li><i class="bi bi-check"></i> <strong>Nov. 2023:</strong> Serving as a keynote speaker at Health Informatics Grand Rounds. <a href="https://calendar.pitt.edu/event/health_informatics_grand_rounds_dr_amirian_will_be_presenting_ai_fairness_in_medical_image_segmentation" target="_blank">Registeration and more info here</a>. </li>
-			<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Soheyla has been nominated for a Franklin College teaching award!. </li>
-		        <li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Serving as a referee at the Journal of Healthcare Informatics Research. <a href="https://www.springer.com/journal/41666" target="_blank">Link</a>. </li>
-			<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> The 18th International Symposium on Visual Computing. <a href="https://github.com/pitthexai/ISVC_2023_Tutorial_XAI_Few_Shot_on_the_Cloud" target="_blank">Tutorial on "Explainable Deep Few-shot Learning on the Cloud and its Application in Medical Imaging Informatics"</a>. </li>
-		  	<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Women in Computing (WIC) Webinar series. <a href="https://amiielab.github.io/wic.html" target="_blank">Registeration and more info here</a>. </li>
-		  	<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Soheyla was awarded the IEEE Atlanta Section Outstanding Educator Award 2023. </li>
-		        <li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Serving as a Program Commitee member at <a href="https://ieeeichi2024.github.io/" target="_blank">IEEE ICHI 2024</a>. </li>
-		        
-		  	<li><i class="bi bi-check"></i> <strong>Sep. 2023:</strong> Women in Computing (WIC) Webinar series. <a href="https://amiielab.github.io/wic.html" target="_blank">Registeration and more info here</a>. </li>
-		        <li><i class="bi bi-check"></i> <strong>Sep. 2023:</strong> Our work on semi-supervised medical image segmentation has been also submitted at <a href="https://amia.org/education-events/amia-2024-informatics-summit" target="_blank">AMIA 2024 Informatics Summit</a>. </li>
-		        <li><i class="bi bi-check"></i> <strong>Sep. 2023:</strong> Our work on Knee ROM has been submitted at prestigious <a href="https://amia.org/education-events/amia-2024-informatics-summit" target="_blank">AMIA 2024 Informatics Summit</a>. Fingers crossed! </li>
-                	<li><i class="bi bi-check"></i> <strong>Aug. 2023:</strong> Our work on bone metastasis classification with <a href="https://www.orthonet.pitt.edu/people/kurt-r-weiss-md" target="_blank">Dr. Kurt Weiss</a> and <a href="https://www.orthonet.pitt.edu/people/ines-lohse-phd" target="_blank"> Dr. Ines lohse</a> has been accepted at <a href="https://www.ctos.org/Meeting/2023AnnualMeeting.aspx" target="_blank">CTOS</a>! Kudos to the team!</li>
-		        <li><i class="bi bi-check"></i> <strong>Aug. 2023:</strong> Our <a href="https://github.com/pitthexai/HexAI-TJAtxt" target="_blank">HexAI-TJAtxt dataset</a> has been submitted at <a href="https://www.editorialmanager.com/dib" target="_blank">Data in Brief Journal</a>.</li>
-		       <!-- <li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> AMIIE Lab has submitted a grant application at <a href="https://www.a2collective.ai/pilotawards" target="_blank">NIH NIA a2 Pilot Award</a>. Fingers crossed!</li> -->
-		        <li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> Soheyla is a reviewing "Data Structures and Algorithms in Java: A Project-Based Approach by Dan Myers", <a href="https://www.cambridge.org/core/publications/books#" target="_blank">Cambridge University Press</a>.</li>
-		  	<!--<li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> AMIIE Lab is hiring a full-stack developer! <a href="https://amiielab.github.io/gitHubrepo.html" target="_blank">More info...</a>.</li>-->
-		        <li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> Soheyla is organizing a tutorial on explainable deep few-shot learning at <a href="http://www.isvc.net/index.php/tutorials/" target="_blank">ISVC 2023</a>.</li>
-		  	<li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> Our paper on Explainable AI was accepted by <a href="https://american-cse.org/index.html/" target="_blank">CSCE'23</a>. Soheyla is serving as the first author!</li>
-		  	<li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> We are serving as Associate Editors at <a href="https://american-cse.org/static/cover-CSCE23-Book-of-Abstracts.pdf" target="_blank">CSCE'23</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> Our paper on unbiased image segmentation was accepted by <a href="https://bhi.embs.org/2023/" target="_blank">IEEE BHI 2023</a>. Soheyla is serving as the corresponding author(s)!</li>
-		        <li><i class="bi bi-check"></i> <strong>May. 2023:</strong> Congratulations, Afsaneh, my TA, on receiving the Teaching Assistant Award in Spring 2023!<a href="" target="_blank"></a></li>
-
-		  	<!--<li><i class="bi bi-check"></i> <strong>Apr. 2023:</strong> Now, we are hiring! <a href="https://amiielab.github.io/gitHubrepo.html" target="_blank">More info...</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Apr. 2023:</strong> Our paper on AI fairness in medical imaging was accepted by <a href="https://ieeeichi.github.io/ICHI2023/" target="_blank">IEEE ICHI 2023</a>. Soheyla is serving as the corresponding author(s)!</li>
-
-		  	<li><i class="bi bi-check"></i> <strong>Mar. 2023:</strong> Our paper on deep few-shot learning in medical imaging was accepted by <a href="https://ieeeichi.github.io/ICHI2023/" target="_blank">IEEE ICHI 2023</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Mar. 2023:</strong> Soheyla was selected by the UGA Provost Office to attend the Faculty Women of Color in the Academy conference <a href="https://www.inclusive.vt.edu/Programs/FWCA.html" target="_blank">(FWCA)</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2023:</strong> Soheyla joined to the Institute for AI as a <a href="https://www.ai.uga.edu/directory/faculty-fellows" target="_blank">faculty fellow</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2023:</strong> Soheyla became a Co-Chair of Computer Vision and AI Research Track at <a href="https://www.american-cse.org/csce2023/committees" target="_blank">CSCE'23</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2023:</strong> Soheyla became an <a href="https://amia.org/" target="_blank">AMIA</a> member (and now an AMIA reviewer).</li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2023:</strong> Soheyla is serving as an International Program Committee member at <a href="http://www.isvc.net/index.php/international-program-committee/" target="_blank">ISVC 2023</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Jan. 2023:</strong> Soheyla became a member at <a href="https://www.ieee.org/" target="_blank">IEEE</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Jan. 2023:</strong> We have submitted a tutorial at <a href="https://www.isvc.net/" target="_blank">ISVC 2023</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Dec. 2022:</strong> We have a manuscript accepted at <a href="https://american-cse.org/csci2022/" target="_blank">CSCI 2022</a>.</li><ul> -->
-			</ul>
-          </div>
-        </div>
-
-
-
-      </div>
-    </section><!-- End Features Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" >
-
-
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-2 footer-links">
-            <img src="assets/img/logo24.png" class="img-fluid" alt="Applied AI Research and Education to Solve Real-World Problems" style="width: 120%;max-width: 250px;">
-          </div>
-
-
-          <div class="col-lg-5 col-md-4 footer-contact">
-            <h4>Location</h4>
-            <p>
-<a href="https://pace.edu/" target="_blank">Pace University</a><br>
-Seidenberg School of CSIS<br>
-One Pace Plaza<br>
-New York, NY 10038 <br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-info">
-            <h3>Contact</h3>
-            <p>
-			<strong>Email:</strong> samirian@pace.edu<br>
-            <strong>Phone:</strong> (+1) 800-874-PACE <br>
-			</p>
-            
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Applied Machine Intelligence Initiatives & Education Lab (AMIIE Lab)</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="flutter_bootstrap.js" async></script>
 </body>
-
 </html>
