@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-  <title>AMIIE Research and Educational Laboratory</title>
-  <meta content="AMIIE Research and Educational Laboratory | Applied Machine Intelligence Initiatives &amp; Education Lab (AMIIE Lab)" name="description">
-  <meta content="AMIIE Research and Educational Laboratory (AMIIE Lab)" name="keywords">
+
+  <title>AMIIE Lab | Applied AI Research & Education at Pace University</title>
+  <meta name="description" content="The Applied Machine Intelligence Initiatives & Education (AMIIE) Lab at Pace University advances research in responsible AI, healthcare AI, computer vision, multimodal learning, graph machine learning, AI agents, and AI education.">
+  <meta name="keywords" content="AMIIE Lab, Soheyla Amirian, Pace University, artificial intelligence, machine learning, responsible AI, explainable AI, healthcare AI, computer vision, multimodal AI, graph neural networks, AI agents, AI education">
+  <meta name="author" content="AMIIE Lab, Pace University">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -16,7 +17,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,16 +29,107 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Small homepage-specific refinements -->
+  <style>
+    .hero .carousel-container p {
+      max-width: 850px;
+      margin: 12px auto 0;
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
 
+    .research-card,
+    .highlight-card,
+    .cta-card {
+      height: 100%;
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .research-card:hover,
+    .highlight-card:hover,
+    .cta-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.11);
+    }
+
+    .research-card i,
+    .cta-card i {
+      font-size: 2rem;
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+
+    .research-card h3,
+    .highlight-card h3,
+    .cta-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+    }
+
+    .research-card p,
+    .highlight-card p,
+    .cta-card p {
+      margin-bottom: 0;
+    }
+
+    .highlight-card .date {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      opacity: 0.75;
+    }
+
+    .section-intro {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .profile-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .profile-list li {
+      margin-bottom: 8px;
+    }
+
+    .profile-list i {
+      margin-right: 8px;
+    }
+
+    .archive-list li {
+      margin-bottom: 10px;
+    }
+
+    .btn-amiie {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid currentColor;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-    <div class="top-link-nav"><a href="https://www.pace.edu/" target="_blank">Pace University</a></div>
+      <div class="top-link-nav">
+        <a href="https://www.pace.edu/" target="_blank" rel="noopener noreferrer">Pace University</a>
+      </div>
+
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="AMIIE Research and Educational Laboratory" class="logo">
+        <img src="assets/img/logo.png" alt="AMIIE Lab logo" class="logo">
       </a>
 
       <nav id="navmenu" class="navmenu pt-4">
@@ -53,7 +145,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -61,299 +152,407 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500">
 
         <div class="carousel-item active">
-          <img src="assets/img/AMIIE-carousel-3.jpg" alt="AMIIE Research and Educational Laboratory">
+          <img src="assets/img/AMIIE-carousel-3.jpg" alt="AMIIE Lab applied artificial intelligence research">
           <div class="carousel-container">
-            <h2>AMIIE Research and Educational Laboratory</h2>
+            <h2>AMIIE Lab</h2>
+            <p><strong>Applied AI Research &amp; Education for Real-World Impact</strong></p>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/AMIIE-carousel-1.jpg" alt="AMIIE Research and Educational Laboratory">
+          <img src="assets/img/AMIIE-carousel-1.jpg" alt="Responsible explainable and multimodal AI research">
           <div class="carousel-container">
-            <h2>Building AI and Machine Intelligence to Tackle Real-World Problems</h2>
+            <h2>Advancing Responsible, Explainable &amp; Multimodal AI</h2>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/AMIIE-carousel-2.jpg" alt="AMIIE Research and Educational Laboratory">
+          <img src="assets/img/AMIIE-carousel-2.jpg" alt="Artificial intelligence for healthcare and biomedical research">
           <div class="carousel-container">
-            <h2>Offering Highly-Available Training in AI and Machine Learning</h2>
+            <h2>Transforming Healthcare Through Data-Driven &amp; Graph-Based AI</h2>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/AMIIE-carousel-3.jpg" alt="AMIIE Research and Educational Laboratory">
+          <img src="assets/img/AMIIE-carousel-3.jpg" alt="Artificial intelligence education and student mentorship">
           <div class="carousel-container">
-            <h2>Empowering Healthcare with AI-Powered Models</h2>
+            <h2>Educating &amp; Mentoring the Next Generation of AI Researchers</h2>
           </div>
         </div><!-- End Carousel Item -->
 
-        <div class="carousel-item">
-          <img src="assets/img/AMIIE-carousel-1.jpg" alt="AMIIE Research and Educational Laboratory">
-          <div class="carousel-container">
-            <h2>Developing Unbiased AI Models to Advance Health Equity</h2>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev" aria-label="Previous slide">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
 
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next" aria-label="Next slide">
           <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
         </a>
 
         <ol class="carousel-indicators"></ol>
-
       </div>
-
     </section><!-- /Hero Section -->
 
-   
-       <!-- About Section -->
+    <!-- About Section -->
     <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-      </div><!-- End Section Title -->
+        <h2>About AMIIE</h2>
+        <p>Applied Machine Intelligence Initiatives &amp; Education</p>
+      </div>
 
       <div class="container">
+        <div class="row gy-4 align-items-center">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8 content justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-8 content" data-aos="fade-up" data-aos-delay="100">
             <p class="description">
-			The main goal and purpose of the <strong> AMIIE Laboratory </strong> led by Soheyla Amirian is to conduct and promote fundamental and applied Artificial Intelligence (AI) research and education in solving real-world problems, ranging from health informatics to surveillance systems and security. We envision serving as a world-class leader in research, education, commercialization, and scholarship in applied AI. 
-		    </p>
-			<p class="description"> Our group is a multidisciplinary team of computer scientists, informaticians, physicians, artificial intelligence experts, undergraduate and graduate students, and it benefits from several external collaborations with other academic institutions nationwide. Furthermore, our laboratory aims to provide high-quality education and research experience in AI-powered algorithms at all levels from K-12 to undergraduate to graduate levels to develop a highly skilled workforce for New York’s economic and social development.
-			</p>
-			
-			<h3>Soheyla Amirian, Ph.D.</h3>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Director, AMIIE Lab</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assistant Professor, Seidenberg School of CSIS</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Pace University</span></li>
+              The <strong>Applied Machine Intelligence Initiatives &amp; Education (AMIIE) Lab</strong>, directed by
+              <strong>Dr. Soheyla Amirian at Pace University</strong>, advances applied artificial intelligence research and education
+              with a focus on real-world and socially meaningful problems.
+            </p>
+
+            <p class="description">
+              Our research spans <strong>responsible and explainable AI, healthcare AI, computer vision and multimodal learning,
+              graph-based machine learning, AI agents, and data-driven decision support</strong>. We develop and evaluate AI methods
+              with an emphasis on interpretability, reliability, fairness, and practical impact.
+            </p>
+
+            <p class="description">
+              AMIIE is an interdisciplinary research and education environment that brings together faculty, undergraduate and
+              graduate students, researchers, and collaborators from computing, healthcare, and related disciplines. The lab is
+              committed to mentoring the next generation of AI researchers through hands-on research, interdisciplinary collaboration,
+              technical education, and scholarly dissemination.
+            </p>
+
+            <h3>Soheyla Amirian, Ph.D.</h3>
+            <ul class="profile-list">
+              <li><i class="bi bi-check-circle"></i><span>Director, AMIIE Lab</span></li>
+              <li><i class="bi bi-check-circle"></i><span>Assistant Professor, Seidenberg School of Computer Science and Information Systems</span></li>
+              <li><i class="bi bi-check-circle"></i><span>Pace University</span></li>
             </ul>
-			
           </div>
 
-          <div class="col-lg-4 about-images" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/SoheylaA25.png" class="img-fluid" alt="Soheyla Amirian, Ph.D.">
+          <div class="col-lg-4 about-images text-center" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/SoheylaA25.png" class="img-fluid" alt="Soheyla Amirian, Ph.D., Director of AMIIE Lab">
           </div>
 
         </div>
-
       </div>
     </section><!-- /About Section -->
-   
 
-    <!-- ======= Features Section ======= -->
-<!-- ======= Features Section ======= -->
-<section class="stats section light-background">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Research Interests</h2>
-  </div><!-- End Section Title -->
-
-  <div class="container about">
-    <div class="row content">
-      <!-- Text Section -->
-      <div class="col-lg-8 d-flex flex-column justify-content-center p-5 gy-4" data-aos="fade-up">
-        <ul>
-          <li><i class="bi bi-check-circle"></i> <span>Accountable and Explainable AI</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>AI Fairness</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>AI-Powered Healthcare</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Computational Vision</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Computational Text Analytics</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Learning from Less Labeled Data</span></li>
-        </ul>
+    <!-- Research Areas Section -->
+    <section id="research-areas" class="stats section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Research Areas</h2>
+        <p class="section-intro">AMIIE develops and studies AI methods that are technically rigorous, interpretable, and connected to meaningful real-world applications.</p>
       </div>
 
-      <!-- Image Section -->
-      <div class="col-lg-4 d-flex align-items-center" data-aos="fade-up">
-        <img src="assets/img/AMIIE-carousel-3.jpg" alt="AMIIE Research and Educational Laboratory" class="img-fluid" style="width:100%;">
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="container">
+        <div class="row gy-4">
 
-
-
-
-    <!-- ======= Features Section ======= -->
-    <section class="features ">
-	 <div class="container about">
-        <div class="row" data-aos="fade-up">
-        <div class="col-md-12 pt-2 content">
-		<div class="section-title">
-          <h2>Wonderful News to Share!</h2>
-        </div>
-          <ul>
-
-	<!-- 2026 News Dropdown -->
-<li>
-    <i class="bi bi-check"></i> 
-    <strong>2026:</strong> 
-    <a href="#news2026" data-bs-toggle="collapse">Click to view news from 2026</a>
-    <ul id="news2026" class="collapse">
-        <li class="text-muted">News updates coming soon...</li>
-    </ul>
-</li>
-						
-	  <!-- 2025 News Dropdown -->
-                    <li>
-                        <i class="bi bi-check"></i> 
-                        <strong>2025:</strong> 
-                        <a href="#news2025" data-bs-toggle="collapse">Click to view news from 2025</a>
-                        <ul id="news2025" class="collapse">
-		<li><i class="bi bi-check"></i> <strong>Apr. 2025:</strong> PACE AI Insight Series. <a href="webinar_series.html" target="_blank">Registeration and more info.</a>
-		<li><i class="bi bi-check"></i> <strong>Mar. 2025:</strong> Congratulations to our team for our accepted paper at the <a href="https://ieeexplore.ieee.org/document/10942605" target="_blank">IEEE Access Journal!</a>
-		<li><i class="bi bi-check"></i> <strong>Mar. 2025:</strong> Now, we are hiring! <a href="https://amiielab.github.io/openings.html" target="_blank">More info...</a>.</li>
-
-		<!-- <li><i class="bi bi-check"></i> <strong>Jun. 2025:</strong> REF-AI Workshop, Responsible, Explainable, and Fair AI for Medical Imaging Informatics. <a href="https://conferences.computer.org/chase2025/workshop_ref_ai.html" target="_blank">More info here.</a> -->
-		<li><i class="bi bi-check"></i> <strong>Mar. 2025:</strong> PACE AI Insight Series. <a href="webinar_series.html" target="_blank">Registeration and more info.</a>
-		<li><i class="bi bi-check"></i> <strong>Feb. 2025:</strong> PACE AI Insight Series. <a href="webinar_series.html" target="_blank">Registeration and more info.</a>
-		<li><i class="bi bi-check"></i> <strong>Feb. 2025:</strong> We submitted our manuscript at <a href="https://embc.embs.org/2025/" target="_blank">IEEE EMBC 2025.</a>
-		<li><i class="bi bi-check"></i> <strong>Feb. 2025:</strong> PACE AI Insight Series. <a href="webinar_series.html" target="_blank">Registeration and more info.</a>
-		<li><i class="bi bi-check"></i> <strong>Feb. 2025:</strong> Delighted to announce that our paper was accepted by <a href="https://www.sciencedirect.com/journal/international-journal-of-medical-informatics" target="_blank">International Journal of Medical Informatics, IJMEDI.</a>
-		
-		<li><i class="bi bi-check"></i> <strong>Jan. 2025:</strong> Soheyla became a Co-Chair of International Conference on the AI Revolution: Research, Ethics, and Society <a href="https://www.american-cse.org/air-res2025/" target="_blank">(AIR-RES)</a>.</li>
-
-		<li><i class="bi bi-check"></i> <strong>Jan. 2025:</strong> We submitted our manuscript at <a href="https://ieeeaccess.ieee.org/" target="_blank">IEEE Access Journal.</a>
-		<li><i class="bi bi-check"></i> <strong>Jan. 2025:</strong> We submitted our manuscript at <a href="https://events.dimes.unical.it/ichi2025/" target="_blank">IEEE-ICHI2025.</a>
-
-		<li><i class="bi bi-check"></i> <strong>Jan. 2025:</strong> Presenting "AI in Healthcare" at Icahn School of Medicine at Mount Sinai, Bado Lab, Tisch Cancer Institute, NY, USA<a href="" target="_blank">.</a>
-		</ul>
-
-		<!-- 2024 News Dropdown -->
-                    <li>
-                        <i class="bi bi-check"></i> 
-                        <strong>2024:</strong> 
-                        <a href="#news2024" data-bs-toggle="collapse">Click to view news from 2024</a>
-                        <ul id="news2024" class="collapse">
-				
-		<li><i class="bi bi-check"></i> <strong>Dec. 2024:</strong> Serving as a keynote speaker at the Seidenberg Annual Research Day. <a href="https://csis.pace.edu/~scha/SARD2024/" target="_blank">More info here.</a>
-		<li><i class="bi bi-check"></i> <strong>Dec. 2024:</strong> Serving as a Program Committee member at the Seidenberg Annual Research Day. <a href="" target="_blank"></a>
-		<li><i class="bi bi-check"></i> <strong>Dec. 2024:</strong> Serving as a keynote speaker at the CSCI'24 International Conference. <a href="https://www.american-cse.org/csci2024/keynotes/amirian" target="_blank">More info here.</a>
-		<li><i class="bi bi-check"></i> <strong>Nov. 2024:</strong> PACE AI Insight Series. <a href="webinar_series.html" target="_blank">Registeration and more info.</a>
-		<li><i class="bi bi-check"></i> <strong>Nov. 2024:</strong> Thrilled and deeply honored to be awarded by the Helene T. and Grant M. Wilson Center for Social Entrepreneurship, 2024-2025. <a href="https://www.pace.edu/wilson-center/faculty-resources-and-opportunities/faculty-fellows" target="_blank">More info here.</a>
-		<li><i class="bi bi-check"></i> <strong>Oct. 2024:</strong> PACE AI Insight Series. <a href="webinar_series.html" target="_blank">Registeration and more info.</a>
-		<li><i class="bi bi-check"></i> <strong>Oct. 2024:</strong> Soheyla is serving as a panelist, “The AI Revolution: How AI is Redefining our Daily Lives”, Edward J. Mortola Legacy Society, Pace University.<a href="https://www.linkedin.com/in/soheylaamirian/recent-activity/all/" target="_blank"></a>
-		<li><i class="bi bi-check"></i> <strong>Sep. 2024:</strong> Congratulations to our team for our accepted paper at the <a href="https://www.cambridge.org/core/journals/global-mental-health" target="_blank">Cambridge journal!</a>
-		<li><i class="bi bi-check"></i> <strong>Sep. 2024:</strong> PACE AI Insight Series. <a href="webinar_series.html" target="_blank">Registeration and more info.</a>
-		<li><i class="bi bi-check"></i> <strong>Sep. 2024:</strong> Serving as a keynote speaker at the GWU Biomedical Informatics Center, CTSI-CN, and Washington DC VA.  <a href="https://amiielab.github.io/webinar-series.html" target="_blank">Registeration and more info here.</a>
-		<li><i class="bi bi-check"></i> <strong>Sep. 2024:</strong> Our Generative AI in Orthopedics manuscript has been accepted at <a href="https://academic.oup.com/jamia" target="_blank">JAMIA</a>. </li> 
-		<li><i class="bi bi-check"></i> <strong>Sep. 2024:</strong> I am delighted to join Pace University. <a href="https://www.pace.edu/news/introducing-paces-newest-ai-expert"> More on news! </a></li> 
-
-		<li><i class="bi bi-check"></i> <strong>Jul. 2024:</strong> Delighted to announce that our paper was published by <a href="https://www.nature.com/articles/s41598-024-66873-6" target="_blank">Scientific Reports.</a>
-		<li><i class="bi bi-check"></i> <strong>Apr. 2024:</strong> Our team won the second place award for the poster at the University of Georgia's Al Research Day.
-		<li><i class="bi bi-check"></i> <strong>Apr. 2024:</strong> Women in Computing (WIC) Webinar series. <a href="webinar_series.html" target="_blank">Registeration and more info here.</a>
-		<li><i class="bi bi-check"></i> <strong>Apr. 2024:</strong> Congratulations to the Mobile App team for successfully submitting a paper to the <a href="https://eccb2024.fi/calls" target="_blank">ECCB 2024!</a>
-		<li><i class="bi bi-check"></i> <strong>Apr. 2024:</strong> Congratulations to the Text Mining team for successfully submitting a paper to the <a href="https://www.cambridge.org/core/journals/global-mental-health" target="_blank">Cambridge journal!</a>
-		<li><i class="bi bi-check"></i> <strong>Mar. 2024:</strong> Thrilled and deeply honored to be awarded by the NIH-National Institute on Aging, 2024-2025.
-		<li><i class="bi bi-check"></i> <strong>Mar. 2024:</strong> Delighted to be a panelist! "Code-switching vs authentic self: Are you keeping it real?", IEEE Women in Engineering 2024
-		<li><i class="bi bi-check"></i> <strong>Mar. 2024:</strong> Congratulations, Nima, my Fall 23 TA, on receiving the Teaching Assistant Award!
-		<li><i class="bi bi-check"></i> <strong>Mar. 2024:</strong> Congratulations, Rohan, my Fall 23 TA, on receiving the Teaching Assistant Award!
-		<li><i class="bi bi-check"></i> <strong>Feb. 2024:</strong> Soheyla received the UGA "Student Career Success Influencer Award 2023".
-		<li><i class="bi bi-check"></i> <strong>Feb. 2024:</strong> Women in Computing (WIC) Webinar series. <a href="webinar_series.html" target="_blank">Registeration and more info here.</a>
-		<li><i class="bi bi-check"></i> <strong>Jan. 2024:</strong> Soheyla is serving as the Program Committee member at the 19th International Symposium on Visual Computing.
-		<a href="https://www.isvc.net/" target="_blank">ISVC'24.</a>
-		<li><i class="bi bi-check"></i> <strong>Jan. 2024:</strong> Delighted to announce that our podium abstract was accepted by <a href="https://amia.org/education-events/amia-2024-informatics-summit" target="_blank">AMIA 2024 Informatics Summit.</a>
-			</ul>
-		  
-		  <!-- 2023 News Dropdown -->
-                    <li>
-                        <i class="bi bi-check"></i> 
-                        <strong>2023:</strong> 
-                        <a href="#news2023" data-bs-toggle="collapse">Click to view news from 2022 and 2023</a>
-                        <ul id="news2023" class="collapse">
-
-		 	 <li><i class="bi bi-check"></i> <strong>Dec. 2023:</strong> Congratulations, Rohan, my CSCI 1301 lab instructor, on being nominated for the Teaching Assistant Award in Fall 2023!
-			<li><i class="bi bi-check"></i> <strong>Dec. 2023:</strong> Soheyla has been appointed as a member of the University Council at the University of Georgia, commencing her term on July 2024.
-			<li><i class="bi bi-check"></i> <strong>Dec. 2023:</strong> Serving as a keynote speaker at the CSCI'23 International Conference. <a href="https://american-cse.org/csci2023/keynotes/amirian" target="_blank">More info here.</a>
-			<li><i class="bi bi-check"></i> <strong>Nov. 2023:</strong> Our team won the first and second place awards for two posters at the University of Georgia's Soc Research Day.
-			<li><i class="bi bi-check"></i> <strong>Nov. 2023:</strong> Three posters from our team were presented at the University of Georgia's Soc Research Day by our research assistants.
-			<li><i class="bi bi-check"></i> <strong>Nov. 2023:</strong> Serving as a keynote speaker at Health Informatics Grand Rounds.  <a href="https://calendar.pitt.edu/event/health_informatics_grand_rounds_dr_amirian_will_be_presenting_ai_fairness_in_medical_image_segmentation" target="_blank">Registeration and more info here.</a>
-			<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Soheyla has been nominated for a Franklin College teaching award!.
-			<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Serving as a referee at the Journal of Healthcare Informatics Research. <a href="https://link.springer.com/journal/41666" target="_blank">Link.</a>
-			<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> The 18th International Symposium on Visual Computing.
-			<a href="https://github.com/pitthexai/ISVC_2023_Tutorial_XAI_Few_Shot_on_the_Cloud" target="_blank">Tutorial on "Explainable Deep Few-shot Learning on the Cloud and its Application in Medical Imaging Informatics".</a>
-			<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Women in Computing (WIC) Webinar series. <a href="webinar_series.html" target="_blank">Registeration and more info here.</a>
-			<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Soheyla was awarded the IEEE Atlanta Section Outstanding Educator Award 2023.
-			<li><i class="bi bi-check"></i> <strong>Oct. 2023:</strong> Serving as a Program Commitee member at <a href="https://ieeeichi2024.github.io/" target="_blank">IEEE ICHI 2024.</a>
-			<li><i class="bi bi-check"></i> <strong>Sep. 2023:</strong> Women in Computing (WIC) Webinar series. <a href="https://amiielab.github.io/wic.html" target="_blank">Registeration and more info here</a>. </li>
-		        <li><i class="bi bi-check"></i> <strong>Sep. 2023:</strong> Our work on semi-supervised medical image segmentation has been also submitted at <a href="https://amia.org/education-events/amia-2024-informatics-summit" target="_blank">AMIA 2024 Informatics Summit</a>. </li>
-		        <li><i class="bi bi-check"></i> <strong>Sep. 2023:</strong> Our work on Knee ROM has been submitted at prestigious <a href="https://amia.org/education-events/amia-2024-informatics-summit" target="_blank">AMIA 2024 Informatics Summit</a>. Fingers crossed! </li>
-                	<li><i class="bi bi-check"></i> <strong>Aug. 2023:</strong> Our work on bone metastasis classification with <a href="https://www.orthonet.pitt.edu/people/kurt-r-weiss-md" target="_blank">Dr. Kurt Weiss</a> and <a href="https://www.orthonet.pitt.edu/people/ines-lohse-phd" target="_blank"> Dr. Ines lohse</a> has been accepted at <a href="https://www.ctos.org/Meeting/2023AnnualMeeting.aspx" target="_blank">CTOS</a>! Kudos to the team!</li>
-		        <li><i class="bi bi-check"></i> <strong>Aug. 2023:</strong> Our <a href="https://github.com/pitthexai/HexAI-TJAtxt" target="_blank">HexAI-TJAtxt dataset</a> has been submitted at <a href="https://www.editorialmanager.com/dib" target="_blank">Data in Brief Journal</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> AMIIE Lab has submitted a grant application at <a href="https://www.a2collective.ai/pilotawards" target="_blank">NIH NIA a2 Pilot Award</a>. Fingers crossed!</li>
-		        <li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> Soheyla is a reviewing "Data Structures and Algorithms in Java: A Project-Based Approach by Dan Myers", <a href="https://www.cambridge.org/core/publications/books#" target="_blank">Cambridge University Press</a>.</li>
-		  	<li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> AMIIE Lab is hiring a full-stack developer! <a href="https://amiielab.github.io/gitHubrepo.html" target="_blank">More info...</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> Soheyla is organizing a tutorial on explainable deep few-shot learning at <a href="http://www.isvc.net/index.php/tutorials/" target="_blank">ISVC 2023</a>.</li>
-		  	<li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> Our paper on Explainable AI was accepted by <a href="https://american-cse.org/index.html/" target="_blank">CSCE'23</a>. Soheyla is serving as the first author!</li>
-		  	<li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> We are serving as Associate Editors at <a href="https://american-cse.org/static/cover-CSCE23-Book-of-Abstracts.pdf" target="_blank">CSCE'23</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Jul. 2023:</strong> Our paper on unbiased image segmentation was accepted by <a href="https://bhi.embs.org/2023/" target="_blank">IEEE BHI 2023</a>. Soheyla is serving as the corresponding author(s)!</li>
-		        <li><i class="bi bi-check"></i> <strong>May. 2023:</strong> Congratulations, Afsaneh, my TA, on receiving the Teaching Assistant Award in Spring 2023!<a href="" target="_blank"></a></li>
-
-		  	<li><i class="bi bi-check"></i> <strong>Apr. 2023:</strong> Now, we are hiring! <a href="https://amiielab.github.io/gitHubrepo.html" target="_blank">More info...</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Apr. 2023:</strong> Our paper on AI fairness in medical imaging was accepted by <a href="https://ieeeichi.github.io/ICHI2023/" target="_blank">IEEE ICHI 2023</a>. Soheyla is serving as the corresponding author(s)!</li>
-
-		  	<li><i class="bi bi-check"></i> <strong>Mar. 2023:</strong> Our paper on deep few-shot learning in medical imaging was accepted by <a href="https://ieeeichi.github.io/ICHI2023/" target="_blank">IEEE ICHI 2023</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Mar. 2023:</strong> Soheyla was selected by the UGA Provost Office to attend the Faculty Women of Color in the Academy conference <a href="https://www.inclusive.vt.edu/Programs/FWCA.html" target="_blank">(FWCA)</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2023:</strong> Soheyla joined to the Institute for AI as a <a href="https://www.ai.uga.edu/directory/faculty-fellows" target="_blank">faculty fellow</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2023:</strong> Soheyla became a Co-Chair of Computer Vision and AI Research Track at <a href="https://www.american-cse.org/csce2023/committees" target="_blank">CSCE'23</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2023:</strong> Soheyla became an <a href="https://amia.org/" target="_blank">AMIA</a> member (and now an AMIA reviewer).</li>
-			<li><i class="bi bi-check"></i> <strong>Feb. 2023:</strong> Soheyla is serving as an International Program Committee member at <a href="http://www.isvc.net/index.php/international-program-committee/" target="_blank">ISVC 2023</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Jan. 2023:</strong> Soheyla became a member at <a href="https://www.ieee.org/" target="_blank">IEEE</a>.</li>
-		        <li><i class="bi bi-check"></i> <strong>Jan. 2023:</strong> We have submitted a tutorial at <a href="https://www.isvc.net/" target="_blank">ISVC 2023</a>.</li>
-			<li><i class="bi bi-check"></i> <strong>Dec. 2022:</strong> We have a manuscript accepted at <a href="https://american-cse.org/csci2022/" target="_blank">CSCI 2022</a>.</li><ul>
-			</ul>
-                    </li>
-                </ul>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="research-card">
+              <i class="bi bi-shield-check"></i>
+              <h3>Responsible, Explainable &amp; Fair AI</h3>
+              <p>Methods for understanding, evaluating, and improving the transparency, reliability, and fairness of AI systems.</p>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="research-card">
+              <i class="bi bi-heart-pulse"></i>
+              <h3>AI for Healthcare &amp; Biomedical Informatics</h3>
+              <p>AI-driven approaches for biomedical data analysis, clinical research, medical imaging, biomarker discovery, and health informatics.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="research-card">
+              <i class="bi bi-eye"></i>
+              <h3>Computer Vision &amp; Multimodal AI</h3>
+              <p>Learning from images, video, text, and multimodal data for understanding, generation, and decision support.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="research-card">
+              <i class="bi bi-diagram-3"></i>
+              <h3>Graph Machine Learning &amp; Network Intelligence</h3>
+              <p>Graph neural networks and network-based learning for structured, relational, and biological data.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="research-card">
+              <i class="bi bi-cpu"></i>
+              <h3>Generative AI &amp; AI Agents</h3>
+              <p>Research on language models, agentic systems, reasoning, reliability, evaluation, and responsible deployment.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="research-card">
+              <i class="bi bi-chat-square-text"></i>
+              <h3>Natural Language Processing &amp; Text Analytics</h3>
+              <p>Computational methods for extracting knowledge, patterns, and actionable insights from textual data.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="research-card">
+              <i class="bi bi-database-check"></i>
+              <h3>Learning with Limited &amp; Complex Data</h3>
+              <p>Few-shot, semi-supervised, and data-efficient learning for settings where labels or high-quality datasets are limited.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="research-card">
+              <i class="bi bi-mortarboard"></i>
+              <h3>AI Education &amp; Workforce Development</h3>
+              <p>Hands-on AI education, research mentorship, technical workshops, and initiatives that broaden participation in AI.</p>
+            </div>
+          </div>
+
         </div>
-    </div>
-</section><!-- End Features Section -->
-   
-   
-   
+      </div>
+    </section><!-- /Research Areas Section -->
+
+    <!-- Featured Research Section -->
+    <section id="featured-research" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Featured Research</h2>
+        <p class="section-intro">Selected research directions that reflect AMIIE's current emphasis on responsible, interdisciplinary, and high-impact artificial intelligence.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="highlight-card">
+              <h3>Graph AI for Breast Cancer Bone Metastasis</h3>
+              <p>Investigating interpretable graph-based learning for biomarker discovery using gene-expression and protein-interaction networks.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="highlight-card">
+              <h3>Responsible &amp; Explainable Healthcare AI</h3>
+              <p>Developing and evaluating fair, interpretable, and clinically meaningful machine-learning methods for biomedical applications.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="highlight-card">
+              <h3>AI Agents, Reasoning &amp; Reliability</h3>
+              <p>Studying agentic AI systems with an emphasis on reasoning quality, reliability, safety, and comparison with conventional language-model workflows.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center" data-aos="fade-up">
+          <a class="btn-amiie" href="research.html">Explore Our Research</a>
+        </div>
+      </div>
+    </section><!-- /Featured Research Section -->
+
+    <!-- Latest Highlights Section -->
+    <section id="news" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Latest News &amp; Highlights</h2>
+        <p>Selected recent milestones from AMIIE Lab.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="highlight-card">
+              <span class="date">April 2025</span>
+              <h3>Pace AI Insight Series</h3>
+              <p>AMIIE continued its AI Insight Series with educational programming focused on emerging directions in artificial intelligence.</p>
+              <a href="webinar-series.html">View the Webinar Series</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="highlight-card">
+              <span class="date">March 2025</span>
+              <h3>IEEE Access Publication</h3>
+              <p>Congratulations to the team on an accepted paper in <em>IEEE Access</em>.</p>
+              <a href="https://ieeexplore.ieee.org/document/10942605" target="_blank" rel="noopener noreferrer">View Publication</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="highlight-card">
+              <span class="date">February 2025</span>
+              <h3>International Journal of Medical Informatics</h3>
+              <p>The team had a manuscript accepted by the <em>International Journal of Medical Informatics</em>.</p>
+              <a href="https://www.sciencedirect.com/journal/international-journal-of-medical-informatics" target="_blank" rel="noopener noreferrer">Visit Journal</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="highlight-card">
+              <span class="date">January 2025</span>
+              <h3>AIR-RES Conference Leadership</h3>
+              <p>Dr. Soheyla Amirian served as a Co-Chair of the International Conference on the AI Revolution: Research, Ethics, and Society (AIR-RES).</p>
+              <a href="https://www.american-cse.org/air-res2025/" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="highlight-card">
+              <span class="date">January 2025</span>
+              <h3>AI in Healthcare at Mount Sinai</h3>
+              <p>Dr. Amirian presented on AI in Healthcare at the Icahn School of Medicine at Mount Sinai, Bado Lab, Tisch Cancer Institute, New York.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="highlight-card">
+              <span class="date">November 2024</span>
+              <h3>Wilson Center Faculty Fellowship</h3>
+              <p>Dr. Amirian was selected as a 2024–2025 Faculty Fellow of Pace University's Helene T. and Grant M. Wilson Center for Social Entrepreneurship.</p>
+              <a href="https://www.pace.edu/wilson-center/faculty-resources-and-opportunities/faculty-fellows" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- News Archive -->
+        <div class="mt-5" data-aos="fade-up">
+          <h3 class="mb-3">News Archive</h3>
+          <p>Older announcements are preserved below for reference.</p>
+
+          <div class="accordion" id="newsArchive">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2024">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2024" aria-expanded="false" aria-controls="collapse2024">
+                  2024 Highlights
+                </button>
+              </h2>
+              <div id="collapse2024" class="accordion-collapse collapse" aria-labelledby="heading2024" data-bs-parent="#newsArchive">
+                <div class="accordion-body">
+                  <ul class="archive-list">
+                    <li><strong>Dec. 2024:</strong> Keynote speaker at Seidenberg Annual Research Day.</li>
+                    <li><strong>Dec. 2024:</strong> Keynote speaker at CSCI'24 International Conference.</li>
+                    <li><strong>Nov. 2024:</strong> Pace AI Insight Series.</li>
+                    <li><strong>Nov. 2024:</strong> Selected as a 2024–2025 Faculty Fellow of the Wilson Center for Social Entrepreneurship.</li>
+                    <li><strong>Oct. 2024:</strong> Panelist, “The AI Revolution: How AI is Redefining our Daily Lives,” Pace University.</li>
+                    <li><strong>Sep. 2024:</strong> Paper accepted in <em>Global Mental Health</em>, Cambridge University Press.</li>
+                    <li><strong>Sep. 2024:</strong> Invited presentation at the GWU Biomedical Informatics Center, CTSI-CN, and Washington DC VA.</li>
+                    <li><strong>Sep. 2024:</strong> Generative AI in Orthopedics manuscript accepted at <em>JAMIA</em>.</li>
+                    <li><strong>Sep. 2024:</strong> Dr. Amirian joined Pace University.</li>
+                    <li><strong>Jul. 2024:</strong> Paper published in <em>Scientific Reports</em>.</li>
+                    <li><strong>Mar. 2024:</strong> NIH National Institute on Aging award.</li>
+                    <li><strong>Feb. 2024:</strong> UGA Student Career Success Influencer Award 2023.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2023">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2023" aria-expanded="false" aria-controls="collapse2023">
+                  2022–2023 Highlights
+                </button>
+              </h2>
+              <div id="collapse2023" class="accordion-collapse collapse" aria-labelledby="heading2023" data-bs-parent="#newsArchive">
+                <div class="accordion-body">
+                  <ul class="archive-list">
+                    <li><strong>Dec. 2023:</strong> Keynote speaker at CSCI'23 International Conference.</li>
+                    <li><strong>Nov. 2023:</strong> Keynote speaker at Health Informatics Grand Rounds, University of Pittsburgh.</li>
+                    <li><strong>Oct. 2023:</strong> IEEE Atlanta Section Outstanding Educator Award 2023.</li>
+                    <li><strong>Oct. 2023:</strong> Tutorial on explainable deep few-shot learning at ISVC 2023.</li>
+                    <li><strong>Aug. 2023:</strong> Bone metastasis classification work accepted at CTOS.</li>
+                    <li><strong>Jul. 2023:</strong> Explainable AI paper accepted at CSCE'23.</li>
+                    <li><strong>Jul. 2023:</strong> Unbiased image segmentation paper accepted at IEEE BHI 2023.</li>
+                    <li><strong>Apr. 2023:</strong> AI fairness in medical imaging paper accepted at IEEE ICHI 2023.</li>
+                    <li><strong>Mar. 2023:</strong> Deep few-shot learning in medical imaging paper accepted at IEEE ICHI 2023.</li>
+                    <li><strong>Dec. 2022:</strong> Manuscript accepted at CSCI 2022.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /Latest Highlights Section -->
+
+    <!-- Mission / Calls to Action Section -->
+    <section id="connect" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Research, Education &amp; Collaboration</h2>
+        <p>Explore the lab, our work, and opportunities to connect.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="cta-card text-center">
+              <i class="bi bi-journal-code"></i>
+              <h3>Research</h3>
+              <p>Explore our research projects, methods, and interdisciplinary collaborations.</p>
+              <a class="btn-amiie" href="research.html">View Research</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="cta-card text-center">
+              <i class="bi bi-people"></i>
+              <h3>People</h3>
+              <p>Meet the students, researchers, collaborators, and faculty contributing to AMIIE.</p>
+              <a class="btn-amiie" href="people.html">Meet the Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta-card text-center">
+              <i class="bi bi-lightbulb"></i>
+              <h3>Education &amp; Opportunities</h3>
+              <p>Discover educational activities, workshops, webinars, and opportunities to work with the lab.</p>
+              <a class="btn-amiie" href="education.html">Explore Education</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Mission / Calls to Action Section -->
 
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+        <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-2 footer-links">
-            <img src="assets/img/thumbnail-logo-w.png" class="img-fluid" alt=" Applied AI Research and Education to Solve Real-World Problems" style="width: 100%;max-width: 200px;">
+          <div class="col-lg-4 col-md-4 footer-links">
+            <img src="assets/img/thumbnail-logo-w.png" class="img-fluid" alt="AMIIE Lab — Applied AI Research and Education" style="width: 100%; max-width: 200px;">
           </div>
-
 
           <div class="col-lg-4 col-md-4 footer-contact">
             <h4>Location</h4>
             <p>
-<a href="https://www.pace.edu/" target="_blank">Pace University</a><br>
-Seidenberg School of CSIS<br>
-One Pace Plaza<br>
-New York, NY 10038 <br>
+              <a href="https://www.pace.edu/" target="_blank" rel="noopener noreferrer">Pace University</a><br>
+              Seidenberg School of Computer Science and Information Systems<br>
+              One Pace Plaza<br>
+              New York, NY 10038
             </p>
-
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-info">
+          <div class="col-lg-4 col-md-4 footer-info">
             <h4>Contact</h4>
             <p>
-			<strong>Email:</strong> samirian@pace.edu<br>
-            <strong>Phone:</strong> (+1) 800-874-PACE <br>
-			</p>
-            
+              <strong>Email:</strong> <a href="mailto:samirian@pace.edu">samirian@pace.edu</a><br>
+              <strong>Phone:</strong> (+1) 800-874-PACE
+            </p>
           </div>
 
         </div>
@@ -362,16 +561,15 @@ New York, NY 10038 <br>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Applied Machine Intelligence Initiatives & Education Lab (AMIIE Lab)</span></strong>. All Rights Reserved
+        &copy; <span id="current-year"></span> <strong><span>Applied Machine Intelligence Initiatives &amp; Education Lab (AMIIE Lab)</span></strong>. All Rights Reserved.
       </div>
     </div>
-
-
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -389,6 +587,9 @@ New York, NY 10038 <br>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 
+</body>
 </html>
