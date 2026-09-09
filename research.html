@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Research | AMIIE Research and Educational Laboratory</title>
-  <meta content="AMIIE Research and Educational Laboratory | Applied Machine Intelligence Initiatives &amp; Education Lab (AMIIE Lab)" name="description">
-  <meta content="AMIIE Research and Educational Laboratory (AMIIE Lab)" name="keywords">
 
+  <title>Research | AMIIE Lab at Pace University</title>
+  <meta name="description"
+        content="Research at the Applied Machine Intelligence Initiatives & Education (AMIIE) Lab at Pace University spans responsible and explainable AI, healthcare and biomedical AI, computer vision and multimodal learning, graph machine learning, generative AI, AI agents, and data-driven decision support.">
+  <meta name="keywords"
+        content="AMIIE Lab, Soheyla Amirian, Pace University, Artificial Intelligence, Responsible AI, Explainable AI, Fair AI, Healthcare AI, Biomedical AI, Computer Vision, Multimodal AI, Graph Machine Learning, AI Agents, Generative AI">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -28,24 +30,98 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Page-specific refinements -->
+  <style>
+    .research-intro {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .research-theme-card {
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
+      padding: 28px;
+      background: #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .research-theme-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .research-theme-card i {
+      font-size: 2rem;
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+
+    .research-theme-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .research-theme-card p {
+      margin-bottom: 0;
+    }
+
+    .research-project-image {
+      border-radius: 12px;
+      width: 100%;
+    }
+
+    .publication-list {
+      padding-left: 1.15rem;
+      margin-bottom: 0;
+    }
+
+    .publication-list li {
+      margin-bottom: 10px;
+    }
+
+    .status-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #f2f4f7;
+      margin-bottom: 12px;
+    }
+
+    .research-callout {
+      border-left: 4px solid #6c757d;
+      padding: 18px 22px;
+      background: #f8f9fa;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .page-title.compact-title {
+      padding-top: 105px;
+      padding-bottom: 42px;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-    <div class="top-link-nav"><a href="https://www.pace.edu/" target="_blank">Pace University</a></div>
+
+      <div class="top-link-nav">
+        <a href="https://www.pace.edu/" target="_blank" rel="noopener">Pace University</a>
+      </div>
+
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="AMIIE Research and Educational Laboratory" class="logo">
+        <img src="assets/img/logo.png" alt="AMIIE Lab logo" class="logo">
       </a>
 
       <nav id="navmenu" class="navmenu pt-4">
         <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="people.html" >People</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="people.html">People</a></li>
           <li><a href="research.html" class="active">Research</a></li>
           <li><a href="education.html">Education</a></li>
-          <li><a href="publications.html">Publications</a></li>
           <li><a href="openings.html">Openings</a></li>
           <li><a href="github-repo.html">GitHub Repo</a></li>
           <li><a href="webinar-series.html">Webinar Series</a></li>
@@ -59,182 +135,443 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/AMIIE-carousel-3.jpg);">
+    <div class="page-title dark-background compact-title"
+         data-aos="fade"
+         style="background-image: url(assets/img/AMIIE-carousel-3.jpg);">
       <div class="container position-relative">
         <h1>Research</h1>
+        <p>Applied AI research focused on responsible, explainable, and impactful intelligent systems.</p>
       </div>
-    </div><!-- End Page Title -->
-
-
-   <section id="research-projects" class="about section">
-  <div class="container">
-
-    <div class="accordion" id="researchAccordion">
-
-      <!-- Item 1 -->
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Semi-supervised Pipeline for Medical Image Segmentation
-          </button>
-        </h3>
-
-        <div id="collapseOne" class="accordion-collapse collapse show"
-          aria-labelledby="headingOne" data-bs-parent="#researchAccordion">
-          <div class="accordion-body">
-            <div class="row gy-4 align-items-center">
-              <div class="col-lg-8">
-                <p class="text-justify">
-                  In recent years, medical imaging has witnessed significant advances through the application of deep learning methods. However, several fundamental challenges are hindering their full potential in clinical settings. Notably, deep learning models often require large amounts of training data to achieve high accuracy, making their implementation expensive or even impossible in healthcare scenarios. Fortunately, collecting unlabeled images is feasible in many tasks. To overcome the challenge of resource-intensive annotation, researchers have turned to semi-supervised learning methods, which enable researchers to utilize labeled and unlabeled images by combining supervised and unsupervised learning. Our work aims to utilize semi-supervised learning to tackle the problem of knee joint space segmentation in plain radiographs, using only a few manually segmented radiographs.                </p>
-              </div>
-              <div class="col-lg-4">
-                <img src="assets/img/research_06.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 2 -->
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-            Unbiased Image Segmentation using Plain Knee Radiographs
-          </button>
-        </h3>
-
-        <div id="collapseTwo" class="accordion-collapse collapse"
-          data-bs-parent="#researchAccordion">
-          <div class="accordion-body">
-            <div class="row gy-4 align-items-center">
-              <div class="col-lg-8">
-                <p class="text-justify">
-Automatic segmentation of knee bony anatomy is essential in orthopedics, and it has been around for several years in both pre-operative and post-operative settings. While deep learning algorithms have demonstrated exceptional performance in medical image analysis, the assessment of fairness and potential biases within these models remains limited. This study aims to revisit deep learning-powered knee-bony anatomy segmentation using plain radiographs to uncover visible gender and racial biases. The current contribution offers the potential to advance our understanding of biases, and it provides practical insights for researchers and practitioners in medical imaging. The proposed mitigation strategies mitigate gender and racial biases, ensuring fair and unbiased segmentation results. Furthermore, this work promotes equal access to accurate diagnoses and treatment outcomes for diverse patient populations, fostering equitable and inclusive healthcare provision.
-                </p>
-              </div>
-              <div class="col-lg-4">
-                <img src="assets/img/research_05.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapseThree">
-            Textual Dataset(s) to Advance Open Scientific Research in Total Joint Arthroplasty
-          </button>
-        </h3>
-
-        <div id="collapseThree" class="accordion-collapse collapse"
-          data-bs-parent="#researchAccordion">
-          <div class="accordion-body">
-            <div class="row gy-4 align-items-center">
-              <div class="col-lg-8">
-                <p class="text-justify">
-                  Total joint arthroplasty (TJA) is the most common and fastest inpatient surgical procedure in the elderly, nationwide. With the growing number of TJA patients and advances being made in healthcare settings, an increasing number of scientific articles are now published on a daily basis, representing invaluable information in TJA, ranging from TJA diagnosis, prevention, and treatment strategies to genetic variants and epidemiological factors. However, little is done to computationally assemble a large-scale textual dataset from scientific articles and make it publicly available for open scientific research in TJA. Rapid yet computational text analytics on such a large-scale scientific literature has a great potential to discover novel knowledge in better understanding joint diseases, improving the quality of care, and clinical outcomes for TJA.
-                </p>
-              </div>
-              <div class="col-lg-4">
-                <img src="assets/img/research_04.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapseFour">
-            AI Fairness in Hip Bony Anatomy Segmentation
-          </button>
-        </h3>
-
-        <div id="collapseFour" class="accordion-collapse collapse"
-          data-bs-parent="#researchAccordion">
-          <div class="accordion-body">
-            <div class="row gy-4 align-items-center">
-              <div class="col-lg-8">
-                <p class="text-justify">
-Automatic segmentation of hip bony anatomy is a critical component of orthopedics enabling healthcare providers and clinicians to efficiently and objectively accomplish several medical image analysis tasks, including the diagnosis of hip fractures, arthritis, deformity, and dislocation. This autonomous process assists surgeons in preoperative planning by determining the location and size of surgical incisions, the placement of hip implants, and/or other surgical instruments. While deep learning computer vision algorithms for hip segmentation have demonstrated almost human-like performance in past literature, analyzing the fairness and any potential bias within such models has been very limited so far. Thus, the present work aims to provide a better understanding of any visible gender, ethnicity, and racial bias in hip bony anatomy segmentation using plain radiographs.
-                </p>
-              </div>
-              <div class="col-lg-4">
-                <img src="assets/img/research_03.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 5 -->
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapseFive">
-            Word Embedding Neural Networks to Advance Knee Osteoarthritis Research
-          </button>
-        </h3>
-
-        <div id="collapseFive" class="accordion-collapse collapse"
-          data-bs-parent="#researchAccordion">
-          <div class="accordion-body">
-            <div class="row gy-4 align-items-center">
-              <div class="col-lg-8">
-                <p class="text-justify">
-Osteoarthritis (OA) is the most prevalent chronic joint disease worldwide, where knee OA takes more than 80% of commonly affected joints. Although knee OA carries a list of well-known terminology aiming to standardize the nomenclature of the diagnosis, prognosis, treatment, and clinical outcomes of the chronic joint disease, in practice there is a wide range of terminology associated with knee OA across different data sources, including but not limited to biomedical literature, clinical notes, healthcare literacy, and health-related social media. Rapid yet accurate text mining on large-scale scientific literature may discover novel knowledge and terminology to better understand knee OA and to improve the quality of knee OA diagnosis, prevention, and treatment. The present work aims to utilize artificial neural network strategies to automatically extract vocabularies associated with knee OA diseases. Our findings indicate the feasibility of developing word embedding neural networks for autonomous keyword extraction and abstraction of knee OA.
-                </p>
-              </div>
-              <div class="col-lg-4">
-                <img src="assets/img/research_02.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 6 -->
-      <div class="accordion-item">
-        <h3 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapseSix">
-            Explainable Deep Few-Shot Learning in Knee Radiography Analysis
-          </button>
-        </h3>
-
-        <div id="collapseSix" class="accordion-collapse collapse"
-          data-bs-parent="#researchAccordion">
-          <div class="accordion-body">
-            <div class="row gy-4 align-items-center">
-              <div class="col-lg-8">
-                <p class="text-justify">
-                  Rapid yet deep learning medical image analysis has already shown success in a variety of knee image analysis tasks, ranging from knee joint area localization to joint space segmentation and measurement, with almost human-like performance. However, there are several fundamental challenges that prevent deep learning methods from reaching their full potential in clinical settings such as orthopedics. These include the need for a large number of gold-standard, manually annotated training images and a lack of explainability and interpretability. To address these challenges, this study is the first to present an explainable deep few-shot learning model that can localize the knee joint area and segment the joint space in plain knee radiographs, using only a small number of manually annotated radiographs.
-                </p>
-              </div>
-              <div class="col-lg-4">
-                <img src="assets/img/research_01.jpg" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+    <!-- End Page Title -->
 
 
-   
-	
+    <!-- Research Overview -->
+    <section id="research-overview" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Research at AMIIE</h2>
+      </div>
+
+      <div class="container">
+        <div class="research-intro text-center" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The <strong>Applied Machine Intelligence Initiatives &amp; Education (AMIIE) Lab</strong>
+            conducts interdisciplinary research in artificial intelligence and machine learning with an emphasis
+            on real-world impact. Our work spans healthcare and biomedical AI, responsible and explainable AI,
+            computer vision and multimodal learning, graph-based machine learning, generative AI, and intelligent
+            decision-support systems.
+          </p>
+
+          <p>
+            Across these areas, we are particularly interested in building AI systems that are
+            <strong>accurate, interpretable, reliable, fair, and useful in practice</strong>. Our research combines
+            methodological development with application-driven studies and often involves collaboration across
+            computing, healthcare, and other scientific disciplines.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Research Overview -->
+
+
+    <!-- Core Research Programs -->
+    <section id="research-programs" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Core Research Programs</h2>
+        <p>Our current research is organized around five complementary themes.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="research-theme-card">
+              <i class="bi bi-heart-pulse"></i>
+              <h3>AI for Healthcare &amp; Biomedical Research</h3>
+              <p>
+                Developing and evaluating AI methods for medical imaging, health data science, biomedical
+                informatics, clinical prediction, patient-centered applications, and computational approaches
+                that support biomedical discovery and healthcare decision-making.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="research-theme-card">
+              <i class="bi bi-shield-check"></i>
+              <h3>Responsible, Explainable &amp; Fair AI</h3>
+              <p>
+                Studying interpretability, explainability, reliability, fairness, and bias in AI systems,
+                particularly in high-impact settings where model decisions must be transparent and trustworthy.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="research-theme-card">
+              <i class="bi bi-eye"></i>
+              <h3>Computer Vision &amp; Multimodal AI</h3>
+              <p>
+                Building learning systems for images and multimodal data, including medical image analysis,
+                representation learning, image understanding, limited-data learning, and integration of
+                visual and textual information.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="research-theme-card">
+              <i class="bi bi-diagram-3"></i>
+              <h3>Graph Machine Learning &amp; Biomedical Networks</h3>
+              <p>
+                Exploring graph neural networks and network-based learning for complex biological and biomedical
+                data, including the integration of molecular relationships, structured knowledge, and
+                high-dimensional patient data for discovery and prediction.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="research-theme-card">
+              <i class="bi bi-cpu"></i>
+              <h3>Generative AI, LLMs &amp; AI Agents</h3>
+              <p>
+                Investigating generative AI and agentic systems with a focus on reasoning, reliability,
+                explainability, evaluation, and responsible use. Current interests include comparing
+                conventional language models with agent-based AI workflows in complex decision-making tasks.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Core Research Programs -->
+
+
+    <!-- Featured Current and Recent Research -->
+    <section id="featured-research" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Featured Current &amp; Recent Research</h2>
+        <p>Selected projects and research directions from AMIIE's evolving portfolio.</p>
+      </div>
+
+      <div class="container">
+        <div class="accordion" id="researchAccordion">
+
+          <!-- Project 1 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Explainable AI for Medical Imaging and Musculoskeletal Health
+              </button>
+            </h3>
+
+            <div id="collapseOne" class="accordion-collapse collapse show"
+                 aria-labelledby="headingOne" data-bs-parent="#researchAccordion">
+              <div class="accordion-body">
+                <div class="row gy-4 align-items-center">
+                  <div class="col-lg-8">
+                    <p>
+                      AMIIE develops explainable and clinically oriented deep learning methods for medical imaging,
+                      with particular experience in musculoskeletal applications. Our work has addressed challenges
+                      such as limited labeled data, segmentation, disease grading, model interpretability, and the
+                      need for AI systems that can provide meaningful evidence alongside predictions.
+                    </p>
+                    <p>
+                      Recent work includes explainable deep learning for MRI-based knee cartilage and meniscus
+                      segmentation, explainable contrastive learning for knee osteoarthritis grading, and
+                      generative-AI-assisted approaches for knee radiograph analysis.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="assets/img/research_01.jpg"
+                         class="img-fluid research-project-image"
+                         alt="Explainable AI for medical imaging research">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Project 2 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                Responsible, Explainable and Fair AI in Healthcare
+              </button>
+            </h3>
+
+            <div id="collapseTwo" class="accordion-collapse collapse"
+                 aria-labelledby="headingTwo" data-bs-parent="#researchAccordion">
+              <div class="accordion-body">
+                <div class="row gy-4 align-items-center">
+                  <div class="col-lg-8">
+                    <p>
+                      Responsible AI is a central theme of AMIIE's research. We study how bias, model opacity,
+                      data imbalance, and subgroup performance differences can affect machine-learning systems,
+                      especially in medical and health applications.
+                    </p>
+                    <p>
+                      Our work includes fairness analysis and bias-mitigation strategies for orthopedic image
+                      segmentation, broader reviews of responsible and explainable AI in medical image analysis,
+                      and fair and interpretable approaches to health outcome prediction.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="assets/img/research_05.jpg"
+                         class="img-fluid research-project-image"
+                         alt="Responsible explainable and fair AI research">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Project 3 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                AI, Machine Learning and Health Data Science
+              </button>
+            </h3>
+
+            <div id="collapseThree" class="accordion-collapse collapse"
+                 aria-labelledby="headingThree" data-bs-parent="#researchAccordion">
+              <div class="accordion-body">
+                <div class="row gy-4 align-items-center">
+                  <div class="col-lg-8">
+                    <p>
+                      Beyond imaging, AMIIE investigates machine-learning methods for structured and unstructured
+                      health data. This includes predictive modeling, feature engineering, computational text
+                      analytics, and evaluation of generative AI for health-data-science workflows.
+                    </p>
+                    <p>
+                      Recent studies have examined fair and explainable machine-learning approaches for cancer
+                      survival prediction and compared large-language-model-assisted feature engineering with
+                      classical machine-learning approaches in health data science.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="assets/img/research_04.jpg"
+                         class="img-fluid research-project-image"
+                         alt="AI and health data science research">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Project 4 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                      aria-expanded="false" aria-controls="collapseFour">
+                Graph Learning and Network-Based Biomedical Discovery
+              </button>
+            </h3>
+
+            <div id="collapseFour" class="accordion-collapse collapse"
+                 aria-labelledby="headingFour" data-bs-parent="#researchAccordion">
+              <div class="accordion-body">
+                <div class="row gy-4 align-items-center">
+                  <div class="col-lg-8">
+                    <span class="status-badge">Ongoing research direction</span>
+                    <p>
+                      AMIIE is exploring graph-based machine learning for biomedical research, where relationships
+                      among genes, proteins, clinical variables, or other entities can be represented explicitly
+                      as networks rather than treated as independent features.
+                    </p>
+                    <p>
+                      Current work examines graph neural networks, biological interaction networks, interpretable
+                      graph learning, and integration of molecular and patient-level data for biomarker discovery
+                      and clinically meaningful prediction.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="assets/img/research_03.jpg"
+                         class="img-fluid research-project-image"
+                         alt="Graph machine learning and biomedical network research">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Project 5 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                      aria-expanded="false" aria-controls="collapseFive">
+                Generative AI and AI Agents: Reasoning, Reliability and Safety
+              </button>
+            </h3>
+
+            <div id="collapseFive" class="accordion-collapse collapse"
+                 aria-labelledby="headingFive" data-bs-parent="#researchAccordion">
+              <div class="accordion-body">
+                <div class="row gy-4 align-items-center">
+                  <div class="col-lg-8">
+                    <span class="status-badge">Emerging research direction</span>
+                    <p>
+                      AMIIE is expanding its work in generative AI toward AI agents and agentic workflows. A
+                      central research question is whether AI agents actually improve reasoning, reliability,
+                      and safety compared with conventional large language models.
+                    </p>
+                    <p>
+                      Our interests include agent architecture and evaluation, tool-augmented reasoning,
+                      reliability and failure analysis, explainability, safety, and the responsible use of
+                      agentic systems in healthcare and other high-impact domains.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="assets/img/AMIIE-carousel-2.jpg"
+                         class="img-fluid research-project-image"
+                         alt="Generative AI and AI agents research">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Project 6 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                      aria-expanded="false" aria-controls="collapseSix">
+                Computational Text Analytics and Open Scientific Knowledge
+              </button>
+            </h3>
+
+            <div id="collapseSix" class="accordion-collapse collapse"
+                 aria-labelledby="headingSix" data-bs-parent="#researchAccordion">
+              <div class="accordion-body">
+                <div class="row gy-4 align-items-center">
+                  <div class="col-lg-8">
+                    <p>
+                      AMIIE studies computational approaches for extracting knowledge from scientific and
+                      health-related text. Earlier work includes open textual resources for total joint
+                      arthroplasty, neural word embeddings for osteoarthritis terminology, and large-scale
+                      text-mining approaches for biomedical and psychosocial-health research.
+                    </p>
+                    <p>
+                      This line of work now naturally connects with large language models, generative AI,
+                      retrieval-based systems, and scientific knowledge discovery.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="assets/img/research_02.jpg"
+                         class="img-fluid research-project-image"
+                         alt="Computational text analytics and scientific knowledge research">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Featured Research -->
+
+
+    <!-- Recent Publications -->
+    <section id="recent-publications" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Selected Publications &amp; Research Highlights</h2>
+        <p>Representative recent work illustrating the breadth of AMIIE's research portfolio.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <h3>2026</h3>
+            <ul class="publication-list">
+              <li>
+                <strong>KneeXNet-2.5D:</strong> a clinically-oriented and explainable deep learning framework
+                for MRI-based knee cartilage and meniscus segmentation.
+                <em>npj Health Systems</em>, 2026.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <h3>2025</h3>
+            <ul class="publication-list">
+              <li>
+                <strong>State-of-the-art in responsible, explainable, and fair AI for medical image analysis.</strong>
+                <em>IEEE Access</em>, 2025.
+              </li>
+              <li>
+                <strong>Predicting cancer survival at different stages:</strong> Insights from fair and explainable
+                machine learning approaches. <em>International Journal of Medical Informatics</em>, 2025.
+              </li>
+              <li>
+                <strong>Explainable Contrastive Learning for KL Grading Classification in Knee Osteoarthritis.</strong>
+                <em>IEEE EMBC</em>, 2025.
+              </li>
+              <li>
+                <strong>Explainable Feature Engineering in Health Data Science:</strong> Empirical Comparison
+                of ChatGPT-4o and Classical Machine Learning Methods. <em>ACM/IEEE CHASE</em>, 2025.
+              </li>
+              <li>
+                <strong>Advancements in AI for Breast Cancer Diagnosis:</strong> A 2024–2025 Systematic Review Update.
+                <em>International Conference on the AI Revolution</em>, 2025.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=3c3yIokAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
+             class="btn btn-outline-secondary"
+             target="_blank"
+             rel="noopener">
+            <i class="bi bi-mortarboard"></i>
+            View All Publications on Google Scholar
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Recent Publications -->
+
+
+    <!-- Research Philosophy -->
+    <section id="research-philosophy" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Research Philosophy</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="research-callout">
+          <p class="mb-0">
+            AMIIE emphasizes interdisciplinary, student-engaged research that connects methodological AI
+            innovation with meaningful applications. We aim to develop research that is not only technically
+            strong, but also interpretable, reproducible, responsible, and capable of contributing to
+            real-world scientific and societal needs.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Research Philosophy -->
 
   </main>
+
 
   <footer id="footer" class="footer dark-background">
 
@@ -243,28 +580,28 @@ Osteoarthritis (OA) is the most prevalent chronic joint disease worldwide, where
         <div class="row">
 
           <div class="col-lg-4 col-md-2 footer-links">
-            <img src="assets/img/thumbnail-logo-w.png" class="img-fluid" alt="Applied AI Research and Education to Solve Real-World Problems" style="width: 100%;max-width: 200px;">
+            <img src="assets/img/thumbnail-logo-w.png"
+                 class="img-fluid"
+                 alt="Applied AI Research and Education to Solve Real-World Problems"
+                 style="width: 100%; max-width: 200px;">
           </div>
-
 
           <div class="col-lg-4 col-md-4 footer-contact">
             <h4>Location</h4>
             <p>
-<a href="https://www.pace.edu/" target="_blank">Pace University</a><br>
-Seidenberg School of CSIS<br>
-One Pace Plaza<br>
-New York, NY 10038 <br>
+              <a href="https://www.pace.edu/" target="_blank" rel="noopener">Pace University</a><br>
+              Seidenberg School of CSIS<br>
+              One Pace Plaza<br>
+              New York, NY 10038
             </p>
-
           </div>
 
           <div class="col-lg-4 col-md-6 footer-info">
             <h4>Contact</h4>
             <p>
-			<strong>Email:</strong> samirian@pace.edu<br>
-            <strong>Phone:</strong> (+1) 800-874-PACE <br>
-			</p>
-            
+              <strong>Email:</strong> samirian@pace.edu<br>
+              <strong>Phone:</strong> (+1) 800-874-PACE
+            </p>
           </div>
 
         </div>
@@ -273,16 +610,20 @@ New York, NY 10038 <br>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Applied Machine Intelligence Initiatives & Education Lab (AMIIE Lab)</span></strong>. All Rights Reserved
+        &copy; <span id="current-year"></span>
+        <strong><span>Applied Machine Intelligence Initiatives &amp; Education Lab (AMIIE Lab)</span></strong>.
+        All Rights Reserved
       </div>
     </div>
-
-
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top"
+     class="scroll-top d-flex align-items-center justify-content-center"
+     aria-label="Scroll to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -300,6 +641,9 @@ New York, NY 10038 <br>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
 
+</body>
 </html>
