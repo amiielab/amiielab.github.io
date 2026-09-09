@@ -34,7 +34,7 @@
     /* Compact homepage banner */
     .hero-banner {
       position: relative;
-      min-height: 420px;
+      min-height: 235px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -63,37 +63,37 @@
       z-index: 2;
       max-width: 1050px;
       width: 100%;
-      padding: 120px 24px 70px;
+      padding: 88px 24px 28px;
       text-align: center;
       color: #fff;
     }
 
     .hero-banner h1 {
-      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      font-size: clamp(1.9rem, 3.8vw, 3.1rem);
       font-weight: 700;
-      margin-bottom: 14px;
+      margin-bottom: 6px;
     }
 
     .hero-banner .tagline {
-      font-size: clamp(1.15rem, 2.1vw, 1.65rem);
+      font-size: clamp(1rem, 1.8vw, 1.35rem);
       font-weight: 600;
-      margin-bottom: 28px;
+      margin-bottom: 14px;
     }
 
     .hero-banner .banner-pillars {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px 14px;
+      gap: 6px 10px;
     }
 
     .hero-banner .banner-pillar {
-      padding: 9px 14px;
+      padding: 6px 11px;
       border: 1px solid rgba(255,255,255,.55);
       border-radius: 999px;
       background: rgba(0,0,0,.22);
-      font-size: 0.98rem;
-      line-height: 1.35;
+      font-size: 0.88rem;
+      line-height: 1.25;
     }
 
     .research-card,
@@ -162,6 +162,20 @@
       font-weight: 400;
     }
 
+
+    #about.section {
+      padding-top: 34px;
+      padding-bottom: 48px;
+    }
+
+    #about .section-title {
+      padding-bottom: 18px;
+    }
+
+    #about .section-title h2 {
+      margin-bottom: 4px;
+    }
+
     .btn-amiie {
       display: inline-block;
       margin-top: 18px;
@@ -173,8 +187,8 @@
     }
 
     @media (max-width: 767px) {
-      .hero-banner { min-height: 500px; }
-      .hero-banner .banner-content { padding-top: 110px; }
+      .hero-banner { min-height: 360px; }
+      .hero-banner .banner-content { padding: 92px 18px 26px; }
       .hero-banner .banner-pillars { flex-direction: column; align-items: center; }
       .hero-banner .banner-pillar { width: min(100%, 520px); }
     }
@@ -368,8 +382,8 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="highlight-card">
-              <h3>Responsible &amp; Explainable Healthcare AI</h3>
-              <p>Developing and evaluating fair, interpretable, and clinically meaningful machine-learning methods for biomedical applications.</p>
+              <h3>Responsible, Explainable &amp; Fair AI</h3>
+              <p>Designing AI systems that emphasize transparency, interpretability, fairness, reliability, and responsible real-world use.</p>
             </div>
           </div>
 
@@ -399,12 +413,30 @@
         <div class="accordion" id="newsArchive">
 
           <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2026">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2026" aria-expanded="true" aria-controls="collapse2026">
+                2026
+              </button>
+            </h2>
+            <div id="collapse2026" class="accordion-collapse collapse show" aria-labelledby="heading2026" data-bs-parent="#newsArchive">
+              <div class="accordion-body">
+                <ul class="archive-list">
+                  <li><strong>2026:</strong> The Pace AI Insight Webinar Series continued to bring researchers, educators, and industry experts together for conversations on emerging directions in artificial intelligence. <a href="webinar-series.html">View the webinar series.</a></li>
+                  <li><strong>2026:</strong> AMIIE Lab expanded its research activities in generative AI and AI agents, including work on reasoning, reliability, safety, and responsible evaluation of agentic systems.</li>
+                  <li><strong>2026:</strong> AMIIE Lab continued interdisciplinary research in responsible and explainable AI, healthcare AI, multimodal learning, and graph-based machine learning with graduate and undergraduate student involvement.</li>
+                  <li><strong>2026:</strong> Dr. Soheyla Amirian continued professional service and scholarly engagement through conference organization, session leadership, invited talks, and AI research community activities.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
             <h2 class="accordion-header" id="heading2025">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025" aria-expanded="true" aria-controls="collapse2025">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025" aria-expanded="false" aria-controls="collapse2025">
                 2025
               </button>
             </h2>
-            <div id="collapse2025" class="accordion-collapse collapse show" aria-labelledby="heading2025" data-bs-parent="#newsArchive">
+            <div id="collapse2025" class="accordion-collapse collapse" aria-labelledby="heading2025" data-bs-parent="#newsArchive">
               <div class="accordion-body">
                 <ul class="archive-list">
                   <li><strong>Apr. 2025:</strong> Pace AI Insight Series. <a href="webinar-series.html">Registration and more information.</a></li>
