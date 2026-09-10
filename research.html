@@ -18,7 +18,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,282 +30,113 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Page-specific modern styling -->
+  <!-- Page-specific refinements -->
   <style>
-    :root {
-      --amii-card-radius: 18px;
-      --amii-border: rgba(0, 0, 0, 0.08);
-      --amii-soft: #f7f8fa;
-      --amii-muted: #667085;
-      --amii-shadow: 0 12px 35px rgba(16, 24, 40, 0.07);
-    }
-
-    .page-title.modern-hero {
-      position: relative;
-      min-height: 330px;
-      display: flex;
-      align-items: center;
-      background-size: cover;
-      background-position: center;
-      padding-top: 110px;
-      padding-bottom: 60px;
-      overflow: hidden;
-    }
-
-    .page-title.modern-hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        90deg,
-        rgba(10, 20, 35, 0.82) 0%,
-        rgba(10, 20, 35, 0.68) 55%,
-        rgba(10, 20, 35, 0.42) 100%
-      );
-    }
-
-    .page-title.modern-hero .container {
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.83rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 600;
-      margin-bottom: 14px;
-      opacity: 0.92;
-    }
-
-    .modern-hero h1 {
-      font-size: clamp(2.4rem, 5vw, 4.4rem);
-      line-height: 1.05;
-      margin-bottom: 16px;
-    }
-
-    .modern-hero p {
-      max-width: 760px;
-      font-size: 1.08rem;
-      line-height: 1.75;
-      margin-bottom: 0;
-      opacity: 0.96;
-    }
-
     .research-intro {
       max-width: 920px;
       margin: 0 auto;
     }
 
-    .research-intro p {
-      font-size: 1.04rem;
-      line-height: 1.8;
-    }
-
-    .research-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      margin-top: 28px;
-    }
-
-    .research-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 9px 14px;
-      border: 1px solid var(--amii-border);
-      border-radius: 999px;
-      background: #fff;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .research-area-card,
-    .research-work-card {
+    .research-theme-card {
       height: 100%;
-      border: 1px solid var(--amii-border);
-      border-radius: var(--amii-card-radius);
-      background: #fff;
-      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-    }
-
-    .research-area-card:hover,
-    .research-work-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--amii-shadow);
-      border-color: rgba(0, 0, 0, 0.14);
-    }
-
-    .research-area-card {
-      padding: 30px;
-    }
-
-    .research-area-icon {
-      width: 54px;
-      height: 54px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
       border-radius: 14px;
-      background: var(--amii-soft);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.55rem;
-      margin-bottom: 20px;
+      padding: 28px;
+      background: #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .research-area-card h3 {
-      font-size: 1.18rem;
+    .research-theme-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .research-theme-card i {
+      font-size: 2rem;
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+
+    .research-theme-card h3 {
+      font-size: 1.2rem;
       margin-bottom: 12px;
     }
 
-    .research-area-card p {
+    .research-theme-card p {
       margin-bottom: 0;
-      line-height: 1.7;
-      color: var(--amii-muted);
     }
 
-    .work-grid .col-lg-6 {
-      display: flex;
-    }
-
-    .research-work-card {
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
+    .research-project-image {
+      border-radius: 12px;
       width: 100%;
     }
 
-    .work-label {
-      display: inline-flex;
-      width: fit-content;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--amii-soft);
-      font-size: 0.76rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 16px;
+    .publication-list {
+      padding-left: 1.15rem;
+      margin-bottom: 0;
     }
 
-    .research-work-card h3 {
-      font-size: 1.28rem;
-      margin-bottom: 12px;
-    }
-
-    .research-work-card > p {
-      color: var(--amii-muted);
-      line-height: 1.75;
-      margin-bottom: 18px;
-    }
-
-    .selected-work {
-      margin-top: auto;
-      padding-top: 17px;
-      border-top: 1px solid var(--amii-border);
-    }
-
-    .selected-work h4 {
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 700;
+    .publication-list li {
       margin-bottom: 10px;
     }
 
-    .selected-work ul {
-      padding-left: 1.1rem;
-      margin-bottom: 0;
+    .status-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #f2f4f7;
+      margin-bottom: 12px;
     }
 
-    .selected-work li {
-      margin-bottom: 9px;
-      line-height: 1.6;
-    }
 
-    .selected-work li:last-child {
-      margin-bottom: 0;
-    }
-
-    .scholar-panel {
-      margin-top: 44px;
-      padding: 28px;
-      border-radius: var(--amii-card-radius);
-      background: var(--amii-soft);
-      text-align: center;
-    }
-
-    .scholar-panel p {
-      color: var(--amii-muted);
-      margin-bottom: 18px;
-    }
-
-    .research-approach {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 34px 38px;
-      border-radius: var(--amii-card-radius);
+    .research-program-detail {
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
+      padding: 26px;
       background: #fff;
-      border: 1px solid var(--amii-border);
-      box-shadow: 0 8px 24px rgba(16, 24, 40, 0.04);
-      text-align: center;
     }
 
-    .research-approach p {
-      margin-bottom: 0;
-      font-size: 1.05rem;
-      line-height: 1.85;
+    .research-program-detail h3 {
+      font-size: 1.22rem;
+      margin-bottom: 10px;
     }
 
-    .section.light-background {
-      background: var(--amii-soft);
+    .research-program-detail .research-focus {
+      margin-bottom: 16px;
     }
 
-    @media (max-width: 991px) {
-      .modern-hero h1 {
-        font-size: 2.7rem;
-      }
-
-      .page-title.modern-hero {
-        min-height: 290px;
-      }
+    .research-program-detail .representative-work {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding-top: 14px;
+      margin-top: 14px;
     }
 
-    @media (max-width: 767px) {
-      .page-title.modern-hero {
-        padding-top: 100px;
-        padding-bottom: 46px;
-      }
+    .research-program-detail .representative-work h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
 
-      .modern-hero h1 {
-        font-size: 2.25rem;
-      }
+    .research-callout {
+      border-left: 4px solid #6c757d;
+      padding: 18px 22px;
+      background: #f8f9fa;
+      border-radius: 0 10px 10px 0;
+    }
 
-      .modern-hero p {
-        font-size: 1rem;
-      }
-
-      .research-area-card,
-      .research-work-card {
-        padding: 24px;
-      }
-
-      .research-approach {
-        padding: 28px 24px;
-      }
+    .page-title.compact-title {
+      padding-top: 105px;
+      padding-bottom: 42px;
     }
   </style>
 </head>
 
 <body class="portfolio-details-page">
 
-  <!-- Header -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -331,142 +162,114 @@
 
     </div>
   </header>
-  <!-- End Header -->
-
 
   <main class="main">
 
-    <!-- Hero -->
-    <div class="page-title dark-background modern-hero"
+    <!-- Page Title -->
+    <div class="page-title dark-background compact-title"
          data-aos="fade"
          style="background-image: url(assets/img/AMIIE-carousel-3.jpg);">
-      <div class="container">
-        <div class="hero-kicker">
-          <i class="bi bi-stars"></i>
-          AMIIE Research
-        </div>
-
+      <div class="container position-relative">
         <h1>Research</h1>
-
-        <p>
-          Applied artificial intelligence research focused on responsible, explainable,
-          reliable, and impactful intelligent systems for healthcare, science, and
-          real-world decision support.
-        </p>
+        <p>Applied AI research focused on responsible, explainable, and impactful intelligent systems.</p>
       </div>
     </div>
-    <!-- End Hero -->
+    <!-- End Page Title -->
 
 
     <!-- Research Overview -->
-    <section id="research-overview" class="section">
+    <section id="research-overview" class="about section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Research at AMIIE</h2>
       </div>
 
       <div class="container">
         <div class="research-intro text-center" data-aos="fade-up" data-aos-delay="100">
-
           <p>
             The <strong>Applied Machine Intelligence Initiatives &amp; Education (AMIIE) Lab</strong>
-            conducts interdisciplinary research in artificial intelligence and machine learning
-            with an emphasis on real-world impact. Our work spans healthcare and biomedical AI,
-            responsible and explainable AI, computer vision and multimodal learning, graph-based
-            machine learning, generative AI, and intelligent decision-support systems.
+            conducts interdisciplinary research in artificial intelligence and machine learning with an emphasis
+            on real-world impact. Our work spans healthcare and biomedical AI, responsible and explainable AI,
+            computer vision and multimodal learning, graph-based machine learning, generative AI, and intelligent
+            decision-support systems.
           </p>
 
           <p>
             Across these areas, we are particularly interested in building AI systems that are
-            <strong>accurate, interpretable, reliable, fair, and useful in practice</strong>.
-            Our research combines methodological development with application-driven studies
-            and collaboration across computing, healthcare, and other scientific disciplines.
+            <strong>accurate, interpretable, reliable, fair, and useful in practice</strong>. Our research combines
+            methodological development with application-driven studies and often involves collaboration across
+            computing, healthcare, and other scientific disciplines.
           </p>
-
-          <div class="research-tags">
-            <span class="research-tag"><i class="bi bi-heart-pulse"></i> Healthcare AI</span>
-            <span class="research-tag"><i class="bi bi-shield-check"></i> Responsible AI</span>
-            <span class="research-tag"><i class="bi bi-eye"></i> Multimodal AI</span>
-            <span class="research-tag"><i class="bi bi-diagram-3"></i> Graph ML</span>
-            <span class="research-tag"><i class="bi bi-cpu"></i> AI Agents</span>
-          </div>
-
         </div>
       </div>
     </section>
     <!-- End Research Overview -->
 
 
-    <!-- Core Research Areas -->
-    <section id="research-areas" class="section light-background">
+    <!-- Core Research Programs -->
+    <section id="research-programs" class="section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Core Research Areas</h2>
-        <p>Five complementary areas shape AMIIE's current research portfolio.</p>
+        <h2>Core Research Programs</h2>
+        <p>Our current research is organized around five complementary themes.</p>
       </div>
 
       <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="research-area-card">
-              <div class="research-area-icon">
-                <i class="bi bi-heart-pulse"></i>
-              </div>
+            <div class="research-theme-card">
+              <i class="bi bi-heart-pulse"></i>
               <h3>AI for Healthcare &amp; Biomedical Research</h3>
               <p>
-                AI methods for medical imaging, health data science, biomedical informatics,
-                clinical prediction, and data-driven decision support.
+                Developing and evaluating AI methods for medical imaging, health data science, biomedical
+                informatics, clinical prediction, patient-centered applications, and computational approaches
+                that support biomedical discovery and healthcare decision-making.
               </p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="research-area-card">
-              <div class="research-area-icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
+            <div class="research-theme-card">
+              <i class="bi bi-shield-check"></i>
               <h3>Responsible, Explainable &amp; Fair AI</h3>
               <p>
-                Research on interpretability, explainability, reliability, fairness, bias,
-                and trustworthy AI in high-impact applications.
+                Studying interpretability, explainability, reliability, fairness, and bias in AI systems,
+                particularly in high-impact settings where model decisions must be transparent and trustworthy.
               </p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="research-area-card">
-              <div class="research-area-icon">
-                <i class="bi bi-eye"></i>
-              </div>
+            <div class="research-theme-card">
+              <i class="bi bi-eye"></i>
               <h3>Computer Vision &amp; Multimodal AI</h3>
               <p>
-                Learning systems for images and multimodal data, including representation
-                learning, image understanding, and limited-data learning.
+                Building learning systems for images and multimodal data, including medical image analysis,
+                representation learning, image understanding, limited-data learning, and integration of
+                visual and textual information.
               </p>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="research-area-card">
-              <div class="research-area-icon">
-                <i class="bi bi-diagram-3"></i>
-              </div>
+            <div class="research-theme-card">
+              <i class="bi bi-diagram-3"></i>
               <h3>Graph Machine Learning &amp; Biomedical Networks</h3>
               <p>
-                Graph neural networks and network-based learning for biological relationships,
-                structured knowledge, high-dimensional biomedical data, and discovery.
+                Exploring graph neural networks and network-based learning for complex biological and biomedical
+                data, including the integration of molecular relationships, structured knowledge, and
+                high-dimensional patient data for discovery and prediction.
               </p>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="research-area-card">
-              <div class="research-area-icon">
-                <i class="bi bi-cpu"></i>
-              </div>
+            <div class="research-theme-card">
+              <i class="bi bi-cpu"></i>
               <h3>Generative AI, LLMs &amp; AI Agents</h3>
               <p>
-                Research on reasoning, reliability, explainability, evaluation, safety,
-                tool use, and responsible agentic AI systems.
+                Investigating generative AI and agentic systems with a focus on reasoning, reliability,
+                explainability, evaluation, and responsible use. Current interests include comparing
+                conventional language models with agent-based AI workflows in complex decision-making tasks.
               </p>
             </div>
           </div>
@@ -474,133 +277,88 @@
         </div>
       </div>
     </section>
-    <!-- End Core Research Areas -->
+    <!-- End Core Research Programs -->
 
 
-    <!-- Current Research & Selected Work -->
-    <section id="current-work" class="section">
+    <!-- Current Research and Selected Publications -->
+    <section id="current-research" class="section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Current Research &amp; Selected Work</h2>
+        <h2>Current Research &amp; Selected Publications</h2>
         <p>
-          Current directions and representative recent work that illustrate the lab's research portfolio.
+          Current research directions at AMIIE, together with representative recent publications
+          that illustrate each area.
         </p>
       </div>
 
       <div class="container">
-        <div class="row gy-4 work-grid">
+        <div class="row gy-4">
 
-          <!-- Healthcare AI -->
           <div class="col-lg-6" data-aos="fade-up">
-            <div class="research-work-card">
-              <span class="work-label">
-                <i class="bi bi-heart-pulse"></i>
-                Healthcare AI
-              </span>
-
+            <div class="research-program-detail">
               <h3>AI for Healthcare &amp; Biomedical Research</h3>
-
-              <p>
+              <p class="research-focus">
                 We develop AI and machine-learning methods for medical imaging, health data science,
-                biomedical informatics, clinical prediction, and decision support, with emphasis on
-                practical and interpretable models.
+                biomedical informatics, clinical prediction, and decision support. Our work emphasizes
+                practical models that can contribute to biomedical discovery and healthcare applications.
               </p>
-
-              <div class="selected-work">
-                <h4>Selected Work</h4>
-                <ul>
-                  <li>
-                    <strong>KneeXNet-2.5D:</strong> a clinically-oriented and explainable deep learning
-                    framework for MRI-based knee cartilage and meniscus segmentation.
-                    <em>npj Health Systems</em>, 2026.
-                  </li>
-                  <li>
-                    <strong>Predicting cancer survival at different stages:</strong> Insights from fair
-                    and explainable machine learning approaches.
-                    <em>International Journal of Medical Informatics</em>, 2025.
-                  </li>
+              <div class="representative-work">
+                <h4>Representative Recent Work</h4>
+                <ul class="publication-list">
+                  <li><strong>KneeXNet-2.5D:</strong> a clinically-oriented and explainable deep learning framework for MRI-based knee cartilage and meniscus segmentation. <em>npj Health Systems</em>, 2026.</li>
+                  <li><strong>Predicting cancer survival at different stages:</strong> Insights from fair and explainable machine-learning approaches. <em>International Journal of Medical Informatics</em>, 2025.</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Responsible AI -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="research-work-card">
-              <span class="work-label">
-                <i class="bi bi-shield-check"></i>
-                Trustworthy AI
-              </span>
-
+            <div class="research-program-detail">
               <h3>Responsible, Explainable &amp; Fair AI</h3>
-
-              <p>
-                We study interpretability, explainability, fairness, reliability, and bias in AI
-                systems, particularly in settings where predictions and model behavior must be
-                transparent and trustworthy.
+              <p class="research-focus">
+                We study interpretability, explainability, fairness, reliability, and bias in AI systems,
+                particularly in high-impact domains where predictions and model behavior must be transparent,
+                trustworthy, and meaningfully evaluated.
               </p>
-
-              <div class="selected-work">
-                <h4>Selected Work</h4>
-                <ul>
-                  <li>
-                    <strong>State-of-the-art in responsible, explainable, and fair AI for medical image analysis.</strong>
-                    <em>IEEE Access</em>, 2025.
-                  </li>
-                  <li>
-                    <strong>Explainable Contrastive Learning for KL Grading Classification in Knee Osteoarthritis.</strong>
-                    <em>IEEE EMBC</em>, 2025.
-                  </li>
+              <div class="representative-work">
+                <h4>Representative Recent Work</h4>
+                <ul class="publication-list">
+                  <li><strong>State-of-the-art in responsible, explainable, and fair AI for medical image analysis.</strong> <em>IEEE Access</em>, 2025.</li>
+                  <li><strong>Explainable Contrastive Learning for KL Grading Classification in Knee Osteoarthritis.</strong> <em>IEEE EMBC</em>, 2025.</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Vision & Multimodal -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="research-work-card">
-              <span class="work-label">
-                <i class="bi bi-eye"></i>
-                Vision &amp; Multimodal
-              </span>
-
+            <div class="research-program-detail">
               <h3>Computer Vision &amp; Multimodal AI</h3>
-
-              <p>
-                Our work includes medical image analysis, representation learning, limited-data learning,
-                image understanding, and methods that combine visual information with textual or
-                structured data.
+              <p class="research-focus">
+                Our work in computer vision and multimodal AI includes medical image analysis,
+                representation learning, limited-data learning, image understanding, and methods that
+                integrate visual information with textual or structured data.
               </p>
-
-              <div class="selected-work">
-                <h4>Current Emphasis</h4>
-                <ul>
+              <div class="representative-work">
+                <h4>Research Emphasis</h4>
+                <ul class="publication-list">
                   <li>Explainable and data-efficient medical image analysis.</li>
                   <li>Image segmentation, classification, and representation learning.</li>
-                  <li>Multimodal learning across visual, textual, and structured information.</li>
+                  <li>Multimodal learning that connects visual, textual, and structured information.</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Graph ML -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="research-work-card">
-              <span class="work-label">
-                <i class="bi bi-diagram-3"></i>
-                Ongoing Direction
-              </span>
-
+            <div class="research-program-detail">
               <h3>Graph Machine Learning &amp; Biomedical Networks</h3>
-
-              <p>
+              <p class="research-focus">
                 We are exploring graph neural networks and network-based approaches for biological
                 and biomedical data, where relationships among genes, proteins, clinical variables,
-                patients, or other entities are represented explicitly.
+                patients, or other entities can be represented explicitly as structured networks.
               </p>
-
-              <div class="selected-work">
-                <h4>Current Emphasis</h4>
-                <ul>
+              <div class="representative-work">
+                <h4>Current Direction</h4>
+                <ul class="publication-list">
                   <li>Graph neural networks for biomedical prediction and discovery.</li>
                   <li>Biological interaction networks and patient-level data integration.</li>
                   <li>Interpretable graph learning for biomarker and knowledge discovery.</li>
@@ -609,60 +367,39 @@
             </div>
           </div>
 
-          <!-- Generative AI -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="research-work-card">
-              <span class="work-label">
-                <i class="bi bi-cpu"></i>
-                Emerging Direction
-              </span>
-
+            <div class="research-program-detail">
               <h3>Generative AI, LLMs &amp; AI Agents</h3>
-
-              <p>
-                We investigate generative AI and agentic systems with a focus on reasoning,
-                reliability, explainability, evaluation, and responsible use. A current question
-                is whether agent-based workflows improve reliability and safety over conventional LLMs.
+              <p class="research-focus">
+                We investigate generative AI and agentic systems with a focus on reasoning, reliability,
+                explainability, evaluation, and responsible use. An emerging research question is whether
+                AI agents improve reasoning, reliability, and safety compared with conventional large language models.
               </p>
-
-              <div class="selected-work">
-                <h4>Selected Work &amp; Direction</h4>
-                <ul>
-                  <li>
-                    <strong>Explainable Feature Engineering in Health Data Science:</strong>
-                    Empirical Comparison of ChatGPT-4o and Classical Machine Learning Methods.
-                    <em>ACM/IEEE CHASE</em>, 2025.
-                  </li>
-                  <li>
-                    Ongoing research on AI agents, agentic workflows, reasoning, reliability, and safety.
-                  </li>
+              <div class="representative-work">
+                <h4>Representative Recent Work</h4>
+                <ul class="publication-list">
+                  <li><strong>Explainable Feature Engineering in Health Data Science:</strong> Empirical Comparison of ChatGPT-4o and Classical Machine Learning Methods. <em>ACM/IEEE CHASE</em>, 2025.</li>
+                  <li>Ongoing research on AI agents, agentic workflows, reasoning, reliability, and safety.</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Text Analytics -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="research-work-card">
-              <span class="work-label">
-                <i class="bi bi-file-text"></i>
-                Scientific Knowledge
-              </span>
-
+            <div class="research-program-detail">
               <h3>Computational Text Analytics &amp; Scientific Knowledge</h3>
-
-              <p>
-                AMIIE also studies methods for extracting knowledge from scientific, biomedical,
-                and health-related text. Earlier work in datasets, embeddings, and text mining now
-                connects naturally with LLMs, retrieval-based methods, and scientific discovery.
+              <p class="research-focus">
+                AMIIE also studies computational methods for extracting knowledge from scientific,
+                biomedical, and health-related text. Earlier work in textual datasets, word embeddings,
+                and scientific literature analysis now connects naturally with large language models,
+                retrieval-based methods, and scientific knowledge discovery.
               </p>
-
-              <div class="selected-work">
-                <h4>Current Emphasis</h4>
-                <ul>
+              <div class="representative-work">
+                <h4>Research Emphasis</h4>
+                <ul class="publication-list">
                   <li>Biomedical and scientific text mining.</li>
                   <li>Open scientific datasets and terminology discovery.</li>
-                  <li>LLMs, retrieval-based systems, and scientific knowledge discovery.</li>
+                  <li>Connections between classical text analytics, LLMs, and knowledge discovery.</li>
                 </ul>
               </div>
             </div>
@@ -670,50 +407,42 @@
 
         </div>
 
-        <!-- Google Scholar CTA -->
-        <div class="scholar-panel" data-aos="fade-up">
-          <h3 class="h4">Explore the Full Publication Record</h3>
-          <p>
-            View peer-reviewed articles, conference papers, books, and other scholarly work on Google Scholar.
-          </p>
-
+        <div class="text-center mt-5" data-aos="fade-up">
           <a href="https://scholar.google.com/citations?hl=en&amp;user=3c3yIokAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
              class="btn btn-outline-secondary"
              target="_blank"
              rel="noopener">
-            <i class="bi bi-mortarboard me-1"></i>
+            <i class="bi bi-mortarboard"></i>
             View All Publications on Google Scholar
           </a>
         </div>
-
       </div>
     </section>
-    <!-- End Current Research & Selected Work -->
+    <!-- End Current Research and Selected Publications -->
 
 
-    <!-- Research Approach -->
-    <section id="research-approach" class="section light-background">
+    <!-- Research Philosophy -->
+    <section id="research-philosophy" class="section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Research Approach</h2>
+        <h2>Research Philosophy</h2>
       </div>
 
       <div class="container" data-aos="fade-up">
-        <div class="research-approach">
-          <p>
-            AMIIE emphasizes interdisciplinary, student-engaged research that connects methodological
-            AI innovation with meaningful applications. We aim to develop research that is technically
-            strong, interpretable, reproducible, responsible, and capable of contributing to
+        <div class="research-callout">
+          <p class="mb-0">
+            AMIIE emphasizes interdisciplinary, student-engaged research that connects methodological AI
+            innovation with meaningful applications. We aim to develop research that is not only technically
+            strong, but also interpretable, reproducible, responsible, and capable of contributing to
             real-world scientific and societal needs.
           </p>
         </div>
       </div>
     </section>
-    <!-- End Research Approach -->
+    <!-- End Research Philosophy -->
 
   </main>
 
 
-  <!-- Footer -->
   <footer id="footer" class="footer dark-background">
 
     <div class="footer-top">
@@ -752,20 +481,15 @@
     <div class="container">
       <div class="copyright">
         &copy; <span id="current-year"></span>
-        <strong>
-          <span>Applied Machine Intelligence Initiatives &amp; Education Lab (AMIIE Lab)</span>
-        </strong>.
+        <strong><span>Applied Machine Intelligence Initiatives &amp; Education Lab (AMIIE Lab)</span></strong>.
         All Rights Reserved
       </div>
     </div>
 
   </footer>
-  <!-- End Footer -->
-
 
   <!-- Scroll Top -->
-  <a href="#"
-     id="scroll-top"
+  <a href="#" id="scroll-top"
      class="scroll-top d-flex align-items-center justify-content-center"
      aria-label="Scroll to top">
     <i class="bi bi-arrow-up-short"></i>
@@ -792,5 +516,4 @@
   </script>
 
 </body>
-
 </html>
