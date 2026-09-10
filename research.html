@@ -89,6 +89,38 @@
       margin-bottom: 12px;
     }
 
+
+    .research-program-detail {
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
+      padding: 26px;
+      background: #fff;
+    }
+
+    .research-program-detail h3 {
+      font-size: 1.22rem;
+      margin-bottom: 10px;
+    }
+
+    .research-program-detail .research-focus {
+      margin-bottom: 16px;
+    }
+
+    .research-program-detail .representative-work {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding-top: 14px;
+      margin-top: 14px;
+    }
+
+    .research-program-detail .representative-work h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
     .research-callout {
       border-left: 4px solid #6c757d;
       padding: 18px 22px;
@@ -248,295 +280,134 @@
     <!-- End Core Research Programs -->
 
 
-    <!-- Featured Current and Recent Research -->
-    <section id="featured-research" class="section">
+    <!-- Current Research and Selected Publications -->
+    <section id="current-research" class="section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Current &amp; Recent Research</h2>
-        <p>Selected projects and research directions from AMIIE's evolving portfolio.</p>
+        <h2>Current Research &amp; Selected Publications</h2>
+        <p>
+          Current research directions at AMIIE, together with representative recent publications
+          that illustrate each area.
+        </p>
       </div>
 
       <div class="container">
-        <div class="accordion" id="researchAccordion">
-
-          <!-- Project 1 -->
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Explainable AI for Medical Imaging and Musculoskeletal Health
-              </button>
-            </h3>
-
-            <div id="collapseOne" class="accordion-collapse collapse show"
-                 aria-labelledby="headingOne" data-bs-parent="#researchAccordion">
-              <div class="accordion-body">
-                <div class="row gy-4 align-items-center">
-                  <div class="col-lg-8">
-                    <p>
-                      AMIIE develops explainable and clinically oriented deep learning methods for medical imaging,
-                      with particular experience in musculoskeletal applications. Our work has addressed challenges
-                      such as limited labeled data, segmentation, disease grading, model interpretability, and the
-                      need for AI systems that can provide meaningful evidence alongside predictions.
-                    </p>
-                    <p>
-                      Recent work includes explainable deep learning for MRI-based knee cartilage and meniscus
-                      segmentation, explainable contrastive learning for knee osteoarthritis grading, and
-                      generative-AI-assisted approaches for knee radiograph analysis.
-                    </p>
-                  </div>
-                  <div class="col-lg-4">
-                    <img src="assets/img/research_01.jpg"
-                         class="img-fluid research-project-image"
-                         alt="Explainable AI for medical imaging research">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Project 2 -->
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                      aria-expanded="false" aria-controls="collapseTwo">
-                Responsible, Explainable and Fair AI in Healthcare
-              </button>
-            </h3>
-
-            <div id="collapseTwo" class="accordion-collapse collapse"
-                 aria-labelledby="headingTwo" data-bs-parent="#researchAccordion">
-              <div class="accordion-body">
-                <div class="row gy-4 align-items-center">
-                  <div class="col-lg-8">
-                    <p>
-                      Responsible AI is a central theme of AMIIE's research. We study how bias, model opacity,
-                      data imbalance, and subgroup performance differences can affect machine-learning systems,
-                      especially in medical and health applications.
-                    </p>
-                    <p>
-                      Our work includes fairness analysis and bias-mitigation strategies for orthopedic image
-                      segmentation, broader reviews of responsible and explainable AI in medical image analysis,
-                      and fair and interpretable approaches to health outcome prediction.
-                    </p>
-                  </div>
-                  <div class="col-lg-4">
-                    <img src="assets/img/research_05.jpg"
-                         class="img-fluid research-project-image"
-                         alt="Responsible explainable and fair AI research">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Project 3 -->
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                      aria-expanded="false" aria-controls="collapseThree">
-                AI, Machine Learning and Health Data Science
-              </button>
-            </h3>
-
-            <div id="collapseThree" class="accordion-collapse collapse"
-                 aria-labelledby="headingThree" data-bs-parent="#researchAccordion">
-              <div class="accordion-body">
-                <div class="row gy-4 align-items-center">
-                  <div class="col-lg-8">
-                    <p>
-                      Beyond imaging, AMIIE investigates machine-learning methods for structured and unstructured
-                      health data. This includes predictive modeling, feature engineering, computational text
-                      analytics, and evaluation of generative AI for health-data-science workflows.
-                    </p>
-                    <p>
-                      Recent studies have examined fair and explainable machine-learning approaches for cancer
-                      survival prediction and compared large-language-model-assisted feature engineering with
-                      classical machine-learning approaches in health data science.
-                    </p>
-                  </div>
-                  <div class="col-lg-4">
-                    <img src="assets/img/research_04.jpg"
-                         class="img-fluid research-project-image"
-                         alt="AI and health data science research">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Project 4 -->
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                      aria-expanded="false" aria-controls="collapseFour">
-                Graph Learning and Network-Based Biomedical Discovery
-              </button>
-            </h3>
-
-            <div id="collapseFour" class="accordion-collapse collapse"
-                 aria-labelledby="headingFour" data-bs-parent="#researchAccordion">
-              <div class="accordion-body">
-                <div class="row gy-4 align-items-center">
-                  <div class="col-lg-8">
-                    <span class="status-badge">Ongoing research direction</span>
-                    <p>
-                      AMIIE is exploring graph-based machine learning for biomedical research, where relationships
-                      among genes, proteins, clinical variables, or other entities can be represented explicitly
-                      as networks rather than treated as independent features.
-                    </p>
-                    <p>
-                      Current work examines graph neural networks, biological interaction networks, interpretable
-                      graph learning, and integration of molecular and patient-level data for biomarker discovery
-                      and clinically meaningful prediction.
-                    </p>
-                  </div>
-                  <div class="col-lg-4">
-                    <img src="assets/img/research_03.jpg"
-                         class="img-fluid research-project-image"
-                         alt="Graph machine learning and biomedical network research">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Project 5 -->
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                      aria-expanded="false" aria-controls="collapseFive">
-                Generative AI and AI Agents: Reasoning, Reliability and Safety
-              </button>
-            </h3>
-
-            <div id="collapseFive" class="accordion-collapse collapse"
-                 aria-labelledby="headingFive" data-bs-parent="#researchAccordion">
-              <div class="accordion-body">
-                <div class="row gy-4 align-items-center">
-                  <div class="col-lg-8">
-                    <span class="status-badge">Emerging research direction</span>
-                    <p>
-                      AMIIE is expanding its work in generative AI toward AI agents and agentic workflows. A
-                      central research question is whether AI agents actually improve reasoning, reliability,
-                      and safety compared with conventional large language models.
-                    </p>
-                    <p>
-                      Our interests include agent architecture and evaluation, tool-augmented reasoning,
-                      reliability and failure analysis, explainability, safety, and the responsible use of
-                      agentic systems in healthcare and other high-impact domains.
-                    </p>
-                  </div>
-                  <div class="col-lg-4">
-                    <img src="assets/img/AMIIE-carousel-2.jpg"
-                         class="img-fluid research-project-image"
-                         alt="Generative AI and AI agents research">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Project 6 -->
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                      aria-expanded="false" aria-controls="collapseSix">
-                Computational Text Analytics and Open Scientific Knowledge
-              </button>
-            </h3>
-
-            <div id="collapseSix" class="accordion-collapse collapse"
-                 aria-labelledby="headingSix" data-bs-parent="#researchAccordion">
-              <div class="accordion-body">
-                <div class="row gy-4 align-items-center">
-                  <div class="col-lg-8">
-                    <p>
-                      AMIIE studies computational approaches for extracting knowledge from scientific and
-                      health-related text. Earlier work includes open textual resources for total joint
-                      arthroplasty, neural word embeddings for osteoarthritis terminology, and large-scale
-                      text-mining approaches for biomedical and psychosocial-health research.
-                    </p>
-                    <p>
-                      This line of work now naturally connects with large language models, generative AI,
-                      retrieval-based systems, and scientific knowledge discovery.
-                    </p>
-                  </div>
-                  <div class="col-lg-4">
-                    <img src="assets/img/research_02.jpg"
-                         class="img-fluid research-project-image"
-                         alt="Computational text analytics and scientific knowledge research">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- End Featured Research -->
-
-
-    <!-- Recent Publications -->
-    <section id="recent-publications" class="section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Selected Publications &amp; Research Highlights</h2>
-        <p>Representative recent work illustrating the breadth of AMIIE's research portfolio.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up">
         <div class="row gy-4">
 
-          <div class="col-lg-6">
-            <h3>2026</h3>
-            <ul class="publication-list">
-              <li>
-                <strong>KneeXNet-2.5D:</strong> a clinically-oriented and explainable deep learning framework
-                for MRI-based knee cartilage and meniscus segmentation.
-                <em>npj Health Systems</em>, 2026.
-              </li>
-            </ul>
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="research-program-detail">
+              <h3>AI for Healthcare &amp; Biomedical Research</h3>
+              <p class="research-focus">
+                We develop AI and machine-learning methods for medical imaging, health data science,
+                biomedical informatics, clinical prediction, and decision support. Our work emphasizes
+                practical models that can contribute to biomedical discovery and healthcare applications.
+              </p>
+              <div class="representative-work">
+                <h4>Representative Recent Work</h4>
+                <ul class="publication-list">
+                  <li><strong>KneeXNet-2.5D:</strong> a clinically-oriented and explainable deep learning framework for MRI-based knee cartilage and meniscus segmentation. <em>npj Health Systems</em>, 2026.</li>
+                  <li><strong>Predicting cancer survival at different stages:</strong> Insights from fair and explainable machine-learning approaches. <em>International Journal of Medical Informatics</em>, 2025.</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-6">
-            <h3>2025</h3>
-            <ul class="publication-list">
-              <li>
-                <strong>State-of-the-art in responsible, explainable, and fair AI for medical image analysis.</strong>
-                <em>IEEE Access</em>, 2025.
-              </li>
-              <li>
-                <strong>Predicting cancer survival at different stages:</strong> Insights from fair and explainable
-                machine learning approaches. <em>International Journal of Medical Informatics</em>, 2025.
-              </li>
-              <li>
-                <strong>Explainable Contrastive Learning for KL Grading Classification in Knee Osteoarthritis.</strong>
-                <em>IEEE EMBC</em>, 2025.
-              </li>
-              <li>
-                <strong>Explainable Feature Engineering in Health Data Science:</strong> Empirical Comparison
-                of ChatGPT-4o and Classical Machine Learning Methods. <em>ACM/IEEE CHASE</em>, 2025.
-              </li>
-              <li>
-                <strong>Advancements in AI for Breast Cancer Diagnosis:</strong> A 2024–2025 Systematic Review Update.
-                <em>International Conference on the AI Revolution</em>, 2025.
-              </li>
-            </ul>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="research-program-detail">
+              <h3>Responsible, Explainable &amp; Fair AI</h3>
+              <p class="research-focus">
+                We study interpretability, explainability, fairness, reliability, and bias in AI systems,
+                particularly in high-impact domains where predictions and model behavior must be transparent,
+                trustworthy, and meaningfully evaluated.
+              </p>
+              <div class="representative-work">
+                <h4>Representative Recent Work</h4>
+                <ul class="publication-list">
+                  <li><strong>State-of-the-art in responsible, explainable, and fair AI for medical image analysis.</strong> <em>IEEE Access</em>, 2025.</li>
+                  <li><strong>Explainable Contrastive Learning for KL Grading Classification in Knee Osteoarthritis.</strong> <em>IEEE EMBC</em>, 2025.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="research-program-detail">
+              <h3>Computer Vision &amp; Multimodal AI</h3>
+              <p class="research-focus">
+                Our work in computer vision and multimodal AI includes medical image analysis,
+                representation learning, limited-data learning, image understanding, and methods that
+                integrate visual information with textual or structured data.
+              </p>
+              <div class="representative-work">
+                <h4>Research Emphasis</h4>
+                <ul class="publication-list">
+                  <li>Explainable and data-efficient medical image analysis.</li>
+                  <li>Image segmentation, classification, and representation learning.</li>
+                  <li>Multimodal learning that connects visual, textual, and structured information.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="research-program-detail">
+              <h3>Graph Machine Learning &amp; Biomedical Networks</h3>
+              <p class="research-focus">
+                We are exploring graph neural networks and network-based approaches for biological
+                and biomedical data, where relationships among genes, proteins, clinical variables,
+                patients, or other entities can be represented explicitly as structured networks.
+              </p>
+              <div class="representative-work">
+                <h4>Current Direction</h4>
+                <ul class="publication-list">
+                  <li>Graph neural networks for biomedical prediction and discovery.</li>
+                  <li>Biological interaction networks and patient-level data integration.</li>
+                  <li>Interpretable graph learning for biomarker and knowledge discovery.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="research-program-detail">
+              <h3>Generative AI, LLMs &amp; AI Agents</h3>
+              <p class="research-focus">
+                We investigate generative AI and agentic systems with a focus on reasoning, reliability,
+                explainability, evaluation, and responsible use. An emerging research question is whether
+                AI agents improve reasoning, reliability, and safety compared with conventional large language models.
+              </p>
+              <div class="representative-work">
+                <h4>Representative Recent Work</h4>
+                <ul class="publication-list">
+                  <li><strong>Explainable Feature Engineering in Health Data Science:</strong> Empirical Comparison of ChatGPT-4o and Classical Machine Learning Methods. <em>ACM/IEEE CHASE</em>, 2025.</li>
+                  <li>Ongoing research on AI agents, agentic workflows, reasoning, reliability, and safety.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="research-program-detail">
+              <h3>Computational Text Analytics &amp; Scientific Knowledge</h3>
+              <p class="research-focus">
+                AMIIE also studies computational methods for extracting knowledge from scientific,
+                biomedical, and health-related text. Earlier work in textual datasets, word embeddings,
+                and scientific literature analysis now connects naturally with large language models,
+                retrieval-based methods, and scientific knowledge discovery.
+              </p>
+              <div class="representative-work">
+                <h4>Research Emphasis</h4>
+                <ul class="publication-list">
+                  <li>Biomedical and scientific text mining.</li>
+                  <li>Open scientific datasets and terminology discovery.</li>
+                  <li>Connections between classical text analytics, LLMs, and knowledge discovery.</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
         </div>
 
-        <div class="text-center mt-4">
+        <div class="text-center mt-5" data-aos="fade-up">
           <a href="https://scholar.google.com/citations?hl=en&amp;user=3c3yIokAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
              class="btn btn-outline-secondary"
              target="_blank"
@@ -547,7 +418,7 @@
         </div>
       </div>
     </section>
-    <!-- End Recent Publications -->
+    <!-- End Current Research and Selected Publications -->
 
 
     <!-- Research Philosophy -->
