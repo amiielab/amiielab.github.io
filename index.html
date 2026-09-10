@@ -29,75 +29,172 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Modern homepage refinements -->
+  <!-- Small homepage-specific refinements -->
   <style>
-    :root{
-      --soft:#f7f8fa;
-      --ink:#17202a;
-      --muted:#667085;
-      --line:rgba(0,0,0,.08);
-      --radius:18px;
+    /* Compact homepage banner */
+    .hero-banner {
+      position: relative;
+      min-height: 235px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #111;
     }
-    .home-hero{
-      position:relative; min-height:560px; display:flex; align-items:center;
-      overflow:hidden; background:#111; color:#fff;
+
+    .hero-banner .banner-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.42;
     }
-    .home-hero .hero-bg{
-      position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.43;
+
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.42));
     }
-    .home-hero:after{
-      content:""; position:absolute; inset:0;
-      background:linear-gradient(90deg,rgba(8,18,30,.88) 0%,rgba(8,18,30,.68) 58%,rgba(8,18,30,.35) 100%);
+
+    .hero-banner .banner-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1050px;
+      width: 100%;
+      padding: 88px 24px 28px;
+      text-align: center;
+      color: #fff;
     }
-    .hero-inner{position:relative;z-index:2;max-width:850px;padding-top:100px}
-    .hero-kicker{font-size:.82rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;margin-bottom:18px}
-    .home-hero h1{font-size:clamp(3rem,7vw,5.6rem);line-height:.98;font-weight:700;margin-bottom:20px}
-    .home-hero .lead{font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.65;max-width:760px;margin-bottom:30px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .hero-actions .btn{padding:12px 22px;border-radius:999px;font-weight:600}
-    .section-copy{max-width:850px;margin:0 auto;font-size:1.06rem;line-height:1.85;color:var(--muted)}
-    .mini-link{font-weight:600;text-decoration:none}
-    .area-card,.focus-card,.path-card,.news-card{
-      height:100%;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-      padding:28px;transition:transform .2s ease,border-color .2s ease;
+
+    .hero-banner h1 {
+      font-size: clamp(1.9rem, 3.8vw, 3.1rem);
+      font-weight: 700;
+      margin-bottom: 6px;
     }
-    .area-card:hover,.focus-card:hover,.path-card:hover{transform:translateY(-4px);border-color:rgba(0,0,0,.16)}
-    .area-icon{
-      width:48px;height:48px;border-radius:14px;background:var(--soft);
-      display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:18px
+
+    .hero-banner .tagline {
+      font-size: clamp(1rem, 1.8vw, 1.35rem);
+      font-weight: 600;
+      margin-bottom: 14px;
     }
-    .area-card h3,.focus-card h3,.path-card h3{font-size:1.15rem;margin-bottom:10px}
-    .area-card p,.focus-card p,.path-card p,.news-card p{color:var(--muted);line-height:1.7;margin-bottom:0}
-    .focus-card{padding:32px}
-    .focus-label{display:inline-block;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:15px}
-    .focus-card .arrow-link{display:inline-block;margin-top:18px;font-weight:600;text-decoration:none}
-    .identity-strip{padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .identity-items{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 30px;font-weight:600}
-    .identity-items span:not(:last-child):after{content:"·";margin-left:30px;color:#a0a7b0}
-    .news-date{font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-    .director-card{
-      max-width:920px;margin:34px auto 0;border-top:1px solid var(--line);padding-top:26px;
-      display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap
+
+    .hero-banner .banner-pillars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 10px;
     }
-    .director-card img{width:72px;height:72px;border-radius:50%;object-fit:cover}
-    .director-card h3{font-size:1.05rem;margin:0 0 3px}
-    .director-card p{margin:0;color:var(--muted);font-size:.92rem}
-    .final-cta{
-      max-width:1000px;margin:0 auto;border-radius:24px;padding:52px 34px;text-align:center;
-      background:var(--soft);border:1px solid var(--line)
+
+    .hero-banner .banner-pillar {
+      padding: 6px 11px;
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 999px;
+      background: rgba(0,0,0,.22);
+      font-size: 0.88rem;
+      line-height: 1.25;
     }
-    .final-cta h2{font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:12px}
-    .final-cta p{color:var(--muted);margin-bottom:24px}
-    .final-cta .btn{border-radius:999px;padding:11px 20px;margin:4px}
-    .light-background{background:var(--soft)}
-    @media(max-width:767px){
-      .home-hero{min-height:520px}
-      .hero-inner{padding-top:105px}
-      .identity-items{gap:10px 16px}
-      .identity-items span:not(:last-child):after{display:none}
+
+    .research-card,
+    .highlight-card,
+    .cta-card {
+      height: 100%;
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .research-card:hover,
+    .highlight-card:hover,
+    .cta-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.11);
+    }
+
+    .research-card i,
+    .cta-card i {
+      font-size: 2rem;
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+
+    .research-card h3,
+    .highlight-card h3,
+    .cta-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+    }
+
+    .research-card p,
+    .highlight-card p,
+    .cta-card p {
+      margin-bottom: 0;
+    }
+
+    .section-intro {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .profile-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .profile-list li {
+      margin-bottom: 8px;
+    }
+
+    .profile-list i {
+      margin-right: 8px;
+    }
+
+    .archive-list li {
+      margin-bottom: 10px;
+    }
+
+    .news-archive-title {
+      font-weight: 400;
+    }
+
+
+    #about.section {
+      padding-top: 34px;
+      padding-bottom: 48px;
+    }
+
+    #about .section-title {
+      padding-bottom: 18px;
+    }
+
+    #about .section-title h2 {
+      margin-bottom: 4px;
+    }
+
+    .btn-amiie {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid currentColor;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 767px) {
+      .hero-banner { min-height: 360px; }
+      .hero-banner .banner-content { padding: 92px 18px 26px; }
+      .hero-banner .banner-pillars { flex-direction: column; align-items: center; }
+      .hero-banner .banner-pillar { width: min(100%, 520px); }
     }
   </style>
 </head>
+
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -126,184 +223,332 @@
 
   <main class="main">
 
-    <!-- Hero -->
-    <section id="hero" class="home-hero">
-      <img class="hero-bg" src="assets/img/AMIIE-carousel-3.jpg" alt="AMIIE Lab artificial intelligence research">
-      <div class="container">
-        <div class="hero-inner" data-aos="fade-up">
-          <div class="hero-kicker">Applied Machine Intelligence Initiatives &amp; Education</div>
-          <h1>AMIIE Lab</h1>
-          <p class="lead">Applied AI research for real-world impact — advancing responsible, multimodal, biomedical, and agentic intelligence.</p>
-          <div class="hero-actions">
-            <a href="research.html" class="btn btn-light">Explore Research</a>
-            <a href="people.html" class="btn btn-outline-light">Meet the Team</a>
-          </div>
+    <!-- Hero Banner -->
+    <section id="hero" class="hero-banner">
+      <img class="banner-bg" src="assets/img/AMIIE-carousel-3.jpg" alt="AMIIE Lab applied artificial intelligence research">
+      <div class="banner-content" data-aos="fade-up">
+        <h1>AMIIE Lab</h1>
+        <div class="tagline">Applied AI Research &amp; Education for Real-World Impact</div>
+        <div class="banner-pillars" aria-label="AMIIE Lab focus areas">
+          <span class="banner-pillar">Advancing Responsible, Explainable &amp; Multimodal AI</span>
+          <span class="banner-pillar">Transforming Healthcare Through Data-Driven AI</span>
+          <span class="banner-pillar">Educating &amp; Mentoring the Next Generation of AI Researchers</span>
         </div>
       </div>
-    </section>
+    </section><!-- /Hero Banner -->
 
-    <!-- About -->
-    <section id="about" class="section">
+    <!-- About Section -->
+    <section id="about" class="about section">
       <div class="container section-title" data-aos="fade-up">
         <h2>About AMIIE</h2>
+        <p>Applied Machine Intelligence Initiatives &amp; Education</p>
       </div>
-      <div class="container text-center" data-aos="fade-up">
-        <p class="section-copy">
-          The <strong>Applied Machine Intelligence Initiatives &amp; Education (AMIIE) Lab</strong> at Pace University
-          is an interdisciplinary research and education environment focused on responsible and explainable AI,
-          healthcare and biomedical AI, computer vision and multimodal learning, graph machine learning,
-          generative AI, and AI agents. We connect methodological innovation with meaningful applications,
-          student mentorship, and interdisciplinary collaboration.
-        </p>
-        <div class="director-card">
-          <img src="assets/img/SoheylaA25.png" alt="Soheyla Amirian, Ph.D.">
-          <div class="text-start">
+
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-8 content" data-aos="fade-up" data-aos-delay="100">
+            <p class="description">
+              The <strong>Applied Machine Intelligence Initiatives &amp; Education (AMIIE) Lab</strong>, directed by
+              <strong>Dr. Soheyla Amirian at Pace University</strong>, advances applied artificial intelligence research and education
+              with a focus on real-world and socially meaningful problems.
+            </p>
+
+            <p class="description">
+              Our research spans <strong>responsible and explainable AI, healthcare AI, computer vision and multimodal learning,
+              graph-based machine learning, AI agents, and data-driven decision support</strong>. We develop and evaluate AI methods
+              with an emphasis on interpretability, reliability, fairness, and practical impact.
+            </p>
+
+            <p class="description">
+              AMIIE is an interdisciplinary research and education environment that brings together faculty, undergraduate and
+              graduate students, researchers, and collaborators from computing, healthcare, and related disciplines. The lab is
+              committed to mentoring the next generation of AI researchers through hands-on research, interdisciplinary collaboration,
+              technical education, and scholarly dissemination.
+            </p>
+
             <h3>Soheyla Amirian, Ph.D.</h3>
-            <p>Director, AMIIE Lab · Assistant Professor, Pace University</p>
-            <a class="mini-link" href="people.html">Meet the team →</a>
+            <ul class="profile-list">
+              <li><i class="bi bi-check-circle"></i><span>Director, AMIIE Lab</span></li>
+              <li><i class="bi bi-check-circle"></i><span>Assistant Professor, Seidenberg School of Computer Science and Information Systems</span></li>
+              <li><i class="bi bi-check-circle"></i><span>Pace University</span></li>
+            </ul>
           </div>
+
+          <div class="col-lg-4 about-images text-center" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/SoheylaA25.png" class="img-fluid" alt="Soheyla Amirian, Ph.D., Director of AMIIE Lab">
+          </div>
+
         </div>
       </div>
-    </section>
+    </section><!-- /About Section -->
 
-    <!-- Research Areas -->
-    <section id="research-areas" class="section light-background">
+    <!-- Research Areas Section -->
+    <section id="research-areas" class="stats section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Research Areas</h2>
-        <p>Focused research at the intersection of intelligent systems, health, science, and responsible AI.</p>
+        <p class="section-intro">AMIIE develops and studies AI methods that are technically rigorous, interpretable, and connected to meaningful real-world applications.</p>
       </div>
+
       <div class="container">
         <div class="row gy-4">
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="area-card">
-              <div class="area-icon"><i class="bi bi-shield-check"></i></div>
+            <div class="research-card">
+              <i class="bi bi-shield-check"></i>
               <h3>Responsible, Explainable &amp; Fair AI</h3>
-              <p>Interpretability, fairness, reliability, and trustworthy AI for high-impact applications.</p>
+              <p>Methods for understanding, evaluating, and improving the transparency, reliability, and fairness of AI systems.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
-            <div class="area-card">
-              <div class="area-icon"><i class="bi bi-heart-pulse"></i></div>
-              <h3>Healthcare &amp; Biomedical AI</h3>
-              <p>AI for medical imaging, health data science, biomedical research, prediction, and decision support.</p>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="research-card">
+              <i class="bi bi-heart-pulse"></i>
+              <h3>AI for Healthcare &amp; Biomedical Informatics</h3>
+              <p>AI-driven approaches for biomedical data analysis, clinical research, medical imaging, biomarker discovery, and health informatics.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
-            <div class="area-card">
-              <div class="area-icon"><i class="bi bi-eye"></i></div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="research-card">
+              <i class="bi bi-eye"></i>
               <h3>Computer Vision &amp; Multimodal AI</h3>
-              <p>Learning from visual, textual, and structured information for understanding and intelligent decision-making.</p>
+              <p>Learning from images, video, text, and multimodal data for understanding, generation, and decision support.</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6" data-aos="fade-up">
-            <div class="area-card">
-              <div class="area-icon"><i class="bi bi-diagram-3"></i></div>
-              <h3>Graph Machine Learning</h3>
-              <p>Graph neural networks and network-based methods for structured, relational, and biomedical data.</p>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="research-card">
+              <i class="bi bi-diagram-3"></i>
+              <h3>Graph Machine Learning &amp; Network Intelligence</h3>
+              <p>Graph neural networks and network-based learning for structured, relational, and biological data.</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="80">
-            <div class="area-card">
-              <div class="area-icon"><i class="bi bi-cpu"></i></div>
-              <h3>Generative AI, LLMs &amp; AI Agents</h3>
-              <p>Reasoning, reliability, evaluation, safety, tool use, and responsible agentic AI systems.</p>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="research-card">
+              <i class="bi bi-cpu"></i>
+              <h3>Generative AI &amp; AI Agents</h3>
+              <p>Research on language models, agentic systems, reasoning, reliability, evaluation, and responsible deployment.</p>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="research-card">
+              <i class="bi bi-chat-square-text"></i>
+              <h3>Natural Language Processing &amp; Text Analytics</h3>
+              <p>Computational methods for extracting knowledge, patterns, and actionable insights from textual data.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="research-card">
+              <i class="bi bi-database-check"></i>
+              <h3>Learning with Limited &amp; Complex Data</h3>
+              <p>Few-shot, semi-supervised, and data-efficient learning for settings where labels or high-quality datasets are limited.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="research-card">
+              <i class="bi bi-mortarboard"></i>
+              <h3>AI Education &amp; Workforce Development</h3>
+              <p>Hands-on AI education, research mentorship, technical workshops, and initiatives that broaden participation in AI.</p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+    </section><!-- /Research Areas Section -->
 
-    <!-- Identity Strip -->
-    <div class="identity-strip">
-      <div class="container">
-        <div class="identity-items">
-          <span>Research</span><span>Education</span><span>Mentorship</span><span>Collaboration</span><span>Impact</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Featured Focus -->
-    <section id="featured-focus" class="section">
+    <!-- Featured Research Section -->
+    <section id="featured-research" class="section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Focus</h2>
-        <p>Three directions that reflect AMIIE's current research emphasis.</p>
+        <h2>Featured Research</h2>
+        <p class="section-intro">Selected research directions that reflect AMIIE's current emphasis on responsible, interdisciplinary, and high-impact artificial intelligence.</p>
       </div>
+
       <div class="container">
         <div class="row gy-4">
+
           <div class="col-lg-4" data-aos="fade-up">
-            <div class="focus-card">
-              <span class="focus-label">Healthcare AI</span>
-              <h3>AI for Biomedical Research &amp; Health</h3>
-              <p>Developing interpretable and data-driven methods for medical imaging, health data, prediction, and biomedical discovery.</p>
-              <a class="arrow-link" href="research.html">Explore →</a>
+            <div class="highlight-card">
+              <h3>AI for Healthcare &amp; Biomedical Research</h3>
+              <p>Developing data-driven and interpretable AI methods for biomedical research, health informatics, medical imaging, and decision support.</p>
             </div>
           </div>
+
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="focus-card">
-              <span class="focus-label">Trustworthy AI</span>
+            <div class="highlight-card">
               <h3>Responsible, Explainable &amp; Fair AI</h3>
-              <p>Studying transparency, interpretability, fairness, reliability, and responsible evaluation of intelligent systems.</p>
-              <a class="arrow-link" href="research.html">Explore →</a>
+              <p>Designing AI systems that emphasize transparency, interpretability, fairness, reliability, and responsible real-world use.</p>
             </div>
           </div>
+
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="focus-card">
-              <span class="focus-label">Emerging AI</span>
+            <div class="highlight-card">
               <h3>AI Agents, Reasoning &amp; Reliability</h3>
-              <p>Investigating agentic workflows with emphasis on reasoning quality, reliability, safety, and evaluation.</p>
-              <a class="arrow-link" href="research.html">Explore →</a>
+              <p>Studying agentic AI systems with an emphasis on reasoning quality, reliability, safety, and comparison with conventional language-model workflows.</p>
             </div>
           </div>
+
+        </div>
+
+        <div class="text-center" data-aos="fade-up">
+          <a class="btn-amiie" href="research.html">Explore Our Research</a>
         </div>
       </div>
-    </section>
+    </section><!-- /Featured Research Section -->
 
-    <!-- Latest Highlights -->
-    <section id="highlights" class="section light-background">
+    <!-- News Archive Section -->
+    <section id="news" class="section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Latest from AMIIE</h2>
-        <p>A concise view of recent lab activity and research directions.</p>
+        <h2 class="news-archive-title">News Archive</h2>
+        <p>Announcements, publications, presentations, awards, and other AMIIE Lab milestones.</p>
       </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="accordion" id="newsArchive">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2026">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2026" aria-expanded="true" aria-controls="collapse2026">
+                2026
+              </button>
+            </h2>
+            <div id="collapse2026" class="accordion-collapse collapse show" aria-labelledby="heading2026" data-bs-parent="#newsArchive">
+              <div class="accordion-body">
+                <ul class="archive-list">
+                  <li><strong>2026:</strong> The Pace AI Insight Webinar Series continued to bring researchers, educators, and industry experts together for conversations on emerging directions in artificial intelligence. <a href="webinar-series.html">View the webinar series.</a></li>
+                  <li><strong>2026:</strong> AMIIE Lab expanded its research activities in generative AI and AI agents, including work on reasoning, reliability, safety, and responsible evaluation of agentic systems.</li>
+                  <li><strong>2026:</strong> AMIIE Lab continued interdisciplinary research in responsible and explainable AI, healthcare AI, multimodal learning, and graph-based machine learning with graduate and undergraduate student involvement.</li>
+                  <li><strong>2026:</strong> Dr. Soheyla Amirian continued professional service and scholarly engagement through conference organization, session leadership, invited talks, and AI research community activities.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2025">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025" aria-expanded="false" aria-controls="collapse2025">
+                2025
+              </button>
+            </h2>
+            <div id="collapse2025" class="accordion-collapse collapse" aria-labelledby="heading2025" data-bs-parent="#newsArchive">
+              <div class="accordion-body">
+                <ul class="archive-list">
+                  <li><strong>Apr. 2025:</strong> Pace AI Insight Series. <a href="webinar-series.html">Registration and more information.</a></li>
+                  <li><strong>Mar. 2025:</strong> Our team had a paper accepted in <a href="https://ieeexplore.ieee.org/document/10942605" target="_blank" rel="noopener noreferrer">IEEE Access</a>.</li>
+                  <li><strong>Mar. 2025:</strong> AMIIE Lab announced new research opportunities. <a href="openings.html">More information.</a></li>
+                  <li><strong>Mar. 2025:</strong> Pace AI Insight Series. <a href="webinar-series.html">Registration and more information.</a></li>
+                  <li><strong>Feb. 2025:</strong> Pace AI Insight Series. <a href="webinar-series.html">Registration and more information.</a></li>
+                  <li><strong>Feb. 2025:</strong> A manuscript was submitted to <a href="https://embc.embs.org/2025/" target="_blank" rel="noopener noreferrer">IEEE EMBC 2025</a>.</li>
+                  <li><strong>Feb. 2025:</strong> A paper was accepted by the <a href="https://www.sciencedirect.com/journal/international-journal-of-medical-informatics" target="_blank" rel="noopener noreferrer">International Journal of Medical Informatics</a>.</li>
+                  <li><strong>Jan. 2025:</strong> Dr. Soheyla Amirian served as a Co-Chair of the <a href="https://www.american-cse.org/air-res2025/" target="_blank" rel="noopener noreferrer">International Conference on the AI Revolution: Research, Ethics, and Society (AIR-RES)</a>.</li>
+                  <li><strong>Jan. 2025:</strong> A manuscript was submitted to <a href="https://ieeeaccess.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE Access</a>.</li>
+                  <li><strong>Jan. 2025:</strong> A manuscript was submitted to IEEE ICHI 2025.</li>
+                  <li><strong>Jan. 2025:</strong> Dr. Amirian presented "AI in Healthcare" at the Icahn School of Medicine at Mount Sinai, Bado Lab, Tisch Cancer Institute, New York.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2024">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2024" aria-expanded="false" aria-controls="collapse2024">
+                2024
+              </button>
+            </h2>
+            <div id="collapse2024" class="accordion-collapse collapse" aria-labelledby="heading2024" data-bs-parent="#newsArchive">
+              <div class="accordion-body">
+                <ul class="archive-list">
+                  <li><strong>Dec. 2024:</strong> Keynote speaker at the Seidenberg Annual Research Day.</li>
+                  <li><strong>Dec. 2024:</strong> Program Committee member at the Seidenberg Annual Research Day.</li>
+                  <li><strong>Dec. 2024:</strong> Keynote speaker at the CSCI'24 International Conference.</li>
+                  <li><strong>Nov. 2024:</strong> Pace AI Insight Series.</li>
+                  <li><strong>Nov. 2024:</strong> Selected as a 2024–2025 Faculty Fellow of the Helene T. and Grant M. Wilson Center for Social Entrepreneurship.</li>
+                  <li><strong>Oct. 2024:</strong> Panelist, “The AI Revolution: How AI is Redefining our Daily Lives,” Pace University.</li>
+                  <li><strong>Sep. 2024:</strong> Paper accepted in <em>Global Mental Health</em>, Cambridge University Press.</li>
+                  <li><strong>Sep. 2024:</strong> Invited presentation at the GWU Biomedical Informatics Center, CTSI-CN, and Washington DC VA.</li>
+                  <li><strong>Sep. 2024:</strong> Generative AI in Orthopedics manuscript accepted at <em>JAMIA</em>.</li>
+                  <li><strong>Sep. 2024:</strong> Dr. Amirian joined Pace University.</li>
+                  <li><strong>Jul. 2024:</strong> Paper published in <em>Scientific Reports</em>.</li>
+                  <li><strong>Apr. 2024:</strong> The team won second place for a poster at the University of Georgia AI Research Day.</li>
+                  <li><strong>Mar. 2024:</strong> NIH National Institute on Aging award.</li>
+                  <li><strong>Feb. 2024:</strong> UGA Student Career Success Influencer Award 2023.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2023">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2023" aria-expanded="false" aria-controls="collapse2023">
+                2022–2023
+              </button>
+            </h2>
+            <div id="collapse2023" class="accordion-collapse collapse" aria-labelledby="heading2023" data-bs-parent="#newsArchive">
+              <div class="accordion-body">
+                <ul class="archive-list">
+                  <li><strong>Dec. 2023:</strong> Keynote speaker at the CSCI'23 International Conference.</li>
+                  <li><strong>Nov. 2023:</strong> Keynote speaker at Health Informatics Grand Rounds, University of Pittsburgh.</li>
+                  <li><strong>Oct. 2023:</strong> IEEE Atlanta Section Outstanding Educator Award 2023.</li>
+                  <li><strong>Oct. 2023:</strong> Tutorial on explainable deep few-shot learning at ISVC 2023.</li>
+                  <li><strong>Aug. 2023:</strong> Bone metastasis classification work accepted at CTOS.</li>
+                  <li><strong>Jul. 2023:</strong> Explainable AI paper accepted at CSCE'23.</li>
+                  <li><strong>Jul. 2023:</strong> Unbiased image segmentation paper accepted at IEEE BHI 2023.</li>
+                  <li><strong>Apr. 2023:</strong> AI fairness in medical imaging paper accepted at IEEE ICHI 2023.</li>
+                  <li><strong>Mar. 2023:</strong> Deep few-shot learning in medical imaging paper accepted at IEEE ICHI 2023.</li>
+                  <li><strong>Dec. 2022:</strong> Manuscript accepted at CSCI 2022.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /News Archive Section -->
+
+    <!-- Mission / Calls to Action Section -->
+    <section id="connect" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Research, Education &amp; Collaboration</h2>
+        <p>Explore the lab, our work, and opportunities to connect.</p>
+      </div>
+
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-4" data-aos="fade-up">
-            <div class="news-card">
-              <div class="news-date">2026 · Research</div>
-              <h3 class="h5">AI Agents &amp; Generative AI</h3>
-              <p>AMIIE expanded research activities in AI agents, reasoning, reliability, safety, and responsible evaluation of agentic systems.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="news-card">
-              <div class="news-date">2026 · Community</div>
-              <h3 class="h5">AI Insight Webinar Series</h3>
-              <p>The Pace AI Insight Webinar Series continues interdisciplinary conversations with researchers, educators, and industry experts.</p>
-              <a class="mini-link d-inline-block mt-3" href="webinar-series.html">Explore the series →</a>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="news-card">
-              <div class="news-date">2026 · Research</div>
-              <h3 class="h5">Interdisciplinary AI Research</h3>
-              <p>Current work spans responsible AI, healthcare AI, multimodal learning, and graph-based machine learning with student engagement.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Final CTA -->
-    <section id="connect" class="section">
-      <div class="container" data-aos="fade-up">
-        <div class="final-cta">
-          <h2>Explore AMIIE</h2>
-          <p>Discover our research, meet the team, or learn about education and research opportunities.</p>
-          <a href="research.html" class="btn btn-dark">Explore Research</a>
-          <a href="education.html" class="btn btn-outline-secondary">Education &amp; Opportunities</a>
-          <a href="people.html" class="btn btn-outline-secondary">Meet the Team</a>
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="cta-card text-center">
+              <i class="bi bi-journal-code"></i>
+              <h3>Research</h3>
+              <p>Explore our research projects, methods, and interdisciplinary collaborations.</p>
+              <a class="btn-amiie" href="research.html">View Research</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="cta-card text-center">
+              <i class="bi bi-people"></i>
+              <h3>People</h3>
+              <p>Meet the students, researchers, collaborators, and faculty contributing to AMIIE.</p>
+              <a class="btn-amiie" href="people.html">Meet the Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta-card text-center">
+              <i class="bi bi-lightbulb"></i>
+              <h3>Education &amp; Opportunities</h3>
+              <p>Discover educational activities, workshops, webinars, and opportunities to work with the lab.</p>
+              <a class="btn-amiie" href="education.html">Explore Education</a>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+    </section><!-- /Mission / Calls to Action Section -->
 
   </main>
 
