@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,6 @@
   <meta content="AMIIE Research and Educational Laboratory | Applied Machine Intelligence Initiatives &amp; Education Lab (AMIIE Lab)" name="description">
   <meta content="AMIIE Research and Educational Laboratory (AMIIE Lab)" name="keywords">
 
-
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -16,7 +16,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,20 +28,56 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .student-spotlight {
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    .student-spotlight h5 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .student-spotlight p {
+      line-height: 1.8;
+    }
+
+    .student-spotlight img {
+      width: 100%;
+      max-width: 560px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .student-spotlight figcaption {
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
 
+  <!-- Header -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-    <div class="top-link-nav"><a href="https://www.pace.edu/" target="_blank">Pace University</a></div>
+
+      <div class="top-link-nav">
+        <a href="https://www.pace.edu/" target="_blank">Pace University</a>
+      </div>
+
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="AMIIE Research and Educational Laboratory" class="logo">
       </a>
 
       <nav id="navmenu" class="navmenu pt-4">
         <ul>
-          <li><a href="index.html" >Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="people.html" class="active">Team</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="education.html">Education &amp; Opportunities</a></li>
@@ -53,228 +89,384 @@
 
     </div>
   </header>
+  <!-- End Header -->
 
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/AMIIE-carousel-3.jpg);">
+    <div class="page-title dark-background"
+         data-aos="fade"
+         style="background-image: url(assets/img/AMIIE-carousel-3.jpg);">
       <div class="container position-relative">
         <h1>People</h1>
       </div>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
-
-    <section id="about" class="about section">
-
+    <!-- Director -->
+    <section id="director" class="about section">
       <div class="container">
-
         <div class="row gy-4">
- 
-          <div class="col-lg-7 content justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-7 content justify-content-center"
+               data-aos="fade-up" data-aos-delay="100">
             <h3>Director</h3>
             <ul>
-              <li><h5><i class="bi bi-check-circle"></i> <span><a href="https://www.pace.edu/profile/soheyla-amirian?seidenberg" target="_blank">Soheyla Amirian</a>, PhD, Pace University.</h5></span></li>
+              <li>
+                <h5>
+                  <i class="bi bi-check-circle"></i>
+                  <span>
+                    <a href="https://www.pace.edu/profile/soheyla-amirian?seidenberg"
+                       target="_blank">
+                      Soheyla Amirian
+                    </a>, PhD, Pace University.
+                  </span>
+                </h5>
+              </li>
             </ul>
-			
           </div>
-
-         
-
         </div>
-
       </div>
     </section>
+    <!-- End Director -->
 
-    <section id="about" class="about section light-background">
-
+    <!-- Academic Advisory Board -->
+    <section id="advisory-board" class="about section light-background">
       <div class="container">
-
         <div class="row gy-4">
 
-          <div class="col-lg-7 content justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-7 content justify-content-center"
+               data-aos="fade-up" data-aos-delay="100">
             <h4>Academic Advisory Board</h4>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span><a href="https://www.pace.edu/provost/about" target="_blank">Jonathan Hill</a>, DPS, Pace University.</span></li>
-			  <li><i class="bi bi-check-circle"></i> <span><a href="https://www.pace.edu/profile/li-chiou-chen?seidenberg" target="_blank">Li-Chiou Chen</a>, PhD, Pace University.</span></li>
-			  <li><i class="bi bi-check-circle"></i> <span><a href="https://www.cs.uga.edu/directory/people/hamid-r-arabnia" target="_blank">Hamid R. Arabnia</a>, PhD, University of Georgia.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span><a href="https://www.cs.uga.edu/directory/people/khaled-rasheed" target="_blank">Khaled Rasheed</a>, PhD, University of Georgia.</span></li>
-           <!--  <li><i class="bi bi-check-circle"></i> <span><a href="https://pitthexai.github.io/" target="_blank">Ahmad P. Tafti</a>, PhD, FAMIA, University of Pittsburgh.</span></li> 
-              <li><i class="bi bi-check-circle"></i> <span><a href="https://pittmollab.github.io/" target="_blank">Kurt R. Weiss</a>, MD, University of Pittsburgh.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span><a href="https://www.orthonet.pitt.edu/people/f-johannes-plate-md-phd" target="_blank">Johannes F. Plate</a>, MD, PhD, University of Pittsburgh.</span></li> -->
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>
+                  <a href="https://www.pace.edu/provost/about" target="_blank">Jonathan Hill</a>,
+                  DPS, Pace University.
+                </span>
+              </li>
 
-	    
-	    </ul>
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>
+                  <a href="https://www.pace.edu/profile/li-chiou-chen?seidenberg" target="_blank">Li-Chiou Chen</a>,
+                  PhD, Pace University.
+                </span>
+              </li>
+
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>
+                  <a href="https://www.cs.uga.edu/directory/people/hamid-r-arabnia" target="_blank">Hamid R. Arabnia</a>,
+                  PhD, University of Georgia.
+                </span>
+              </li>
+
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>
+                  <a href="https://www.cs.uga.edu/directory/people/khaled-rasheed" target="_blank">Khaled Rasheed</a>,
+                  PhD, University of Georgia.
+                </span>
+              </li>
+            </ul>
           </div>
-			
-			<div class="col-lg-5 about-images" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/people_01.jpg" class="img-fluid" alt="AMIIE Research and Educational Laboratory">
-            </div>
-			
-		</div>
+
+          <div class="col-lg-5 about-images"
+               data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/people_01.jpg"
+                 class="img-fluid"
+                 alt="AMIIE Research and Educational Laboratory">
+          </div>
+
+        </div>
       </div>
     </section>
+    <!-- End Academic Advisory Board -->
 
-
-   <!--  <section id="about" class="about section ">
-
+    <!-- Graduate Research Assistants -->
+    <section id="graduate-research-assistants" class="about section">
       <div class="container">
-
         <div class="row gy-4">
 
-         <div class="col-lg-12 content justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h4>Main Extramural Collaborators</h4>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span><a href="https://www.mayo.edu/research/faculty/maradit-kremers-hilal-m-d/bio-00027898" target="_blank">Hilal Maradit Kremers</a>, MD, Mayo Clinic.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span><a href="https://scholar.google.com/citations?user=2TXcctIAAAAJ&hl=en" target="_blank">Hongfang Liu</a>, PhD, the University of Texas Health Science Center at Houston.</span></li>
+          <div class="col-lg-7 content justify-content-center"
+               data-aos="fade-up" data-aos-delay="100">
+
+            <h4>Graduate Research Assistants</h4>
+
+            <ul class="student-list">
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>
+                  <a href="https://www.linkedin.com/in/soumyasriperepu/"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    Soumya Sri Perepu
+                  </a>,
+                  PhD student, Pace University, Spring 2026 – Fall 2026
+                </span>
+              </li>
             </ul>
-          </div> 
+
+            <!-- Soumya IBM Research Highlight -->
+            <div class="student-spotlight mt-4" data-aos="fade-up">
+
+              <h5>
+                <i class="bi bi-award me-2"></i>
+                Student Research Highlight: IBM AI Compute Symposium 2026
+              </h5>
+
+              <p>
+                On October 28, 2026, Soumya Sri Perepu presented
+                <em>CareCompute: Compute-Aware Selective Agentic AI for False-Negative Rescue</em>
+                at the IBM/IEEE AI Compute Symposium, held at the
+                IBM Thomas J. Watson Research Center in Yorktown Heights,
+                New York. Her research explores selective computation,
+                intelligent routing, and human-in-the-loop oversight
+                for responsible AI-assisted clinical decision-making.
+              </p>
+
+              <figure class="mb-0">
+
+                <a href="assets/img/SoumyaIBM_poster.jpeg"
+                   class="glightbox"
+                   data-gallery="student-research"
+                   data-title="Soumya Sri Perepu at the IBM/IEEE AI Compute Symposium 2026">
+
+                  <img src="assets/img/SoumyaIBM_poster.jpeg"
+                       class="img-fluid rounded shadow-sm"
+                       alt="Soumya Sri Perepu presenting her CareCompute research poster at the IBM/IEEE AI Compute Symposium 2026"
+                       loading="lazy">
+
+                </a>
+
+                <figcaption class="small text-muted mt-2">
+                  Soumya Sri Perepu presenting CareCompute at the
+                  IBM/IEEE AI Compute Symposium, October 28, 2026.
+                  Research advisor: Dr. Soheyla Amirian, AMIIE Lab.
+                </figcaption>
+
+              </figure>
+
+            </div>
+            <!-- End Soumya IBM Research Highlight -->
+
+            <!-- UGA Graduate Research Assistants -->
+            <strong>UGA Graduate Research Assistants:</strong>
+            <a href="#ugaGRAs"
+               data-bs-toggle="collapse"
+               aria-expanded="false"
+               aria-controls="ugaGRAs">
+              Click to view UGA Graduate Research Assistants
+            </a>
+
+            <ul id="ugaGRAs" class="collapse">
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Pavan Bodanki, Graduate student, Fall 23, Spring, and Summer 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Rohan Swapneel Intipalli, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Vedraj Sachin Chavan, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Vaishnavi Ganjikunta, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Aditya U. Patel, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Lakshmi Meghana Bojja, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Venkata Sivasai Ramachandra Punith Kandula, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Manoj Tumkur Shivashankar, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Boby John Loganathan, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Nikhita Mallappa Biradar, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+              <li><i class="bi bi-check-circle"></i>
+                <span>Ashutosh Kekre, Graduate student, Fall 23, Spring 24</span>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-5 about-images"
+               data-aos="fade-up" data-aos-delay="200">
+
+            <img src="assets/img/people_02.jpg"
+                 class="img-fluid"
+                 alt="AMIIE Research and Educational Laboratory">
+
+            <br><br>
+
+            <img src="assets/img/people_03.jpg"
+                 class="img-fluid"
+                 alt="AMIIE Research and Educational Laboratory">
+
+          </div>
 
         </div>
-
       </div>
-  </section> -->
- 
+    </section>
+    <!-- End Graduate Research Assistants -->
 
-	  
-   <section id="about" class="about section">
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-7 content justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <h4>Graduate Research Assistants</h4>
-                 <ul class="student-list">
-  					  <li><i class="bi bi-check-circle"></i> <span><a href="#" target="_blank">Soumya Sri Perepu</a>, PhD student, Pace University, Spring 2026 – Fall 2026</span></li>
- 				  </ul>
-        <!-- Collapse trigger -->
-        <strong>UGA Graduate Research Assistants:</strong>
-        <a href="#ugaGRAs" data-bs-toggle="collapse">Click to view UGA Graduate Research Assistants</a>
+    <!-- RAI and Ukrainian Project -->
+    <section id="ukrainian-research" class="about section light-background">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 content justify-content-center"
+               data-aos="fade-up" data-aos-delay="100">
 
-        <!-- Collapsible list -->
-        <ul id="ugaGRAs" class="collapse">
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Pavan Bodanki</a>, Graduate student, Fall 23, Spring, and Summer 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Rohan Swapneel Intipalli</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Vedraj Sachin Chavan</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Vaishnavi Ganjikunta</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Aditya U. Patel</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Lakshmi Meghana Bojja</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Venkata Sivasai Ramachandra Punith Kandula</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Manoj Tumkur Shivashankar</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Boby John Loganathan</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Nikhita Mallappa Biradar</a>, Graduate student, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Ashutosh Kekre</a>, Graduate student, Fall 23, Spring 24</span></li>
-        </ul>
-      </div>
+            <h4>
+              <a class="text-decoration-none"
+                 data-bs-toggle="collapse"
+                 href="#ukrainianProject"
+                 role="button"
+                 aria-expanded="false"
+                 aria-controls="ukrainianProject">
+                RAI and Ukrainian Project
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </h4>
 
-      <div class="col-lg-5 about-images" data-aos="fade-up" data-aos-delay="200">
-        <img src="assets/img/people_02.jpg" class="img-fluid" alt="AMIIE Research and Educational Laboratory">
-        <br><br>
-        <img src="assets/img/people_03.jpg" class="img-fluid" alt="AMIIE Research and Educational Laboratory">
-      </div>
-    </div>
-  </div>
-</section>
+            <div class="collapse" id="ukrainianProject">
+              <ul class="no-bullets">
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Vladyslav Protsenko, Graduate student, Ukrainian Catholic University, Fall 24 – Summer 25</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Danylo Reznyk, Undergraduate student, Igor Sikorsky Kyiv Polytechnic Institute, Fall 24 – Summer 25</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Yaroslav Klym, Undergraduate student, Ukrainian Catholic University, Fall 24 – Summer 25</span>
+                </li>
+              </ul>
+            </div>
 
-
-
-	    <section id="about" class="about section light-background">
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-12 content justify-content-center" data-aos="fade-up" data-aos-delay="100">
-
-        <h4>
-          <a class="text-decoration-none" data-bs-toggle="collapse" href="#ukrainianProject" role="button"
-             aria-expanded="false" aria-controls="ukrainianProject">
-            RAI and Ukrainian Project
-            <i class="bi bi-chevron-down"></i>
-          </a>
-        </h4>
-
-        <div class="collapse" id="ukrainianProject">
-          <ul class="no-bullets">
-	  <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Vladyslav Protsenko</a>, Graduate student, Ukrainian Catholic University, Fall 24 – Summer 25</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Danylo Reznyk</a>, Undergraduate student, Igor Sikorsky Kyiv Polytechnic Institute, Fall 24 – Summer 25</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Yaroslav Klym</a>, Undergraduate student, Ukrainian Catholic University, Fall 24 – Summer 25</span></li>        
-	
-          </ul>
+          </div>
         </div>
-
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <!-- End RAI and Ukrainian Project -->
 
-    <section id="about" class="about section ">
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-12 content justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <h4>Undergraduate Research Assistants</h4>
+    <!-- Undergraduate Research Assistants -->
+    <section id="undergraduate-research-assistants" class="about section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 content justify-content-center"
+               data-aos="fade-up" data-aos-delay="100">
 
-	 <ul class="no-bullets">
-          <!-- <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Kseniya Liavitskaya </a>, Fall 24</span></li> -->
-	  </ul>
-	      
-        <strong>UGA Undergraduate Research Assistants:</strong> 
-        <a href="#uga-uras" data-bs-toggle="collapse" aria-expanded="false" aria-controls="uga-uras">
-          Click to view UGA Undergraduate Research Assistants
-        </a>
-        <ul id="uga-uras" class="collapse list-unstyled mt-2">
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Mary Margaret Gleason</a>, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">James Laurence Rivera</a>, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Tharushika Dp Maryan Dehipitiarachchi</a>, Fall 23, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Dias Mashikov</a>, Fall 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Bryce N. Wellman</a>, Fall 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Catherine Kimbrell Goldman</a>, Summer and Fall 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Sean Nicolas Payne</a>, Summer 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Robin Grazulis</a>, Spring 23</span></li>
-        </ul>
+            <h4>Undergraduate Research Assistants</h4>
+
+            <ul class="no-bullets"></ul>
+
+            <strong>UGA Undergraduate Research Assistants:</strong>
+            <a href="#uga-uras"
+               data-bs-toggle="collapse"
+               aria-expanded="false"
+               aria-controls="uga-uras">
+              Click to view UGA Undergraduate Research Assistants
+            </a>
+
+            <ul id="uga-uras" class="collapse list-unstyled mt-2">
+              <li><i class="bi bi-check-circle"></i> <span>Mary Margaret Gleason, Spring 24</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>James Laurence Rivera, Spring 24</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Tharushika Dp Maryan Dehipitiarachchi, Fall 23, Spring 24</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Dias Mashikov, Fall 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Bryce N. Wellman, Fall 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Catherine Kimbrell Goldman, Summer and Fall 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Sean Nicolas Payne, Summer 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Robin Grazulis, Spring 23</span></li>
+            </ul>
+
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <!-- End Undergraduate Research Assistants -->
 
-	
-    <section id="about" class="about section light-background">
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-12 content justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <h4>Teaching Assistants</h4>
-	   <ul class="no-bullets">
-		     <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Le Zhou</a>, PhD student, Fall 2025 – Fall 2026</span></li>
-       		 <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Arpit Shah</a>, Graduate student, Fall 24 – Spring 25</span></li>
-	   </ul>
-        <strong>UGA Teaching Assistants:</strong>
-        <a href="#ugaTAs" data-bs-toggle="collapse">Click to view UGA Teaching Assistants</a>
+    <!-- Teaching Assistants -->
+    <section id="teaching-assistants" class="about section light-background">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 content justify-content-center"
+               data-aos="fade-up" data-aos-delay="100">
 
-        <!-- Collapse section for UGA Teaching Assistants -->
-        <ul id="ugaTAs" class="collapse">
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Qingchen Kong</a>, Graduate student, Summer 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Sandeep Reddy Guthireddy</a>, Graduate student, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Wei Liang</a>, Undergraduate student, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Maggie Opsahl</a>, Undergraduate student, Spring 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Nima Darbandi</a>, Graduate student (recipient of the Teaching Assistant Award in Spring 2024!), Fall 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Rohan Swapneel Intipalli</a>, Graduate student (recipient of the Teaching Assistant Award in Spring 2024!), Fall 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Abdulrahman Ahmed Gharawi</a>, Graduate student, Spring 23, 24</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Kishan Kalaria</a>, Undergraduate student, Fall 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Anna Hu</a>, Undergraduate student, Spring and Fall 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Afsaneh Shams</a>, Graduate student (recipient of the Teaching Assistant Award in Spring 2023!), Spring and Fall 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Sakher Khalil Alqaaidi</a>, Graduate student, Summer 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Ehsan Asali</a>, Graduate student, Summer 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Zainab Adeola Agboola</a>, Graduate student, Spring 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Yousef Fekri</a>, Graduate student, Spring and Summer 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Benjamin Abel Goodwin</a>, Undergraduate student, Spring and Summer 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Zhengliang Liu</a>, Graduate student, Spring 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Manas Mishra</a>, Graduate student, Spring 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Sarayu Ramachandra</a>, Undergraduate student, Summer 23</span></li>
-          <li><i class="bi bi-check-circle"></i> <span><a href="" target="_blank">Matthew Sand</a>, Undergraduate student, Spring 23</span></li>
-        </ul>
+            <h4>Teaching Assistants</h4>
+
+            <ul class="no-bullets">
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>Le Zhou, PhD student, Fall 2025 – Fall 2026</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>Arpit Shah, Graduate student, Fall 24 – Spring 25</span>
+              </li>
+            </ul>
+
+            <strong>UGA Teaching Assistants:</strong>
+            <a href="#ugaTAs"
+               data-bs-toggle="collapse"
+               aria-expanded="false"
+               aria-controls="ugaTAs">
+              Click to view UGA Teaching Assistants
+            </a>
+
+            <ul id="ugaTAs" class="collapse">
+
+              <li><i class="bi bi-check-circle"></i> <span>Qingchen Kong, Graduate student, Summer 24</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Sandeep Reddy Guthireddy, Graduate student, Spring 24</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Wei Liang, Undergraduate student, Spring 24</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Maggie Opsahl, Undergraduate student, Spring 24</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Nima Darbandi, Graduate student (recipient of the Teaching Assistant Award in Spring 2024!), Fall 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Rohan Swapneel Intipalli, Graduate student (recipient of the Teaching Assistant Award in Spring 2024!), Fall 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Abdulrahman Ahmed Gharawi, Graduate student, Spring 23, 24</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Kishan Kalaria, Undergraduate student, Fall 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Anna Hu, Undergraduate student, Spring and Fall 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Afsaneh Shams, Graduate student (recipient of the Teaching Assistant Award in Spring 2023!), Spring and Fall 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Sakher Khalil Alqaaidi, Graduate student, Summer 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Ehsan Asali, Graduate student, Summer 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Zainab Adeola Agboola, Graduate student, Spring 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Yousef Fekri, Graduate student, Spring and Summer 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Benjamin Abel Goodwin, Undergraduate student, Spring and Summer 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Zhengliang Liu, Graduate student, Spring 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Manas Mishra, Graduate student, Spring 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Sarayu Ramachandra, Undergraduate student, Summer 23</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Matthew Sand, Undergraduate student, Spring 23</span></li>
+
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-	
+    </section>
+    <!-- End Teaching Assistants -->
 
   </main>
 
+  <!-- Footer -->
   <footer id="footer" class="footer dark-background">
 
     <div class="footer-top">
@@ -282,28 +474,28 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-2 footer-links">
-            <img src="assets/img/thumbnail-logo-w.png" class="img-fluid" alt="Applied AI Research and Education to Solve Real-World Problems" style="width: 100%;max-width: 200px;">
+            <img src="assets/img/thumbnail-logo-w.png"
+                 class="img-fluid"
+                 alt="Applied AI Research and Education to Solve Real-World Problems"
+                 style="width: 100%;max-width: 200px;">
           </div>
-
 
           <div class="col-lg-4 col-md-4 footer-contact">
             <h4>Location</h4>
             <p>
-<a href="https://www.pace.edu/" target="_blank">Pace University</a><br>
-Seidenberg School of CSIS<br>
-One Pace Plaza<br>
-New York, NY 10038 <br>
+              <a href="https://www.pace.edu/" target="_blank">Pace University</a><br>
+              Seidenberg School of CSIS<br>
+              One Pace Plaza<br>
+              New York, NY 10038
             </p>
-
           </div>
 
           <div class="col-lg-4 col-md-6 footer-info">
             <h4>Contact</h4>
             <p>
-			<strong>Email:</strong> samirian@pace.edu<br>
-            <strong>Phone:</strong> (+1) 800-874-PACE <br>
-			</p>
-            
+              <strong>Email:</strong> samirian@pace.edu<br>
+              <strong>Phone:</strong> (+1) 800-874-PACE
+            </p>
           </div>
 
         </div>
@@ -312,16 +504,23 @@ New York, NY 10038 <br>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Applied Machine Intelligence Initiatives & Education Lab (AMIIE Lab)</span></strong>. All Rights Reserved
+        &copy; Copyright
+        <strong>
+          <span>Applied Machine Intelligence Initiatives &amp; Education Lab (AMIIE Lab)</span>
+        </strong>.
+        All Rights Reserved
       </div>
     </div>
 
-
-
   </footer>
+  <!-- End Footer -->
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#"
+     id="scroll-top"
+     class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -340,5 +539,4 @@ New York, NY 10038 <br>
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
