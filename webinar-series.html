@@ -9,9 +9,10 @@
   <title>Webinar Series | AMIIE Research and Educational Laboratory</title>
 
   <meta name="description"
-        content="AI Insights Webinar Series at AMIIE Lab, Pace University.">
+        content="AI Insights Webinar Series at AMIIE Lab, Pace University. Explore talks by researchers and industry leaders in artificial intelligence.">
+
   <meta name="keywords"
-        content="AMIIE Lab, AI Insights, Webinar Series, Artificial Intelligence">
+        content="AMIIE Lab, AI Insights, Webinar Series, Artificial Intelligence, Pace University">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -35,11 +36,12 @@
 
   <!-- Webinar Page Styling -->
   <style>
+
     .webinar-intro {
-      max-width: 780px;
+      max-width: 800px;
       color: #526174;
-      line-height: 1.7;
-      margin-bottom: 24px;
+      line-height: 1.75;
+      margin-bottom: 30px;
     }
 
     .series-heading {
@@ -47,67 +49,90 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      margin: 30px 0 12px;
+      margin: 30px 0 15px;
     }
 
     .series-heading h3 {
       margin: 0;
+      font-size: 1.45rem;
+      font-weight: 650;
     }
 
-    .series-heading .bi {
+    .series-heading h3 .bi {
       color: #2773a5;
+      margin-right: 8px;
     }
+
+    /* Three-column speaker gallery */
 
     .webinar-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin: 20px 0 40px;
+      gap: 20px;
+      margin: 20px 0 42px;
     }
+
+    /* Speaker cards */
 
     .webinar-card {
       background: #ffffff;
       border: 1px solid #e5eaf0;
       border-radius: 14px;
-      padding: 24px 20px;
+      padding: 25px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      min-height: 245px;
-      transition: transform 0.2s, box-shadow 0.2s;
+      min-height: 255px;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
     }
 
     .webinar-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(30, 57, 82, 0.09);
+      transform: translateY(-4px);
+      border-color: #cbdce8;
+      box-shadow: 0 12px 28px rgba(30, 57, 82, 0.09);
     }
 
+    /* Circular speaker avatar */
+
     .speaker-avatar {
-      height: 64px;
-      width: 64px;
+      height: 68px;
+      width: 68px;
+      flex-shrink: 0;
       border-radius: 50%;
       background: #e9f3f9;
       color: #20618b;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 25px;
+
+      font-size: 24px;
       font-weight: 650;
       text-decoration: none;
-      margin-bottom: 12px;
+
+      margin-bottom: 13px;
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease;
     }
 
-    .speaker-avatar:hover {
-      background: #d8eaf5;
+    a.speaker-avatar:hover {
+      background: #d5eaf6;
       color: #174c6e;
+      transform: scale(1.06);
     }
 
     .speaker-name {
+      font-size: 1.05rem;
       font-weight: 650;
-      font-size: 1.06rem;
-      margin: 0 0 3px;
       color: #253d51;
+      margin: 0 0 5px;
+      line-height: 1.4;
     }
 
     .speaker-name a {
@@ -116,64 +141,89 @@
     }
 
     .speaker-name a:hover {
+      color: #17699c;
       text-decoration: underline;
     }
 
     .speaker-org {
       font-size: 0.86rem;
       color: #64748b;
-      margin: 0 0 13px;
+      margin: 0 0 14px;
     }
 
     .webinar-title {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      margin: auto 0 12px;
+      font-size: 0.94rem;
+      line-height: 1.55;
       color: #263746;
+      margin: auto 0 13px;
     }
 
     .webinar-date {
-      font-size: 0.82rem;
+      display: block;
+      font-size: 0.83rem;
       color: #718096;
-      margin-bottom: 9px;
+      margin-bottom: 10px;
     }
 
+    /* LinkedIn link */
+
     .speaker-link {
-      font-size: 0.83rem;
-      text-decoration: none;
+      font-size: 0.85rem;
       color: #17699c;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .speaker-link:hover {
+      color: #0c4d77;
+      text-decoration: underline;
     }
 
     .speaker-link .bi {
       margin-right: 5px;
+      font-size: 1rem;
     }
+
+    /* Archive */
 
     .webinar-divider {
       border-top: 1px solid #e7ebef;
-      margin: 35px 0 25px;
+      margin: 38px 0 28px;
     }
 
     .archive-note {
-      font-size: 0.91rem;
       color: #64748b;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      max-width: 800px;
     }
 
     .webinar-series-toggle {
-      background: none;
-      border: 0;
-      padding: 0;
+      background: #f0f6fa;
+      border: 1px solid #dce9f1;
+      border-radius: 25px;
+      padding: 9px 16px;
       color: #1c5b80;
       font-weight: 600;
+      font-size: 0.87rem;
+      cursor: pointer;
+    }
+
+    .webinar-series-toggle:hover {
+      background: #e3eff6;
     }
 
     .webinar-series-toggle .bi {
       margin-left: 6px;
+      display: inline-block;
+      transition: transform 0.2s ease;
     }
 
     .webinar-series-toggle[aria-expanded="true"] .bi {
       transform: rotate(180deg);
-      display: inline-block;
     }
+
+    /* Responsive */
 
     @media (max-width: 991px) {
       .webinar-grid {
@@ -184,38 +234,67 @@
     @media (max-width: 575px) {
       .webinar-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
       }
 
       .webinar-card {
-        min-height: 215px;
+        min-height: 220px;
+      }
+
+      .series-heading {
+        align-items: flex-start;
+        flex-direction: column;
       }
     }
+
   </style>
+
 </head>
 
 <body class="portfolio-details-page">
 
   <!-- Header -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header"
+          class="header d-flex align-items-center fixed-top">
+
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <div class="top-link-nav">
-        <a href="https://www.pace.edu/" target="_blank">Pace University</a>
+        <a href="https://www.pace.edu/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Pace University
+        </a>
       </div>
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html"
+         class="logo d-flex align-items-center">
+
         <img src="assets/img/logo.png"
              alt="AMIIE Research and Educational Laboratory"
              class="logo">
+
       </a>
 
       <nav id="navmenu" class="navmenu pt-4">
+
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="people.html">Team</a></li>
           <li><a href="research.html">Research</a></li>
-          <li><a href="education.html">Education &amp; Opportunities</a></li>
-          <li><a href="github-repo.html">GitHub Repo</a></li>
+
+          <li>
+            <a href="education.html">
+              Education &amp; Opportunities
+            </a>
+          </li>
+
+          <li>
+            <a href="github-repo.html">
+              GitHub Repo
+            </a>
+          </li>
+
           <li>
             <a href="webinar-series.html" class="active">
               Webinar Series
@@ -224,10 +303,12 @@
         </ul>
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
       </nav>
 
     </div>
   </header>
+
 
   <main class="main">
 
@@ -239,22 +320,29 @@
       <div class="container position-relative">
         <h1>Webinar Series</h1>
       </div>
+
     </div>
 
-    <!-- Webinar Content -->
-    <section id="about" class="about section">
+
+    <!-- Webinar Series -->
+    <section id="webinars" class="about section">
+
       <div class="container" data-aos="fade-up">
 
         <h2>AI Insights Webinar Series</h2>
 
         <p class="webinar-intro">
-          Conversations with researchers and industry leaders exploring
-          artificial intelligence, emerging technologies, and real-world
-          applications. Select a speaker's name or LinkedIn icon
-          to learn more.
+          Connecting academic research, industry innovation,
+          and the next generation of AI leaders.
+
+          Explore conversations with researchers and industry
+          professionals on artificial intelligence, emerging
+          technologies, and real-world applications.
         </p>
 
-        <!-- Pace AI Insights -->
+
+        <!-- PACE AI INSIGHTS -->
+
         <div class="series-heading">
           <h3>
             <i class="bi bi-mic"></i>
@@ -262,363 +350,13 @@
           </h3>
         </div>
 
-        <div class="webinar-grid">
-
-          <!-- Leon Deligiannidis -->
-          <article class="webinar-card">
-
-            <a href="https://www.linkedin.com/in/leon-deligiannidis"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-avatar"
-               aria-label="View Leon Deligiannidis on LinkedIn">
-              LD
-            </a>
-
-            <h4 class="speaker-name">
-              <a href="https://www.linkedin.com/in/leon-deligiannidis"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Leon Deligiannidis
-              </a>
-            </h4>
-
-            <p class="speaker-org">
-              Wentworth Institute of Technology
-            </p>
-
-            <p class="webinar-title">
-              From Qubits to Classifiers:
-              A hands-on introduction to quantum machine learning
-            </p>
-
-            <time class="webinar-date">Oct 26, 2026</time>
-
-            <a href="https://www.linkedin.com/in/leon-deligiannidis"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-link">
-              <i class="bi bi-linkedin"></i> LinkedIn
-            </a>
-
-          </article>
-
-
-          <!-- Salem Othman -->
-          <article class="webinar-card">
-
-            <a href="https://www.linkedin.com/in/salem-othman"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-avatar"
-               aria-label="View Salem Othman on LinkedIn">
-              SO
-            </a>
-
-            <h4 class="speaker-name">
-              <a href="https://www.linkedin.com/in/salem-othman"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Salem Othman
-              </a>
-            </h4>
-
-            <p class="speaker-org">
-              Wentworth Institute of Technology
-            </p>
-
-            <p class="webinar-title">
-              Building Transformers from Scratch
-            </p>
-
-            <time class="webinar-date">May 4, 2026</time>
-
-            <a href="https://www.linkedin.com/in/salem-othman"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-link">
-              <i class="bi bi-linkedin"></i> LinkedIn
-            </a>
-
-          </article>
-
-
-          <!-- Jayeeta Putatunda: November 2025 -->
-          <article class="webinar-card">
-
-            <a href="https://www.linkedin.com/in/jayeeta-putatunda"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-avatar">
-              JP
-            </a>
-
-            <h4 class="speaker-name">
-              <a href="https://www.linkedin.com/in/jayeeta-putatunda"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Jayeeta Putatunda
-              </a>
-            </h4>
-
-            <p class="speaker-org">Fitch Group</p>
-
-            <p class="webinar-title">
-              Building Agents That Actually Work
-            </p>
-
-            <time class="webinar-date">Nov 10, 2025</time>
-
-            <a href="https://www.linkedin.com/in/jayeeta-putatunda"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-link">
-              <i class="bi bi-linkedin"></i> LinkedIn
-            </a>
-
-          </article>
-
-
-          <!-- Khalifeh AlJadda -->
-          <article class="webinar-card">
-
-            <span class="speaker-avatar">KA</span>
-
-            <h4 class="speaker-name">
-              Khalifeh AlJadda
-            </h4>
-
-            <p class="speaker-org">Google</p>
-
-            <p class="webinar-title">
-              Unlocking the Power of AI
-            </p>
-
-            <time class="webinar-date">Apr 18, 2025</time>
-
-          </article>
-
-
-          <!-- Sundeep Sardana -->
-          <article class="webinar-card">
-
-            <a href="https://www.linkedin.com/in/sundeepsardana"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-avatar">
-              SS
-            </a>
-
-            <h4 class="speaker-name">
-              <a href="https://www.linkedin.com/in/sundeepsardana"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Sundeep Sardana
-              </a>
-            </h4>
-
-            <p class="speaker-org">Verisk Analytics</p>
-
-            <p class="webinar-title">
-              Generative AI in Action – Verisk's Journey
-              and Industry Impact
-            </p>
-
-            <time class="webinar-date">Mar 24, 2025</time>
-
-            <a href="https://www.linkedin.com/in/sundeepsardana"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-link">
-              <i class="bi bi-linkedin"></i> LinkedIn
-            </a>
-
-          </article>
-
-
-          <!-- Don Finley -->
-          <article class="webinar-card">
-
-            <a href="https://www.linkedin.com/in/dfinley"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-avatar">
-              DF
-            </a>
-
-            <h4 class="speaker-name">
-              <a href="https://www.linkedin.com/in/dfinley"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Don Finley
-              </a>
-            </h4>
-
-            <p class="speaker-org">FINdustries</p>
-
-            <p class="webinar-title">
-              Path to AI Enablement:
-              A Practical Guide to Transformative AI Adoption
-            </p>
-
-            <time class="webinar-date">Feb 24, 2025</time>
-
-            <a href="https://www.linkedin.com/in/dfinley"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-link">
-              <i class="bi bi-linkedin"></i> LinkedIn
-            </a>
-
-          </article>
-
-
-          <!-- Jayeeta Putatunda: February 2025 -->
-          <article class="webinar-card">
-
-            <a href="https://www.linkedin.com/in/jayeeta-putatunda"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-avatar">
-              JP
-            </a>
-
-            <h4 class="speaker-name">
-              <a href="https://www.linkedin.com/in/jayeeta-putatunda"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Jayeeta Putatunda
-              </a>
-            </h4>
-
-            <p class="speaker-org">Fitch Group</p>
-
-            <p class="webinar-title">
-              Agents 101
-            </p>
-
-            <time class="webinar-date">Feb 10, 2025</time>
-
-            <a href="https://www.linkedin.com/in/jayeeta-putatunda"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-link">
-              <i class="bi bi-linkedin"></i> LinkedIn
-            </a>
-
-          </article>
-
-
-          <!-- Haichong Zhang -->
-          <article class="webinar-card">
-
-            <span class="speaker-avatar">HK</span>
-
-            <h4 class="speaker-name">
-              Haichong (Kai) Zhang
-            </h4>
-
-            <p class="speaker-org">
-              Worcester Polytechnic Institute
-            </p>
-
-            <p class="webinar-title">
-              A New Paradigm of Medical Imaging
-              and Robotics Powered by AI
-            </p>
-
-            <time class="webinar-date">Nov 22, 2024</time>
-
-          </article>
-
-
-          <!-- Zahra Ronaghi -->
-          <article class="webinar-card">
-
-            <a href="https://www.linkedin.com/in/zahra-ronaghi"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-avatar">
-              ZR
-            </a>
-
-            <h4 class="speaker-name">
-              <a href="https://www.linkedin.com/in/zahra-ronaghi"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Zahra Ronaghi
-              </a>
-            </h4>
-
-            <p class="speaker-org">NVIDIA</p>
-
-            <p class="webinar-title">
-              NVIDIA's Generative AI:
-              Transforming Industries Through Advanced Computing
-            </p>
-
-            <time class="webinar-date">Oct 22, 2024</time>
-
-            <a href="https://www.linkedin.com/in/zahra-ronaghi"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="speaker-link">
-              <i class="bi bi-linkedin"></i> LinkedIn
-            </a>
-
-          </article>
-
-
-          <!-- Illah R. Nourbakhsh -->
-          <article class="webinar-card">
-
-            <span class="speaker-avatar">IR</span>
-
-            <h4 class="speaker-name">
-              Illah R. Nourbakhsh
-            </h4>
-
-            <p class="speaker-org">
-              Carnegie Mellon University
-            </p>
-
-            <p class="webinar-title">
-              AI: Separating Fact from Hyperbole
-            </p>
-
-            <time class="webinar-date">Sep 20, 2024</time>
-
-          </article>
-
-
-          <!-- Soheyla Amirian -->
-          <article class="webinar-card">
-
-            <span class="speaker-avatar">SA</span>
-
-            <h4 class="speaker-name">
-              Soheyla Amirian
-            </h4>
-
-            <p class="speaker-org">
-              Pace University
-            </p>
-
-            <p class="webinar-title">
-              Generative Artificial Intelligence and Enhanced
-              Analysis of Scientific Literature:
-              Advanced Clinical Text Mining on PubMed
-            </p>
-
-            <time class="webinar-date">Sep 18, 2024</time>
-
-          </article>
-
+        <div class="webinar-grid" id="pace-webinar-grid">
+          <!-- Speaker cards generated below -->
         </div>
-        <!-- End Pace Webinar Grid -->
 
 
-        <!-- IEEE Women in Computing Archive -->
+        <!-- IEEE WOMEN IN COMPUTING -->
+
         <div class="webinar-divider"></div>
 
         <div class="series-heading">
@@ -634,140 +372,32 @@
                   data-bs-target="#ieeeWICSeries"
                   aria-expanded="false"
                   aria-controls="ieeeWICSeries">
+
             View past events
             <i class="bi bi-chevron-down"></i>
+
           </button>
 
         </div>
 
         <p class="archive-note">
-          An earlier webinar series organized in collaboration with
-          IEEE Women in Computing, IEEE WIE Atlanta,
-          and the University of Georgia.
+          An earlier webinar series organized in collaboration
+          with IEEE Women in Computing, IEEE WIE Atlanta,
+          and the University of Georgia to support
+          professional development, research exchange,
+          and leadership in computing.
         </p>
 
         <div class="collapse" id="ieeeWICSeries">
 
-          <div class="webinar-grid">
-
-            <!-- Ines Lohse -->
-            <article class="webinar-card">
-
-              <span class="speaker-avatar">IL</span>
-
-              <h4 class="speaker-name">
-                Ines Lohse
-              </h4>
-
-              <p class="speaker-org">
-                University of Pittsburgh
-              </p>
-
-              <p class="webinar-title">
-                Drug Sensitivity Testing for the
-                Treatment Stratification of Cancer Patients
-              </p>
-
-              <time class="webinar-date">Apr 19, 2024</time>
-
-            </article>
-
-
-            <!-- Gabriela Wilson -->
-            <article class="webinar-card">
-
-              <span class="speaker-avatar">GW</span>
-
-              <h4 class="speaker-name">
-                Gabriela Wilson
-              </h4>
-
-              <p class="speaker-org">
-                University of Texas at Arlington
-              </p>
-
-              <p class="webinar-title">
-                The Joy of Discovery:
-                My Story of Courage, Growth, and Transformation
-              </p>
-
-              <time class="webinar-date">Feb 16, 2024</time>
-
-            </article>
-
-
-            <!-- Soheyla Amirian -->
-            <article class="webinar-card">
-
-              <span class="speaker-avatar">SA</span>
-
-              <h4 class="speaker-name">
-                Soheyla Amirian
-              </h4>
-
-              <p class="speaker-org">
-                University of Georgia
-              </p>
-
-              <p class="webinar-title">
-                AI Fairness in Medical Image Segmentation
-              </p>
-
-              <time class="webinar-date">Nov 17, 2023</time>
-
-            </article>
-
-
-            <!-- Young Ji Lee -->
-            <article class="webinar-card">
-
-              <span class="speaker-avatar">YJ</span>
-
-              <h4 class="speaker-name">
-                Young Ji Lee
-              </h4>
-
-              <p class="speaker-org">
-                Nursing and Medicine
-              </p>
-
-              <p class="webinar-title">
-                Human-AI Collaboration:
-                Health E-Librarian with Personalized
-                Recommender Engine (HELPER)
-              </p>
-
-              <time class="webinar-date">Oct 20, 2023</time>
-
-            </article>
-
-
-            <!-- Beth Bauer -->
-            <article class="webinar-card">
-
-              <span class="speaker-avatar">BB</span>
-
-              <h4 class="speaker-name">
-                Beth Bauer
-              </h4>
-
-              <p class="speaker-org">
-                PosiROI
-              </p>
-
-              <p class="webinar-title">
-                Becoming ADEPT at Innovations with Data
-              </p>
-
-              <time class="webinar-date">Sep 22, 2023</time>
-
-            </article>
-
+          <div class="webinar-grid" id="wic-webinar-grid">
+            <!-- Speaker cards generated below -->
           </div>
+
         </div>
-        <!-- End IEEE WIC Archive -->
 
       </div>
+
     </section>
 
   </main>
@@ -777,14 +407,18 @@
   <footer id="footer" class="footer dark-background">
 
     <div class="footer-top">
+
       <div class="container">
+
         <div class="row">
 
           <div class="col-lg-4 col-md-2 footer-links">
+
             <img src="assets/img/thumbnail-logo-w.png"
                  class="img-fluid"
                  alt="AMIIE Lab"
                  style="width:100%;max-width:200px;">
+
           </div>
 
           <div class="col-lg-4 col-md-4 footer-contact">
@@ -792,11 +426,16 @@
             <h4>Location</h4>
 
             <p>
-              <a href="https://www.pace.edu/" target="_blank">
+              <a href="https://www.pace.edu/"
+                 target="_blank"
+                 rel="noopener noreferrer">
                 Pace University
-              </a><br>
-              Seidenberg School of CSIS<br>
-              One Pace Plaza<br>
+              </a>
+              <br>
+              Seidenberg School of CSIS
+              <br>
+              One Pace Plaza
+              <br>
               New York, NY 10038
             </p>
 
@@ -807,17 +446,21 @@
             <h4>Contact</h4>
 
             <p>
-              <strong>Email:</strong> samirian@pace.edu<br>
+              <strong>Email:</strong> samirian@pace.edu
+              <br>
               <strong>Phone:</strong> (+1) 800-874-PACE
             </p>
 
           </div>
 
         </div>
+
       </div>
+
     </div>
 
     <div class="container">
+
       <div class="copyright">
         &copy; Copyright
         <strong>
@@ -828,6 +471,7 @@
         </strong>.
         All Rights Reserved
       </div>
+
     </div>
 
   </footer>
@@ -837,7 +481,9 @@
   <a href="#"
      id="scroll-top"
      class="scroll-top d-flex align-items-center justify-content-center">
+
     <i class="bi bi-arrow-up-short"></i>
+
   </a>
 
   <!-- Preloader -->
@@ -856,6 +502,308 @@
 
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
+
+
+  <!-- Webinar Speaker Data and Card Rendering -->
+  <script>
+
+    /*
+     * Speaker information.
+     *
+     * To add a new webinar:
+     * Add one entry to the appropriate array.
+     *
+     * To add or update a LinkedIn profile:
+     * Set linkedin to the speaker's profile URL.
+     *
+     * If no LinkedIn profile is available:
+     * Use linkedin: ""
+     */
+
+    const paceWebinars = [
+
+      {
+        name: "Leon Deligiannidis",
+        initials: "LD",
+        organization: "Wentworth Institute of Technology",
+        title: "From Qubits to Classifiers: A hands-on introduction to quantum machine learning",
+        date: "Oct 26, 2026",
+        linkedin: "https://www.linkedin.com/in/leon-deligiannidis"
+      },
+
+      {
+        name: "Salem Othman",
+        initials: "SO",
+        organization: "Wentworth Institute of Technology",
+        title: "Building Transformers from Scratch",
+        date: "May 4, 2026",
+        linkedin: "https://www.linkedin.com/in/salem-othman"
+      },
+
+      {
+        name: "Jayeeta Putatunda",
+        initials: "JP",
+        organization: "Fitch Group",
+        title: "Building Agents That Actually Work",
+        date: "Nov 10, 2025",
+        linkedin: "https://www.linkedin.com/in/jayeeta-putatunda"
+      },
+
+      {
+        name: "Khalifeh AlJadda",
+        initials: "KA",
+        organization: "Google",
+        title: "Unlocking the Power of AI",
+        date: "Apr 18, 2025",
+        linkedin: "https://www.linkedin.com/in/khalifeh-al-jadda-ph-d-929a5020/"
+      },
+
+      {
+        name: "Sundeep Sardana",
+        initials: "SS",
+        organization: "Verisk Analytics",
+        title: "Generative AI in Action – Verisk's Journey and Industry Impact",
+        date: "Mar 24, 2025",
+        linkedin: "https://www.linkedin.com/in/sundeepsardana"
+      },
+
+      {
+        name: "Don Finley",
+        initials: "DF",
+        organization: "FINdustries",
+        title: "Path to AI Enablement: A Practical Guide to Transformative AI Adoption",
+        date: "Feb 24, 2025",
+        linkedin: "https://www.linkedin.com/in/dfinley"
+      },
+
+      {
+        name: "Jayeeta Putatunda",
+        initials: "JP",
+        organization: "Fitch Group",
+        title: "Agents 101",
+        date: "Feb 10, 2025",
+        linkedin: "https://www.linkedin.com/in/jayeeta-putatunda"
+      },
+
+      {
+        name: "Haichong (Kai) Zhang",
+        initials: "HZ",
+        organization: "Worcester Polytechnic Institute",
+        title: "A New Paradigm of Medical Imaging and Robotics Powered by AI",
+        date: "Nov 22, 2024",
+        linkedin: "https://www.linkedin.com/in/haichong-zhang-a49aba1b/"
+      },
+
+      {
+        name: "Zahra Ronaghi",
+        initials: "ZR",
+        organization: "NVIDIA",
+        title: "NVIDIA's Generative AI: Transforming Industries Through Advanced Computing",
+        date: "Oct 22, 2024",
+        linkedin: "https://www.linkedin.com/in/zahra-ronaghi"
+      },
+
+      {
+        name: "Illah R. Nourbakhsh",
+        initials: "IN",
+        organization: "Carnegie Mellon University",
+        title: "AI: Separating Fact from Hyperbole",
+        date: "Sep 20, 2024",
+        linkedin: ""
+      },
+
+      {
+        name: "Soheyla Amirian",
+        initials: "SA",
+        organization: "Pace University",
+        title: "Generative Artificial Intelligence and Enhanced Analysis of Scientific Literature: Advanced Clinical Text Mining on PubMed",
+        date: "Sep 18, 2024",
+        linkedin: ""
+      }
+
+    ];
+
+
+    const wicWebinars = [
+
+      {
+        name: "Ines Lohse",
+        initials: "IL",
+        organization: "University of Pittsburgh",
+        title: "Drug Sensitivity Testing for the Treatment Stratification of Cancer Patients",
+        date: "Apr 19, 2024",
+        linkedin: ""
+      },
+
+      {
+        name: "Gabriela Wilson",
+        initials: "GW",
+        organization: "University of Texas at Arlington",
+        title: "The Joy of Discovery: My Story of Courage, Growth, and Transformation",
+        date: "Feb 16, 2024",
+        linkedin: "https://www.linkedin.com/in/gabriela-mustata-wilson-phd-msc-fhimss-snai/"
+      },
+
+      {
+        name: "Soheyla Amirian",
+        initials: "SA",
+        organization: "University of Georgia",
+        title: "AI Fairness in Medical Image Segmentation",
+        date: "Nov 17, 2023",
+        linkedin: ""
+      },
+
+      {
+        name: "Young Ji Lee",
+        initials: "YL",
+        organization: "Nursing and Medicine",
+        title: "Human-AI Collaboration: Health E-Librarian with Personalized Recommender Engine (HELPER)",
+        date: "Oct 20, 2023",
+        linkedin: ""
+      },
+
+      {
+        name: "Beth Bauer",
+        initials: "BB",
+        organization: "PosiROI",
+        title: "Becoming ADEPT at Innovations with Data",
+        date: "Sep 22, 2023",
+        linkedin: ""
+      }
+
+    ];
+
+
+    /*
+     * Render one speaker card.
+     *
+     * LinkedIn links are shown only when a URL is supplied.
+     * Speaker initials are used instead of external images.
+     */
+
+    function createSpeakerCard(speaker) {
+
+      const card = document.createElement("article");
+      card.className = "webinar-card";
+
+      const hasLinkedIn = Boolean(speaker.linkedin);
+
+      // Circular avatar
+      const avatar = document.createElement(
+        hasLinkedIn ? "a" : "span"
+      );
+
+      avatar.className = "speaker-avatar";
+      avatar.textContent = speaker.initials;
+
+      if (hasLinkedIn) {
+        avatar.href = speaker.linkedin;
+        avatar.target = "_blank";
+        avatar.rel = "noopener noreferrer";
+        avatar.setAttribute(
+          "aria-label",
+          "View " + speaker.name + " on LinkedIn"
+        );
+      }
+
+      card.appendChild(avatar);
+
+
+      // Speaker name
+      const nameHeading = document.createElement("h4");
+      nameHeading.className = "speaker-name";
+
+      if (hasLinkedIn) {
+
+        const nameLink = document.createElement("a");
+        nameLink.href = speaker.linkedin;
+        nameLink.target = "_blank";
+        nameLink.rel = "noopener noreferrer";
+        nameLink.textContent = speaker.name;
+
+        nameHeading.appendChild(nameLink);
+
+      } else {
+
+        nameHeading.textContent = speaker.name;
+
+      }
+
+      card.appendChild(nameHeading);
+
+
+      // Organization
+      const organization = document.createElement("p");
+      organization.className = "speaker-org";
+      organization.textContent = speaker.organization;
+
+      card.appendChild(organization);
+
+
+      // Talk title
+      const talkTitle = document.createElement("p");
+      talkTitle.className = "webinar-title";
+      talkTitle.textContent = speaker.title;
+
+      card.appendChild(talkTitle);
+
+
+      // Date
+      const date = document.createElement("time");
+      date.className = "webinar-date";
+      date.textContent = speaker.date;
+
+      card.appendChild(date);
+
+
+      // LinkedIn icon and link
+      if (hasLinkedIn) {
+
+        const linkedInLink = document.createElement("a");
+
+        linkedInLink.className = "speaker-link";
+        linkedInLink.href = speaker.linkedin;
+        linkedInLink.target = "_blank";
+        linkedInLink.rel = "noopener noreferrer";
+
+        const icon = document.createElement("i");
+        icon.className = "bi bi-linkedin";
+        icon.setAttribute("aria-hidden", "true");
+
+        linkedInLink.appendChild(icon);
+        linkedInLink.appendChild(
+          document.createTextNode(" LinkedIn")
+        );
+
+        card.appendChild(linkedInLink);
+
+      }
+
+      return card;
+    }
+
+
+    /*
+     * Populate the speaker grids.
+     */
+
+    function renderWebinars(webinars, containerId) {
+
+      const container = document.getElementById(containerId);
+
+      if (!container) return;
+
+      webinars.forEach(function(speaker) {
+        container.appendChild(createSpeakerCard(speaker));
+      });
+
+    }
+
+
+    renderWebinars(paceWebinars, "pace-webinar-grid");
+    renderWebinars(wicWebinars, "wic-webinar-grid");
+
+  </script>
 
 </body>
 </html>
