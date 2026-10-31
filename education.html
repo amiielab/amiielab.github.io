@@ -1,75 +1,125 @@
 
-<!-- Learning Resources -->
-<section id="learning-resources" class="section light-background">
+<!-- Workshops and Tutorials -->
+<section id="workshops" class="section">
   <div class="container section-title" data-aos="fade-up">
-    <h2>Learning Resources</h2>
+    <h2>Workshops &amp; Tutorials</h2>
     <p class="section-subtitle">
-      Selected open educational resources and technical learning materials.
+      Selected educational activities developed or delivered around
+      explainability, deep learning, and healthcare applications.
     </p>
   </div>
 
   <div class="container">
-    <div class="row gy-4">
+    <div class="accordion" id="workshopAccordion">
 
-      <!-- Data Science with Python -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up">
-        <div class="edu-card">
-          <i class="bi bi-play-btn"></i>
-          <h3>Data Science with Python</h3>
-          <p>
-            A video-based learning resource introducing practical
-            concepts in Python and data science.
-          </p>
-          <a class="resource-link"
-             href="https://www.youtube.com/watch?v=UHimT9zglcs&amp;list=PLgaEBo31ON7xu53xSG-CloqVgbtccspFB&amp;ab_channel=Soheyla"
-             target="_blank"
-             rel="noopener noreferrer">
-            View on YouTube
-          </a>
+      <!-- XAI Clinical Applications -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="headingXAI">
+          <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseXAI"
+                  aria-expanded="true"
+                  aria-controls="collapseXAI">
+            Explainable AI (XAI) in Clinical Applications
+          </button>
+        </h3>
+
+        <div id="collapseXAI"
+             class="accordion-collapse collapse show"
+             aria-labelledby="headingXAI"
+             data-bs-parent="#workshopAccordion">
+          <div class="accordion-body">
+            <p>
+              Artificial intelligence has demonstrated strong performance
+              across many healthcare applications, but the black-box
+              nature of complex models can limit trust and adoption
+              in clinical environments. This half-day tutorial examined
+              explainable AI in healthcare, with particular emphasis on
+              transparency, interpretability, accountability, and the
+              communication of AI-supported decisions in clinical settings.
+            </p>
+
+            <a href="https://ieeesoutheastcon.org/workshop-and-tutorials/"
+               target="_blank"
+               rel="noopener noreferrer">
+              More Information
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Java Programming -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="edu-card">
-          <i class="bi bi-code-slash"></i>
-          <h3>Java Programming</h3>
-          <p>
-            A foundational video series covering Java programming
-            concepts for students learning software development
-            and computational problem solving.
-          </p>
-          <a class="resource-link"
-             href="https://www.youtube.com/watch?v=067Ii4u5iGs&amp;list=PLgaEBo31ON7xhknw8IEpGYKduzjLZcOMF&amp;ab_channel=Soheyla"
-             target="_blank"
-             rel="noopener noreferrer">
-            View on YouTube
-          </a>
+      <!-- Few-shot tutorial -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="headingFewShot">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFewShot"
+                  aria-expanded="false"
+                  aria-controls="collapseFewShot">
+            Explainable Deep Few-Shot Learning on the Cloud
+            for Medical Imaging Informatics
+          </button>
+        </h3>
+
+        <div id="collapseFewShot"
+             class="accordion-collapse collapse"
+             aria-labelledby="headingFewShot"
+             data-bs-parent="#workshopAccordion">
+          <div class="accordion-body">
+            <p>
+              This tutorial introduced explainable deep few-shot
+              learning for image localization and segmentation
+              in medical imaging. Participants explored how
+              limited labeled data, model explainability, and
+              cloud-based computational resources can be combined
+              to build practical medical imaging workflows.
+            </p>
+
+            <a href="https://pitthexai.github.io/isvc-xfcloud/"
+               target="_blank"
+               rel="noopener noreferrer">
+              More Information
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Mathematical Foundations of Machine Learning -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="edu-card">
-          <i class="bi bi-calculator"></i>
-          <h3>Mathematical Foundations of Machine Learning</h3>
-          <p>
-            A video lecture series exploring essential mathematical
-            foundations of machine learning, including linear algebra,
-            matrices, eigenvalues and eigenvectors, derivatives,
-            gradients, optimization, and gradient descent,
-            with practical applications in artificial intelligence.
-          </p>
-          <a class="resource-link"
-             href="https://www.youtube.com/watch?v=N9p9oKYy7sQ&amp;list=PLgaEBo31ON7xF7_sNqLm2hYA65m2qffWD"
-             target="_blank"
-             rel="noopener noreferrer">
-            View on YouTube
-          </a>
+      <!-- Deep Learning Workshop -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="headingDeepLearning">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseDeepLearning"
+                  aria-expanded="false"
+                  aria-controls="collapseDeepLearning">
+            Annual Deep Learning Workshop for Medical Image Analysis
+          </button>
+        </h3>
+
+        <div id="collapseDeepLearning"
+             class="accordion-collapse collapse"
+             aria-labelledby="headingDeepLearning"
+             data-bs-parent="#workshopAccordion">
+          <div class="accordion-body">
+            <p>
+              This workshop brought together researchers and students
+              interested in deep learning for medical image analysis.
+              Topics included image registration, object localization,
+              segmentation, anomaly detection, image classification,
+              and hands-on applications of deep learning in
+              biomedical imaging.
+            </p>
+
+            <a href="https://web.cvent.com/event/8071b458-dcec-406d-9a52-5100e0e1ba4c/summary"
+               target="_blank"
+               rel="noopener noreferrer">
+              More Information
+            </a>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 </section>
-<!-- End Learning Resources -->
+<!-- End Workshops -->
